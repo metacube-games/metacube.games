@@ -1,0 +1,200 @@
+{
+  "navigation": {
+    "market": "Marché",
+    "inventory": "Inventaire",
+    "rewards": "Récompenses",
+    "allStars": "All Stars",
+    "play": "JOUER",
+    "playMetacube": "METACUBE"
+  },
+  "metadata": {
+    "title": "Metacube",
+    "titleTemplate": "%s | Metacube",
+    "description": "Explorez le Metacube Marketplace sur Starknet. Achetez des NFT Metacube exclusifs, gagnez des récompenses uniques et échangez vos actifs dans cet écosystème de jeu basé sur la blockchain.",
+    "keywords": "metacube marketplace, marché nft, acheter nft, gagner nft, échanger nft, starknet, jeu blockchain",
+    "ogImageAlt": "Logo Metacube Marketplace",
+    "siteName": "Metacube Marketplace",
+    "appTitle": "Metacube Marketplace",
+    "market": {
+      "title": "Marché",
+      "description": "Explorez et échangez des NFT de jeu uniques sur le Metacube Marketplace. Découvrez des actifs numériques exclusifs alimentés par la technologie blockchain Starknet pour une expérience de jeu améliorée.",
+      "keywords": "metacube marketplace, acheter nft, échanger nft, nft de jeu, marketplace starknet, jeu blockchain, actifs numériques"
+    },
+    "inventory": {
+      "title": "Inventaire",
+      "description": "Gérez et visualisez votre collection NFT Metacube. Suivez vos actifs de jeu et objets de collection numériques en un seul endroit sécurisé, alimenté par la technologie blockchain Starknet.",
+      "keywords": "inventaire metacube, collection nft, actifs de jeu, objets de collection numériques, portefeuille starknet, jeu blockchain, gestion nft"
+    },
+    "rewards": {
+      "title": "Récompenses",
+      "description": "Gagnez et réclamez des récompenses NFT exclusives dans l'écosystème de jeu Metacube. Découvrez des actifs numériques uniques et des réalisations alimentés par la technologie blockchain Starknet.",
+      "keywords": "récompenses metacube, récompenses nft, récompenses de jeu, récompenses blockchain, nft starknet, jeu metacube, réclamations nft gratuites"
+    },
+    "allstars": {
+      "title": "All Stars",
+      "description": "Parcourez la collection originale Allstars V1 comprenant 10'000 NFT uniques avec des modèles 3D détaillés et des visuels.",
+      "keywords": "Allstars, collection NFT, art numérique, NFT 3D, objets de collection blockchain",
+      "twitterTitle": "Metacube Marketplace - Achetez, Gagnez et Échangez des NFT",
+      "twitterDescription": "Explorez le Metacube Marketplace sur Starknet. Achetez des NFT Metacube exclusifs, gagnez des récompenses uniques et échangez vos actifs.",
+      "twitterCreator": "@MetacubeGames"
+    }
+  },
+  "wallet": {
+    "accountTitle": "Portefeuille",
+    "connect": "Connecter le portefeuille",
+    "login": "Connexion",
+    "disconnect": "Déconnecter",
+    "connectedAddress": "Adresse connectée",
+    "copyAddress": "Copier l'adresse",
+    "strkBalance": "Solde STRK"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "buttons": {
+      "tryAgain": "Réessayer",
+      "goHome": "Accueil",
+      "goBack": "Retour"
+    }
+  },
+  "error": {
+    "title": "Une erreur est survenue",
+    "description": "Une erreur inattendue s'est produite lors du chargement du marché.",
+    "devDetailsHeading": "Détails de l'erreur (développement uniquement)",
+    "devDigestPrefix": "Digest"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous cherchez n'existe pas sur le marché Metacube."
+  },
+  "market": {
+    "title": "Marché"
+  },
+  "inventory": {
+    "title": "Inventaire"
+  },
+  "rewards": {
+    "title": "Récompenses"
+  },
+  "allstars": {
+    "title": "All Stars",
+    "searchPlaceholder": "Recherche par ID...",
+    "sortDefault": "Par défaut",
+    "sortRarity": "Rareté",
+    "noResults": "Aucun Allstars trouvé correspondant à \"{searchTerm}\". Essayez un autre terme de recherche.",
+    "noNFTs": "Aucun NFT disponible. Veuillez réessayer plus tard."
+  },
+  "footer": {
+    "copyrightHolder": "© {year} Metacube",
+    "allRightsReserved": "Tous droits réservés.",
+    "terms": "Conditions",
+    "privacy": "Confidentialité"
+  },
+  "ui": {
+    "close": "Fermer",
+    "strk": {
+      "alt": "STRK"
+    }
+  },
+  "nft": {
+    "actions": {
+      "details": "Détails",
+      "detailsSell": "Détails / Vendre"
+    },
+    "media": {
+      "imageAlt": "Image du NFT"
+    },
+    "switchTo": "Passer à la qualité {quality}",
+    "standard": "SD",
+    "high": "HD",
+    "emptyStateListed": "Aucun NFT n'est actuellement en vente",
+    "emptyStateWithFilter": "Aucun NFT disponible avec le filtre sélectionné",
+    "notFound": "Actif non trouvé"
+  },
+  "nftGrid": {
+    "common": {
+      "connectWallet": "Connecter le portefeuille",
+      "processing": "Traitement...",
+      "loading": "Chargement..."
+    },
+    "actions": {
+      "claim": "Réclamer",
+      "claiming": "Réclamation...",
+      "buyNow": "Acheter maintenant",
+      "approving": "Approbation...",
+      "buying": "Achat...",
+      "sellNft": "Vendre le NFT",
+      "selling": "Vente...",
+      "details": "Détails",
+      "confirm": "Confirmer"
+    },
+    "buy": {
+      "yourBalance": "Votre solde :",
+      "listedPrice": "Prix de vente :",
+      "checkingBalance": "Vérification du solde...",
+      "soldOut": "VENDU !",
+      "transactionFailed": "La transaction a échoué"
+    },
+    "claim": {
+      "invalidTokenId": "L'ID du NFT {ids} est invalide ou pas encore créé",
+      "fetchOwnedNftsError": "Échec de la récupération des NFT {type} possédés",
+      "transactionFailed": "Échec de la transaction : Veuillez réessayer plus tard",
+      "claimed": "Réclamé",
+      "nothingToClaim": "Rien à réclamer",
+      "nftsToClaimCount": "({count} NFT à réclamer)"
+    },
+    "marketplace": {
+      "missingNftDetails": "Détails du NFT manquants ou portefeuille non connecté",
+      "marketplaceFee": "Frais de marché ({percentage} %) :",
+      "total": "Total :",
+      "owner": "Vendeur :",
+      "cancelListing": "Annuler la vente"
+    },
+    "details": {
+      "claimTitle": "{name}",
+      "buyTitle": "{name}",
+      "sellTitle": "Vendre {name}",
+      "detailsTitle": "{name}",
+      "claimConditions": "Conditions de réclamation",
+      "price": "Prix",
+      "saleConditions": "Conditions de vente",
+      "details": "Détails",
+      "nftDetails": "Détails du NFT",
+      "collection": "Collection :",
+      "tokenId": "ID du token :",
+      "rarity": "Rareté :",
+      "attributes": "Attributs",
+      "listingFailed": "Échec de la mise en vente",
+      "removeFailed": "Échec du retrait de la vente",
+      "relistFailed": "Échec de la mise à jour",
+      "listedAt": "En vente à",
+      "enterPrice": "Entrez le prix en STRK",
+      "enterNewPrice": "Entrez le nouveau prix en STRK",
+      "listForSale": "Mettre en vente",
+      "updatePriceButton": "Mettre à jour le prix"
+    },
+    "filter": {
+      "all": "Tous",
+      "listed": "En vente"
+    },
+    "messages": {
+      "loginPromptTitle": "Connectez-vous pour voir vos actifs",
+      "connectWallet": "Connecter le portefeuille",
+      "noNftsFound": "Aucun NFT trouvé",
+      "noNftsAvailable": "Aucun NFT disponible dans cette collection",
+      "errorLoadingNfts": "Erreur lors du chargement des NFT",
+      "unknownError": "Erreur inconnue"
+    },
+    "contract": {
+      "accountNotConnected": "Compte non connecté. Veuillez d'abord connecter votre portefeuille.",
+      "nftSoldOut": "Ce NFT est vendu.",
+      "insufficientBalance": "Solde STRK insuffisant pour effectuer l'achat.",
+      "transactionFailed": "La transaction a échoué : {error}",
+      "listingStatusCheckFailed": "Échec de la vérification du statut de la mise en vente",
+      "walletContractsNotReady": "Portefeuille/contrats non prêts",
+      "missingNftInfo": "Informations manquantes sur le NFT (collection ou tokenId)",
+      "listNftFailed": "Échec de la mise en vente du NFT : {error}",
+      "walletNotConnected": "Portefeuille non connecté",
+      "delistNftFailed": "Échec du retrait de la vente du NFT : {error}"
+    }
+  }
+}

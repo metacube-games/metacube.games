@@ -1,0 +1,43 @@
+---
+# Start all services on a freshly configured server.
+# Independent services start immediately; game cluster follows the
+# required boot order (game-db → db-init → rest).
+# Usage: ansible-playbook playbooks/start.yml
+
+- name: Start all services
+  hosts: prod
+  become: false
+
+  vars:
+    deploy_dir: /home/metacube
+
+  tasks:
+    - name: Pull game cluster images
+      ansible.builtin.command:
+        cmd: >
+          docker compose pull
+          db-init backend state-server game-server view-server game-client
+        chdir: "{{ deploy_dir }}"
+
+    - name: Start independent services
+      ansible.builtin.command:
+        cmd: >
+          docker compose up -d
+          nginx users-db cache-db private-keys
+          landing-page market link-wallet indexer signatures
+        chdir: "{{ deploy_dir }}"
+
+    - name: Start game-db
+      ansible.builtin.command:
+        cmd: docker compose up -d game-db
+        chdir: "{{ deploy_dir }}"
+
+    - name: Run db-init (blocking — waits until world data is loaded)
+      ansible.builtin.command:
+        cmd: docker compose up db-init
+        chdir: "{{ deploy_dir }}"
+
+    - name: Start game services
+      ansible.builtin.command:
+        cmd: docker compose up -d backend state-server game-server view-server game-client
+        chdir: "{{ deploy_dir }}"

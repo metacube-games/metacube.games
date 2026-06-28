@@ -1,0 +1,30 @@
+# Build output
+dist
+dist-ssr
+
+# Dependencies
+node_modules
+
+# Generated / vendored
+src/GLBImports
+src/envData
+public
+bun.lock
+
+# Native platform projects
+android
+ios
+
+# Binary and asset files prettier should not touch
+*.glb
+*.exr
+*.hdr
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.svg
+*.mp3
+*.ogg
+*.wav
+

@@ -1,0 +1,59 @@
+{
+  "navigation": {
+    "play": "Jouer",
+    "playMetacube": "Metacube"
+  },
+  "metadata": {
+    "title": "Lier le Portefeuille",
+    "titleTemplate": "%s | Metacube",
+    "description": "Connectez votre compte Google à votre portefeuille Metacube sur Starknet. Liez votre identité en toute sécurité pour un accès fluide aux actifs de jeu Web3, à la vérification de propriété et à l'intégration blockchain.",
+    "keywords": "metacube, liaison de portefeuille, intégration compte google, portefeuille starknet, authentification web3, identité blockchain, accès aux actifs numériques, connexion sécurisée du portefeuille, connexion web3, dapp starknet, portefeuille crypto, compte blockchain",
+    "ogImageAlt": "Metacube - Plateforme de Jeu Web3 sur Starknet",
+    "siteName": "Metacube Gaming",
+    "appTitle": "Lier le Portefeuille"
+  },
+  "linkWallet": {
+    "title": "Liez votre Portefeuille",
+    "step1": "Choisissez la Méthode de Connexion",
+    "step2": "Liez votre portefeuille",
+    "step3": "Confirmer",
+    "googleLogin": "Connexion Google",
+    "guestId": "ID d'Invité",
+    "enterGuestId": "Entrez l'ID d'Invité",
+    "connect": "Connecter",
+    "connectWallet": "Connecter le Portefeuille",
+    "back": "Retour",
+    "confirmWalletLinking": "Confirmer la Liaison du Portefeuille",
+    "verifyAddress": "Veuillez vérifier soigneusement l'adresse de votre portefeuille avant de confirmer. Cette action ne peut pas être annulée et l'adresse ne pourra pas être modifiée par la suite.",
+    "successfullyLinked": "Votre portefeuille {address} est lié avec succès au compte {username} !"
+  },
+  "common": {
+    "buttons": {
+      "tryAgain": "Réessayer",
+      "goHome": "Accueil",
+      "goBack": "Retour"
+    }
+  },
+  "error": {
+    "title": "Une erreur est survenue",
+    "description": "Une erreur inattendue s'est produite lors de la liaison de votre portefeuille.",
+    "devDetailsHeading": "Détails de l'erreur (développement uniquement)",
+    "devDigestPrefix": "Digest"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous cherchez n'existe pas."
+  },
+  "errors": {
+    "enterValidGuestId": "Veuillez entrer un ID d'Invité valide",
+    "failedConnectGuestId": "Échec de la connexion avec cet ID d'Invité",
+    "connectWalletFailed": "Échec de la connexion au portefeuille. Veuillez réessayer.",
+    "linkWalletFailed": "Échec de la liaison du portefeuille. Veuillez réessayer."
+  },
+  "footer": {
+    "copyrightHolder": "© {year} Metacube",
+    "allRightsReserved": "Tous droits réservés.",
+    "terms": "Conditions",
+    "privacy": "Confidentialité"
+  }
+}

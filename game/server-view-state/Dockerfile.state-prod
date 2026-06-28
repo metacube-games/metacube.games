@@ -1,0 +1,27 @@
+FROM server-view-state AS build
+
+ENV WITH_BORINGSSL=1
+
+WORKDIR /app
+
+COPY . .
+
+RUN --mount=type=cache,target=/tmp/ccache \
+    --mount=type=cache,target=/app/.cache \
+    make state-prod
+
+RUN useradd -u 1001 metacube
+
+FROM scratch
+
+WORKDIR /app
+
+COPY --from=build /etc/passwd /etc/passwd
+
+COPY --from=build /app/state /app/state
+
+USER metacube
+
+EXPOSE 4444
+
+ENTRYPOINT ["./state", "/env/.env"]

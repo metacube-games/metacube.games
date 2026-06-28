@@ -1,0 +1,5 @@
+[prod]
+prod_host ansible_host=YOUR.SERVER.IP.HERE
+
+[prod:vars]
+ansible_ssh_user=YOUR_SSH_USER

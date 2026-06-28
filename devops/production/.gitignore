@@ -1,0 +1,16 @@
+# Secrets and credentials — never commit these
+config/.env
+config/certificates/
+config/game-db/keydb.conf
+config/cache-db/keydb.conf
+private/
+
+# Snapshot files — large, managed via Ansible
+snapshot/
+
+# Runtime data directories — managed on server
+data/
+logs/
+
+# Docker image archives (legacy build approach, no longer used)
+config/images/

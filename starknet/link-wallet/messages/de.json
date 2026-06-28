@@ -1,0 +1,59 @@
+{
+  "navigation": {
+    "play": "Spielen",
+    "playMetacube": "Metacube"
+  },
+  "metadata": {
+    "title": "Wallet verknüpfen",
+    "titleTemplate": "%s | Metacube",
+    "description": "Verbinden Sie Ihr Google-Konto mit Ihrer Metacube-Wallet auf Starknet. Verknüpfen Sie Ihre Identität sicher für nahtlosen Zugriff auf Web3-Gaming-Assets, Eigentumsprüfung und Blockchain-Integration.",
+    "keywords": "metacube, wallet-verknüpfung, google-konto integration, starknet wallet, web3-authentifizierung, blockchain-identität, zugriff auf digitale assets, sichere wallet-verbindung, web3-anmeldung, starknet dapp, krypto-wallet, blockchain-konto",
+    "ogImageAlt": "Metacube - Web3-Gaming-Plattform auf Starknet",
+    "siteName": "Metacube Gaming",
+    "appTitle": "Wallet verknüpfen"
+  },
+  "linkWallet": {
+    "title": "Verknüpfen Sie Ihre Wallet",
+    "step1": "Wählen Sie die Anmeldemethode",
+    "step2": "Verknüpfen Sie Ihre Wallet",
+    "step3": "Bestätigen",
+    "googleLogin": "Google-Anmeldung",
+    "guestId": "Gast-ID",
+    "enterGuestId": "Gast-ID eingeben",
+    "connect": "Verbinden",
+    "connectWallet": "Wallet verbinden",
+    "back": "Zurück",
+    "confirmWalletLinking": "Wallet-Verknüpfung bestätigen",
+    "verifyAddress": "Bitte überprüfen Sie Ihre Wallet-Adresse sorgfältig, bevor Sie bestätigen. Diese Aktion kann nicht rückgängig gemacht werden und die Adresse kann danach nicht mehr geändert werden.",
+    "successfullyLinked": "Ihre Wallet {address} wurde erfolgreich mit dem Konto {username} verknüpft!"
+  },
+  "common": {
+    "buttons": {
+      "tryAgain": "Erneut versuchen",
+      "goHome": "Startseite",
+      "goBack": "Zurück"
+    }
+  },
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Beim Verknüpfen Ihrer Wallet ist ein unerwarteter Fehler aufgetreten.",
+    "devDetailsHeading": "Fehlerdetails (nur Entwicklung)",
+    "devDigestPrefix": "Digest"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht."
+  },
+  "errors": {
+    "enterValidGuestId": "Bitte geben Sie eine gültige Gast-ID ein",
+    "failedConnectGuestId": "Fehler beim Verbinden mit dieser Gast-ID",
+    "connectWalletFailed": "Verbindung zur Wallet fehlgeschlagen. Bitte erneut versuchen.",
+    "linkWalletFailed": "Wallet-Verknüpfung fehlgeschlagen. Bitte erneut versuchen."
+  },
+  "footer": {
+    "copyrightHolder": "© {year} Metacube",
+    "allRightsReserved": "Alle Rechte vorbehalten.",
+    "terms": "Bedingungen",
+    "privacy": "Datenschutz"
+  }
+}

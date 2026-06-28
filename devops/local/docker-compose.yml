@@ -1,0 +1,188 @@
+networks:
+  local-network:
+    driver: bridge
+
+volumes:
+  environment:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./config/environment
+
+  state-users-db:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./state/users-db
+
+  state-world-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./state/world-data
+
+  state-backend:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./state/backend
+
+
+services:
+
+  nginx:
+    container_name: nginx
+    image: nginx:alpine
+    volumes:
+      - ./config/environment/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"
+    networks:
+      - local-network
+    restart: unless-stopped
+
+  users-db:
+    container_name: users-db
+    image: mysql:8
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    volumes:
+      - state-users-db:/var/lib/mysql
+      - ./config/users-db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - local-network
+    restart: unless-stopped
+    healthcheck:
+      test: mysqladmin ping -h localhost -u root --password=$$MYSQL_ROOT_PASSWORD
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  cache-db:
+    container_name: cache-db
+    image: eqalpha/keydb
+    volumes:
+      - ./config/cache-db/keydb.conf:/etc/keydb/keydb.conf
+    networks:
+      - local-network
+    restart: unless-stopped
+
+  game-db:
+    container_name: game-db
+    image: eqalpha/keydb
+    volumes:
+      - ./config/game-db/keydb.conf:/etc/keydb/keydb.conf
+    networks:
+      - local-network
+    restart: unless-stopped
+
+  db-init:
+    container_name: db-init
+    image: ghcr.io/metacube-games/metacube-db-init:legacy
+    depends_on:
+      game-db:
+        condition: service_started
+    volumes:
+      - environment:/env:ro
+      - state-world-data:/world-data
+    networks:
+      - local-network
+    restart: "no"
+
+  backend:
+    container_name: backend
+    image: ghcr.io/metacube-games/metacube-backend:legacy
+    depends_on:
+      game-db:
+        condition: service_started
+      users-db:
+        condition: service_healthy
+      cache-db:
+        condition: service_started
+    environment:
+      - GIN_MODE=release
+    volumes:
+      - environment:/env:ro
+      - state-backend:/persistent
+    networks:
+      - local-network
+    restart: unless-stopped
+
+  state-server:
+    container_name: state-server
+    image: ghcr.io/metacube-games/metacube-state-server:legacy
+    depends_on:
+      game-db:
+        condition: service_started
+    volumes:
+      - environment:/env:ro
+      - state-world-data:/world-data
+    networks:
+      - local-network
+    restart: unless-stopped
+
+  game-server:
+    container_name: game-server
+    image: ghcr.io/metacube-games/metacube-game-server:legacy
+    depends_on:
+      game-db:
+        condition: service_started
+    environment:
+      - GAME_SERVER_ID=0
+    volumes:
+      - environment:/env:ro
+    networks:
+      - local-network
+    restart: unless-stopped
+
+  view-server:
+    container_name: view-server
+    image: ghcr.io/metacube-games/metacube-view-server:legacy
+    depends_on:
+      game-db:
+        condition: service_started
+    volumes:
+      - environment:/env:ro
+    networks:
+      - local-network
+    restart: unless-stopped
+
+  game-client:
+    container_name: game-client
+    build:
+      context: ../../game/client
+      dockerfile_inline: |
+        FROM oven/bun:alpine AS build
+        WORKDIR /app
+        COPY package.json bun.lock ./
+        RUN --mount=type=cache,target=/root/.bun/install/cache \
+            --mount=type=cache,target=/app/node_modules/.cache \
+            bun install --frozen-lockfile
+        COPY . .
+        RUN printf 'VITE_REACT_APP_BASE_URL=http://localhost/api/v1\nVITE_REACT_APP_INIT_URL=http://localhost\nVITE_REACT_APP_WEBSOCKET_GAME_URL=ws://localhost/ws/game\nVITE_REACT_APP_WEBSOCKET_VIEW_URL=ws://localhost/ws/view\nVITE_REACT_APP_WEBSOCKET_CHAT_URL=ws://localhost/ws/chat\nVITE_REACT_APP_GOOGLE_CLIENT_ID=285204904976-ps77qml7rfllm9scd78fsqgik5tscbkn.apps.googleusercontent.com\nVITE_REACT_APP_AUTHORIZED_ADDRESSES=\nVITE_REACT_APP_GAME_CLIENT_PORT=80\nGENERATE_SOURCEMAP=false\nNODE_ENV=production\n' > .env
+        ENV NODE_OPTIONS=--max-old-space-size=4096
+        RUN --mount=type=cache,target=/app/node_modules/.vite \
+            --mount=type=cache,target=/root/.cache \
+            bun run build
+        FROM nginx:alpine
+        COPY nginx.conf /etc/nginx/nginx.conf
+        COPY --from=build /app/dist /usr/share/nginx/html
+        EXPOSE 443
+        ENTRYPOINT ["nginx", "-g", "daemon off;"]
+    depends_on:
+      backend:
+        condition: service_started
+      game-server:
+        condition: service_started
+      view-server:
+        condition: service_started
+      state-server:
+        condition: service_started
+    networks:
+      - local-network
+    restart: unless-stopped

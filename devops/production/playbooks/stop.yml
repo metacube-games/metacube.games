@@ -1,0 +1,32 @@
+---
+# Gracefully stop the game cluster.
+# Snapshots the current world state before stopping.
+# Independent services (landing-page, market, etc.) remain up.
+# Usage: ansible-playbook playbooks/stop.yml
+
+- name: Stop game cluster
+  hosts: prod
+  become: false
+
+  vars:
+    deploy_dir: /home/metacube
+
+  tasks:
+    - name: Snapshot current world data
+      ansible.builtin.command:
+        cmd: "{{ deploy_dir }}/snapshot-wd.sh"
+
+    - name: Stop game client
+      ansible.builtin.command:
+        cmd: docker compose stop game-client
+        chdir: "{{ deploy_dir }}"
+
+    - name: Stop game services
+      ansible.builtin.command:
+        cmd: docker compose stop game-server view-server state-server backend
+        chdir: "{{ deploy_dir }}"
+
+    - name: Stop game-db
+      ansible.builtin.command:
+        cmd: docker compose stop game-db
+        chdir: "{{ deploy_dir }}"

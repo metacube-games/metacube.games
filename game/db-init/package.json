@@ -1,0 +1,16 @@
+{
+  "name": "metacube-db-init",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "ioredis": "^5.10.1",
+    "jimp": "^1.6.1"
+  },
+  "devDependencies": {
+    "@jimp/types": "^1.6.1",
+    "@types/node": "^24.12.2",
+    "typescript": "^6.0.3"
+  }
+}

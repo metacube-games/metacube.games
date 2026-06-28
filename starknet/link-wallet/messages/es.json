@@ -1,0 +1,59 @@
+{
+  "navigation": {
+    "play": "Jugar",
+    "playMetacube": "Metacube"
+  },
+  "metadata": {
+    "title": "Vincular Billetera",
+    "titleTemplate": "%s | Metacube",
+    "description": "Conecta tu cuenta de Google con tu billetera Metacube en Starknet. Vincula tu identidad de forma segura para un acceso fluido a los activos de juegos Web3, verificación de propiedad e integración blockchain.",
+    "keywords": "metacube, vinculación de billetera, integración de cuenta google, billetera starknet, autenticación web3, identidad blockchain, acceso a activos digitales, conexión segura de billetera, inicio de sesión web3, dapp starknet, billetera cripto, cuenta blockchain",
+    "ogImageAlt": "Metacube - Plataforma de Juegos Web3 en Starknet",
+    "siteName": "Metacube Gaming",
+    "appTitle": "Vincular Billetera"
+  },
+  "linkWallet": {
+    "title": "Vincula tu Billetera",
+    "step1": "Elige el Método de Inicio de Sesión",
+    "step2": "Vincula tu billetera",
+    "step3": "Confirmar",
+    "googleLogin": "Inicio de Sesión con Google",
+    "guestId": "ID de Invitado",
+    "enterGuestId": "Ingresa el ID de Invitado",
+    "connect": "Conectar",
+    "connectWallet": "Conectar Billetera",
+    "back": "Volver",
+    "confirmWalletLinking": "Confirmar Vinculación de Billetera",
+    "verifyAddress": "Por favor verifica cuidadosamente la dirección de tu billetera antes de confirmar. Esta acción no se puede deshacer y la dirección no se podrá cambiar después.",
+    "successfullyLinked": "¡Tu billetera {address} se ha vinculado correctamente a la cuenta {username}!"
+  },
+  "common": {
+    "buttons": {
+      "tryAgain": "Reintentar",
+      "goHome": "Inicio",
+      "goBack": "Volver"
+    }
+  },
+  "error": {
+    "title": "Algo salió mal",
+    "description": "Se produjo un error inesperado al vincular tu billetera.",
+    "devDetailsHeading": "Detalles del error (solo desarrollo)",
+    "devDigestPrefix": "Digest"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe."
+  },
+  "errors": {
+    "enterValidGuestId": "Por favor ingresa un ID de Invitado válido",
+    "failedConnectGuestId": "Error al conectar con este ID de Invitado",
+    "connectWalletFailed": "Error al conectar la billetera. Inténtalo de nuevo.",
+    "linkWalletFailed": "Error al vincular la billetera. Inténtalo de nuevo."
+  },
+  "footer": {
+    "copyrightHolder": "© {year} Metacube",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "terms": "Términos",
+    "privacy": "Privacidad"
+  }
+}

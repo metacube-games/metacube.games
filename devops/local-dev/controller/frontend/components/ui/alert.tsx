@@ -1,0 +1,70 @@
+import * as React from "react";
+import { cva, type VariantProps } from "class-variance-authority";
+import { cn } from "@/lib/utils";
+
+const alertVariants = cva(
+  // Flex row + `items-center` keeps the icon vertically centered against
+  //   the text body, even when the description wraps to several lines.
+  //   The shadcn upstream uses absolute positioning (`absolute left-4
+  //   top-4`) which only looks correct on single-line alerts — multi-line
+  //   alerts ended up with the icon hugging the top.
+  "relative flex w-full items-center gap-3 rounded-lg border p-4 [&>svg]:size-5 [&>svg]:shrink-0 [&>svg]:text-foreground",
+  {
+    variants: {
+      variant: {
+        default: "bg-background text-foreground",
+        destructive:
+          "border-destructive/50 bg-destructive/10 text-destructive [&>svg]:text-destructive dark:border-destructive",
+        warning:
+          "border-amber-600/50 bg-amber-500/10 text-amber-400 [&>svg]:text-amber-400",
+        // `success` uses the brand `--primary` token (the same green as
+        //   the PlayButton, the rest-of-app accents, and the active
+        //   nav marker) instead of Tailwind's `emerald` palette — those
+        //   were close but visibly different from the brand green.
+        success:
+          "border-primary/50 bg-primary/10 text-primary [&>svg]:text-primary",
+        info: "border-blue-600/50 bg-blue-500/10 text-blue-400 [&>svg]:text-blue-400",
+      },
+    },
+    defaultVariants: { variant: "default" },
+  },
+);
+
+const Alert = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement> & VariantProps<typeof alertVariants>
+>(({ className, variant, ...props }, ref) => (
+  <div
+    ref={ref}
+    role="alert"
+    className={cn(alertVariants({ variant }), className)}
+    {...props}
+  />
+));
+Alert.displayName = "Alert";
+
+const AlertTitle = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLHeadingElement>
+>(({ className, ...props }, ref) => (
+  <h5
+    ref={ref}
+    className={cn("mb-1 font-medium leading-none tracking-tight", className)}
+    {...props}
+  />
+));
+AlertTitle.displayName = "AlertTitle";
+
+const AlertDescription = React.forwardRef<
+  HTMLParagraphElement,
+  React.HTMLAttributes<HTMLParagraphElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn("text-sm [&_p]:leading-relaxed", className)}
+    {...props}
+  />
+));
+AlertDescription.displayName = "AlertDescription";
+
+export { Alert, AlertTitle, AlertDescription };

@@ -1,0 +1,65 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create .env.prod from org variables
+        run: |
+          cat > .env.prod << EOF
+          VITE_REACT_APP_BASE_URL=${{ vars.VITE_REACT_APP_BASE_URL }}
+          VITE_REACT_APP_INIT_URL=${{ vars.VITE_REACT_APP_INIT_URL }}
+          VITE_REACT_APP_WEBSOCKET_GAME_URL=${{ vars.VITE_REACT_APP_WEBSOCKET_GAME_URL }}
+          VITE_REACT_APP_WEBSOCKET_VIEW_URL=${{ vars.VITE_REACT_APP_WEBSOCKET_VIEW_URL }}
+          VITE_REACT_APP_WEBSOCKET_CHAT_URL=${{ vars.VITE_REACT_APP_WEBSOCKET_CHAT_URL }}
+          VITE_REACT_APP_GOOGLE_CLIENT_ID=${{ vars.VITE_REACT_APP_GOOGLE_CLIENT_ID }}
+          GENERATE_SOURCEMAP=false
+          EOF
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.prod
+          push: true
+          tags: |
+            ghcr.io/metacube-games/metacube-game-client:latest
+            ghcr.io/metacube-games/metacube-game-client:${{ github.sha }}
+
+  # Only restart game-client on the server if it is currently running.
+  # If the game cluster is stopped, leave it stopped.
+  deploy:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            cd /home/metacube
+            STATUS=$(docker inspect --format='{{.State.Status}}' game-client 2>/dev/null || echo "not_found")
+            if [ "$STATUS" = "running" ]; then
+              docker compose pull game-client
+              docker compose up -d --no-deps game-client
+              docker image prune -f
+              echo "game-client updated"
+            else
+              echo "game-client is not running (game stopped) — skipping restart"
+            fi

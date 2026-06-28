@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./metacubeLogo.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#0ec630" />
+    <meta name="description" content="METACUBE" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="orientation" content="portrait" />
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="x5-page-mode" content="app" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="canonical" href="https://play.metacube.games" />
+    <meta name="application-name" content="Metacube" />
+    <meta name="apple-mobile-web-app-title" content="Metacube" />
+    <link rel="apple-touch-icon" href="./metacubeLogo.svg" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Metacube</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Metacube" />
+    <meta
+      property="og:description"
+      content="1 event, 16777216 cubes, thousand players, the Metacube"
+    />
+    <meta
+      property="og:image"
+      content="https://play.metacube.games/opengraph-image.jpg"
+    />
+    <meta property="og:url" content="https://play.metacube.games" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:title" content="Metacube" />
+    <meta
+      name="twitter:description"
+      content="1 event, 16777216 cubes, thousand players, the Metacube"
+    />
+    <meta
+      name="twitter:image"
+      content="https://play.metacube.games/twitter-image.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <style>
+      html,
+      body {
+        background-color: #111;
+      }
+
+      * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but Metacube doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+
+    <div id="root"></div>
+
+    <!-- Polyfill for Node.js Buffer module (required by Cartridge/Starknet libraries) -->
+    <script type="module">
+      import { Buffer } from "buffer";
+      window.Buffer = Buffer;
+      globalThis.Buffer = Buffer;
+    </script>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

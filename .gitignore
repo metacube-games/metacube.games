@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Compiled Go binaries
+game/backend/main
+game/backend/metacube-backend
+
+# Cairo / Scarb build output
+target/
+
+# Secrets and local config
+.env
+.env.local
+.env.prod
+.env.production
+starknet/data/
+
+# Ansible runtime
+devops/production/config/certificates/
+devops/production/config/authorized-ssh-keys/
+devops/production/private/
+devops/production/snapshot/
+devops/production/data/
+devops/production/logs/
+devops/production/config/.env
+devops/production/inventory/hosts.ini
+
+# Local dev generated data
+devops/local-dev/certificates/*.pem
+devops/local-dev/certificates/*.key
+devops/local-dev/state/world-data/*
+devops/local-dev/state/users-db/*
+devops/local-dev/state/backend/*
+!devops/local-dev/config/environment/.env
+
+# Local deployment generated data
+devops/local/state/world-data/*
+devops/local/state/users-db/*
+devops/local/state/backend/*
+!devops/local/config/environment/.env
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.pyc

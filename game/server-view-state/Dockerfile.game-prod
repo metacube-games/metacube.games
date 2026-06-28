@@ -1,0 +1,28 @@
+FROM server-view-state AS build
+
+ENV WITH_BORINGSSL=1
+
+WORKDIR /app
+
+COPY . .
+
+# BuildKit cache mount for C++ build artifacts - speeds up compilation
+RUN --mount=type=cache,target=/tmp/ccache \
+    --mount=type=cache,target=/app/.cache \
+    make game-prod
+
+RUN useradd -u 1001 metacube
+
+FROM scratch
+
+WORKDIR /app
+
+COPY --from=build /etc/passwd /etc/passwd
+
+COPY --from=build /app/game /app/game
+
+USER metacube
+
+EXPOSE 8000
+
+ENTRYPOINT ["./game", "/env/.env"]

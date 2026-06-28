@@ -1,0 +1,59 @@
+{
+  "navigation": {
+    "play": "Play",
+    "playMetacube": "Metacube"
+  },
+  "metadata": {
+    "title": "Link Wallet",
+    "titleTemplate": "%s | Metacube",
+    "description": "Connect your Google account to your Metacube wallet on Starknet. Securely link your identity for seamless access to Web3 gaming assets, ownership verification, and blockchain integration.",
+    "keywords": "metacube, wallet linking, google account integration, starknet wallet, web3 authentication, blockchain identity, digital asset access, secure wallet connection, web3 login, starknet dapp, crypto wallet, blockchain account",
+    "ogImageAlt": "Metacube - Web3 Gaming Platform on Starknet",
+    "siteName": "Metacube Gaming",
+    "appTitle": "Link Wallet"
+  },
+  "linkWallet": {
+    "title": "Link Your Wallet",
+    "step1": "Choose Login Method",
+    "step2": "Link your wallet",
+    "step3": "Confirm",
+    "googleLogin": "Google Login",
+    "guestId": "Guest ID",
+    "enterGuestId": "Enter Guest ID",
+    "connect": "Connect",
+    "connectWallet": "Connect Wallet",
+    "back": "Back",
+    "confirmWalletLinking": "Confirm Wallet Linking",
+    "verifyAddress": "Please verify your wallet address carefully before confirming. This action cannot be undone and the address cannot be changed afterwards.",
+    "successfullyLinked": "Your wallet {address} is successfully linked to {username} account!"
+  },
+  "common": {
+    "buttons": {
+      "tryAgain": "Try Again",
+      "goHome": "Go Home",
+      "goBack": "Go Back"
+    }
+  },
+  "error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred while linking your wallet.",
+    "devDetailsHeading": "Error Details (Development Only)",
+    "devDigestPrefix": "Digest"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist."
+  },
+  "errors": {
+    "enterValidGuestId": "Please enter a valid Guest ID",
+    "failedConnectGuestId": "Failed to connect with this Guest ID",
+    "connectWalletFailed": "Failed to connect to wallet. Please try again.",
+    "linkWalletFailed": "Failed to link wallet. Please try again."
+  },
+  "footer": {
+    "copyrightHolder": "© {year} Metacube",
+    "allRightsReserved": "All rights reserved.",
+    "terms": "Terms",
+    "privacy": "Privacy"
+  }
+}

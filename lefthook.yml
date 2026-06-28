@@ -1,0 +1,52 @@
+# Pre-commit hooks shared across the five frontends. Each job
+# triggers only when its files change. Install via any frontend's
+# `bun install` (their `prepare` script runs `lefthook install`), or
+# manually: `bunx lefthook install`.
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: landing-typecheck
+      glob: "landing/**/*.{ts,tsx}"
+      root: landing/
+      run: bun run type-check
+    - name: landing-lint
+      glob: "landing/**/*.{ts,tsx}"
+      root: landing/
+      run: bun run lint
+
+    - name: market-typecheck
+      glob: "starknet/market/**/*.{ts,tsx}"
+      root: starknet/market/
+      run: bun run type-check
+    - name: market-lint
+      glob: "starknet/market/**/*.{ts,tsx}"
+      root: starknet/market/
+      run: bun run lint
+
+    - name: link-wallet-typecheck
+      glob: "starknet/link-wallet/**/*.{ts,tsx}"
+      root: starknet/link-wallet/
+      run: bun run type-check
+    - name: link-wallet-lint
+      glob: "starknet/link-wallet/**/*.{ts,tsx}"
+      root: starknet/link-wallet/
+      run: bun run lint
+
+    - name: game-client-typecheck
+      glob: "game/client/src/**/*.{ts,tsx}"
+      root: game/client/
+      run: bun run type-check
+    - name: game-client-lint
+      glob: "game/client/src/**/*.{ts,tsx}"
+      root: game/client/
+      run: bun run lint
+
+    - name: controller-frontend-typecheck
+      glob: "devops/local-dev/controller/frontend/**/*.{ts,tsx}"
+      root: devops/local-dev/controller/frontend/
+      run: bun run type-check
+    - name: controller-frontend-lint
+      glob: "devops/local-dev/controller/frontend/**/*.{ts,tsx}"
+      root: devops/local-dev/controller/frontend/
+      run: bun run lint

@@ -1,0 +1,224 @@
+{
+  "damage": {
+    "id": 0,
+    "displayName": "Mining rig",
+    "name": "damage",
+    "description": "Increase computational power for faster block mining.",
+    "levels": [
+      {
+        "value": 5,
+        "cost": 0
+      },
+      {
+        "value": 6,
+        "cost": 1000
+      },
+      {
+        "value": 7,
+        "cost": 5000
+      },
+      {
+        "value": 8,
+        "cost": 10000
+      },
+      {
+        "value": 9,
+        "cost": 20000
+      },
+      {
+        "value": 10,
+        "cost": 50000
+      },
+      {
+        "value": 12,
+        "cost": 200000
+      }
+    ],
+    "isInGameDB": true
+  },
+  "multiplier": {
+    "id": 1,
+    "displayName": "Staking",
+    "name": "multiplier",
+    "description": "Enhanced staking strategy boosts the value of your crypto rewards.",
+    "levels": [
+      {
+        "value": 0,
+        "cost": 0
+      },
+      {
+        "value": 10,
+        "cost": 1000
+      },
+      {
+        "value": 20,
+        "cost": 5000
+      },
+      {
+        "value": 30,
+        "cost": 10000
+      },
+      {
+        "value": 40,
+        "cost": 20000
+      },
+      {
+        "value": 50,
+        "cost": 50000
+      },
+      {
+        "value": 60,
+        "cost": 200000
+      }
+    ],
+    "isInGameDB": true
+  },
+  "health": {
+    "id": 2,
+    "displayName": "Wallet",
+    "name": "health",
+    "description": "Allows you to handle more attacks before getting rekt.",
+    "levels": [
+      {
+        "value": 5,
+        "cost": 0
+      },
+      {
+        "value": 6,
+        "cost": 1000
+      },
+      {
+        "value": 7,
+        "cost": 5000
+      },
+      {
+        "value": 8,
+        "cost": 10000
+      },
+      {
+        "value": 9,
+        "cost": 20000
+      },
+      {
+        "value": 10,
+        "cost": 50000
+      },
+      {
+        "value": 11,
+        "cost": 200000
+      }
+    ],
+    "isInGameDB": true
+  },
+  "attackRange": {
+    "id": 3,
+    "displayName": "Network",
+    "name": "attackRange",
+    "description": "Allows you to mine blocks from a farther location.",
+    "levels": [
+      {
+        "value": 1,
+        "cost": 0
+      },
+      {
+        "value": 2,
+        "cost": 1000
+      },
+      {
+        "value": 3,
+        "cost": 5000
+      },
+      {
+        "value": 4,
+        "cost": 10000
+      },
+      {
+        "value": 5,
+        "cost": 20000
+      },
+      {
+        "value": 6,
+        "cost": 50000
+      },
+      {
+        "value": 7,
+        "cost": 200000
+      }
+    ],
+    "isInGameDB": false
+  },
+  "fly": {
+    "id": 4,
+    "displayName": "Caffeine",
+    "name": "fly",
+    "description": "Caffeine increase your energy level and recovery.",
+    "levels": [
+      {
+        "value": 1,
+        "cost": 0
+      },
+      {
+        "value": 2,
+        "cost": 1000
+      },
+      {
+        "value": 3,
+        "cost": 5000
+      },
+      {
+        "value": 4,
+        "cost": 10000
+      },
+      {
+        "value": 5,
+        "cost": 20000
+      },
+      {
+        "value": 6,
+        "cost": 50000
+      },
+      {
+        "value": 7,
+        "cost": 200000
+      }
+    ],
+    "isInGameDB": false
+  },
+  "criticalHit": {
+    "id": 5,
+    "displayName": "Proof-of-luck",
+    "name": "criticalHit",
+    "description": "Boost your rig's chances of finding the right hash straight away.",
+    "levels": [
+      {
+        "value": 0,
+        "cost": 0
+      },
+      {
+        "value": 2,
+        "cost": 1000
+      },
+      {
+        "value": 4,
+        "cost": 5000
+      },
+      {
+        "value": 6,
+        "cost": 10000
+      },
+      {
+        "value": 8,
+        "cost": 20000
+      },
+      {
+        "value": 10,
+        "cost": 50000
+      },
+      {
+        "value": 12,
+        "cost": 200000
+      }
+    ],
+    "isInGameDB": true
+  }
+}

@@ -1,0 +1,715 @@
+{
+  "common": {
+    "or": "O",
+    "hide": "Ocultar",
+    "max": "MÁX",
+    "close": "Cerrar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "save": "Guardar",
+    "loading": "Despertando las llamas digitales de la blockchain...",
+    "error": "Error",
+    "success": "Éxito"
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "waitingForSignature": "Esperando la firma…",
+    "cartridgeController": "Controlador Cartridge",
+    "digitalWallet": "Cartera Starknet",
+    "playAsGuest": "Jugar como Invitado",
+    "haveGuestId": "Tengo un ID de Invitado",
+    "enterGuestId": "Ingresar ID de Invitado",
+    "connectWithId": "Conectar con ID",
+    "invalidGuestId": "ID de Invitado inválido o error de conexión",
+    "enterValidGuestId": "Por favor ingresa un ID de Invitado válido",
+    "loginFailed": "Error de inicio de sesión",
+    "guestLoginFailed": "Error de inicio de sesión de invitado"
+  },
+  "settings": {
+    "title": "Configuración",
+    "account": "Cuenta",
+    "language": "Idioma",
+    "render": "Renderizado",
+    "hud": "Interfaz",
+    "audio": "Audio",
+    "controls": "Controles",
+    "quality": "Calidad",
+    "resolution": "Resolución",
+    "antialiasing": "Suavizado",
+    "shadows": "Sombras",
+    "volume": "Volumen",
+    "masterVolume": "Volumen Principal",
+    "musicVolume": "Volumen de Música",
+    "sfxVolume": "Volumen de Efectos",
+    "sensitivity": "Sensibilidad",
+    "mouseSensitivity": "Sensibilidad del Ratón",
+    "invertY": "Invertir Eje Y",
+    "fps": "FPS",
+    "coordinates": "Coordenadas",
+    "totalBlocks": "Total de bloques",
+    "players": "Jugadores",
+    "events": "Eventos",
+    "damages": "Daños",
+    "spectator": "Espectador",
+    "renderDistance": "Distancia de renderizado",
+    "fieldOfView": "Campo de visión",
+    "luminosity": "Luminosidad",
+    "darkFutureAmbiance": "Ambiente futuro oscuro",
+    "fogsEffects": "Efectos de niebla",
+    "particlesEffects": "Efectos de partículas",
+    "spatialObjects": "Objetos espaciales",
+    "spacecraft": "Nave espacial",
+    "powerJauges": "Medidores de potencia",
+    "cameraSensitivity": "Sensibilidad de cámara",
+    "ambientVolume": "Volumen ambiental",
+    "fxVolume": "Volumen de efectos"
+  },
+  "game": {
+    "health": "Salud",
+    "damage": "Daño",
+    "ally": "Aliado",
+    "enemy": "Enemigo",
+    "score": "Puntuación",
+    "level": "Nivel",
+    "coins": "Monedas",
+    "inventory": "Inventario"
+  },
+  "menu": {
+    "skins": "Skins",
+    "upgrades": "Mejoras",
+    "market": "Inventario",
+    "achievements": "Logros",
+    "stats": "Clasificación",
+    "settings": "Configuración"
+  },
+  "character": {
+    "selectSkin": "Seleccionar Skin",
+    "locked": "Bloqueado",
+    "unlockCondition": "Condición de Desbloqueo",
+    "attack": "Ataque",
+    "health": "Salud",
+    "stamina": "Resistencia",
+    "range": "Alcance",
+    "critical": "Crítico",
+    "staking": "Staking",
+    "attackRange": "Alcance de ataque",
+    "criticalHit": "Golpe crítico",
+    "coinsMultiplier": "Multiplicador de monedas",
+    "claimBuy": "Reclamar / Comprar",
+    "loginToSeeSkins": "Inicia sesión para ver tus Skins",
+    "skinStats": "Bonus",
+    "skins": {
+      "stove": {
+        "name": "Stove",
+        "description": "Stove el Cripto-Ravero, soldado del ejército de Pelton Flusk. Fan de las criptos y las fiestas. Consejo: no mezcles ETH con tequila!",
+        "unlockCondition": "Aspecto predeterminado"
+      },
+      "zombie": {
+        "name": "Zombie",
+        "description": "Ni genio ni vivo, pero cocina de muerte. Su lema: '¿Cerebros? ¡No, gracias! Prefiero tacos.' Los zombis también tienen buen gusto.",
+        "unlockCondition": "Obtén un NFT de aspecto Zombie"
+      },
+      "ogStove": {
+        "name": "OG Stove",
+        "description": "Los viejos tiempos... cuando 'minar' significaba realmente picar piedra y 'holdear' era aguantar la respiración.",
+        "unlockCondition": "Obtén un NFT de aspecto OG Stove"
+      },
+      "brother": {
+        "name": "Brother",
+        "description": "¡Hermano, arriba! La batalla sigue, los enemigos huyen, y el café se enfría. ¡Primero el café, luego la victoria!",
+        "unlockCondition": "Obtén un NFT de aspecto Brother"
+      }
+    }
+  },
+  "leaderboard": {
+    "rank": "Rango",
+    "username": "Nombre de usuario",
+    "cubes": "Cubos",
+    "coins": "Monedas",
+    "deaths": "Muertes",
+    "referrals": "Referencias",
+    "globalStats": "Estadísticas",
+    "mostAligned": "Most Aligned (FINALIZADO)",
+    "fidelityWeek": "Fidelity Week (FINALIZADO)",
+    "ended": "FINALIZADO",
+    "top100Message": "¡Los 100 mejores jugadores compartirán 10,000 $STRK cuando el Metacube esté completamente destruido!",
+    "searchPlayer": "Buscar jugador",
+    "rankScoreFormula": "Puntuación de rango = cubos * 100 + monedas - muertes * 2,000 + referencias * 40,000",
+    "rankScoreFormula2": "Puntuación de rango = cubos * 100 + monedas totales - muertes * 2,000",
+    "rankScoreNote": "(Las monedas de logros no están incluidas)",
+    "mostAlignedEventDescription": "Metacube: Most Aligned Event (FINALIZADO) - Los 50 mejores jugadores comparten 2k $STRK.",
+    "fidelityWeekEventDescription": "Fidelity Week Event (FINALIZADO) - Los 40 mejores jugadores comparten 1,000 $STRK. El evento ocurrió del lunes 14 de abril de 2025 a las 8:00 PM al domingo 20 de abril de 2025 a las 8:00 PM.",
+    "referralDescription": "¡Refiere nuevos jugadores a Metacube! Tanto tú como el jugador referido ganarán 10,000 cada uno una vez que el jugador referido rompa 1,000 cubos.",
+    "yourReferralLink": "Tu enlace de referencia:",
+    "totalReferrals": "Total de Referencias:",
+    "successfulReferrals": "Referencias Exitosas (Condición Cumplida):",
+    "totalReferralRewardsEarned": "Total de Recompensas de Referencias Ganadas:",
+    "connectWalletReferrals": "Conecta tu cartera para ver tu enlace de referencia y estadísticas.",
+    "id": "ID"
+  },
+  "buttons": {
+    "play": "Jugar",
+    "resume": "Reanudar",
+    "quitGame": "Salir del Juego",
+    "copyLink": "Copiar Enlace",
+    "copied": "¡Copiado!",
+    "failed": "Fallido",
+    "buy": "Comprar",
+    "claimStrk": "Reclamar STRK",
+    "alreadyClaimed": "Ya Reclamado",
+    "claiming": "Reclamando...",
+    "tokensClaimed": "Tokens Reclamados"
+  },
+  "achievements": {
+    "title": "Logros",
+    "unlocked": "Desbloqueado",
+    "locked": "Bloqueado",
+    "progress": "Progreso",
+    "reward": "Recompensa",
+    "claimReward": "Reclamar Recompensa",
+    "loginToSeeAchievements": "Inicia sesión para ver tus Logros",
+    "loginRequired": "Inicia sesión para ver tus Logros",
+    "descriptions": {
+      "cubes": {
+        "1": "¡Rompe tu primer cubo!",
+        "100": "Rompe 100 cubos",
+        "200": "Rompe 200 cubos",
+        "500": "Rompe 500 cubos",
+        "1000": "Rompe 1'000 cubos",
+        "2000": "Rompe 2'000 cubos",
+        "5000": "Rompe 5'000 cubos",
+        "10000": "Rompe 10'000 cubos",
+        "20000": "Rompe 20'000 cubos",
+        "50000": "Rompe 50'000 cubos",
+        "btc": "Rompe un cubo de bioma Bitcoin",
+        "eth": "Rompe un cubo de bioma Ether",
+        "cli": "Rompe un cubo de bioma figura desconocida",
+        "mro": "Rompe un cubo de bioma Moneyro",
+        "ftx": "Rompe un cubo de bioma EfteX",
+        "lna": "Rompe un cubo de bioma Lunar",
+        "stks": "Rompe un cubo de bioma Stonks",
+        "trndo": "Rompe un cubo de bioma Tornado",
+        "lzrs": "Rompe un cubo de bioma Lazarus",
+        "wsb": "Rompe un cubo de bioma WallStreet Bets",
+        "key": "Rompe un cubo de bioma Key",
+        "dog": "Rompe un cubo de bioma Doge",
+        "strk": "Rompe un cubo de bioma Starknet",
+        "mcb": "Rompe un cubo m-chip"
+      },
+      "layers": {
+        "0": "Está presente en la destrucción de la capa 0",
+        "1": "Está presente en la destrucción de la capa 1",
+        "2": "Está presente en la destrucción de la capa 2",
+        "3": "Está presente en la destrucción de la capa 3",
+        "4": "Está presente en la destrucción de la capa 4",
+        "5": "Está presente en la destrucción de la capa 5"
+      },
+      "upgrades": {
+        "1": "Compra tu primera mejora",
+        "max": "Maximiza una Habilidad"
+      },
+      "ally": {
+        "1": "Golpea a otro aliado Stove"
+      },
+      "attacks": {
+        "fall1": "Recibe daño por caída",
+        "fisc": "Recibe un golpe de un asesor fiscal",
+        "cube": "Recibe una descarga de un cubo de bioma energizado"
+      },
+      "deaths": {
+        "1": "Muere una vez",
+        "5": "Muere 5 veces",
+        "10": "Muere 10 veces",
+        "20": "Muere 20 veces"
+      },
+      "streaks": {
+        "1": "Conéctate en 2 días diferentes"
+      },
+      "links": {
+        "1": "Visita las redes sociales de Metacube"
+      },
+      "skins": {
+        "1": "Cambia de aspecto"
+      },
+      "blocks": {
+        "1": "Destruye todos los tipos de cubos"
+      }
+    },
+    "toastLabel": "Logro"
+  },
+  "upgrades": {
+    "title": "Mejoras",
+    "damage": "Daño",
+    "health": "Salud",
+    "criticalHit": "Golpe Crítico",
+    "coinsMultiplier": "Multiplicador de Monedas",
+    "cost": "Costo",
+    "maxLevel": "Nivel Máximo",
+    "upgrade": "Mejorar",
+    "level": "Nivel",
+    "miningRig": "Equipo de minería",
+    "staking": "Apuesta",
+    "wallet": "Cartera",
+    "network": "Red",
+    "caffeine": "Cafeína",
+    "proofOfLuck": "Prueba de suerte",
+    "miningRigDesc": "Aumenta el poder computacional para una minería de bloques más rápida.",
+    "stakingDesc": "Una estrategia de apuesta mejorada aumenta el valor de tus recompensas cripto.",
+    "walletDesc": "Te permite manejar más ataques antes de ser aplastado.",
+    "networkDesc": "Te permite minar bloques desde una ubicación más lejana.",
+    "caffeineDesc": "La cafeína aumenta tu nivel de energía y recuperación.",
+    "proofOfLuckDesc": "Aumenta las posibilidades de tu equipo de encontrar el hash correcto de inmediato.",
+    "reachedLevel": "alcanzó el nivel",
+    "loginToSeeUpgrades": "Inicia sesión para ver tus mejoras",
+    "maxLevelReached": "¡Nivel máximo alcanzado!",
+    "notEnoughCoins": "¡No hay suficientes monedas!",
+    "current": "Actual:",
+    "next": "Siguiente:",
+    "coinSuffix": " MC",
+    "stat": {
+      "damage": "daño",
+      "health": "salud",
+      "stamina": "resistencia",
+      "meters": "metros",
+      "critical": "% crítico",
+      "value": "% valor"
+    }
+  },
+  "nfts": {
+    "title": "NFTs",
+    "myNfts": "Mis NFTs",
+    "mint": "Crear NFT",
+    "claim": "Reclamar",
+    "noNfts": "No se encontraron NFTs",
+    "loginToSeeAssets": "Inicia sesión para ver tus Activos",
+    "warning": "¡ADVERTENCIA!",
+    "walletLinkWarning": "Si deseas recibir tus activos y ser elegible para posibles airdrops y regalos, haz clic a continuación para vincular una cartera.",
+    "linkWallet": "Vincular Cartera",
+    "errorLoadingAssets": "¡Ups! No pudimos cargar los Activos. Por favor intenta de nuevo en un momento.",
+    "noAssetsYet": "¡Oye soldado, sigue minando para obtener tu primer Activo!",
+    "inventory": "Inventario",
+    "discoverMore": "Descubrir más activos",
+    "goToMarket": "Ir al Mercado",
+    "fetchError": "Error al obtener NFTs.",
+    "collections": {
+      "genesis": "Genesis",
+      "passcard": "Passcard",
+      "zombie": "Zombie",
+      "ogStove": "OGStove",
+      "brother": "Brother",
+      "allstars": "Allstars"
+    },
+    "marketplaces": {
+      "element": "Element",
+      "pyramid": "Pyramid"
+    }
+  },
+  "notifications": {
+    "welcome": "¡Bienvenido a Metacube!",
+    "connected": "Conectado exitosamente",
+    "disconnected": "Desconectado",
+    "error": "Ocurrió un error",
+    "achievementUnlocked": "¡Logro Desbloqueado!",
+    "levelUp": "¡Subida de Nivel!",
+    "newSkinUnlocked": "¡Nuevo aspecto desbloqueado!"
+  },
+  "errors": {
+    "connectionFailed": "Error de conexión",
+    "serverError": "Error del servidor",
+    "unauthorized": "No autorizado",
+    "unknownError": "Ocurrió un error desconocido",
+    "maintenanceMode": "El servidor está en mantenimiento",
+    "walletStillPropagating": "La cartera aún se está propagando. Por favor espera 5-10 segundos e intenta de nuevo."
+  },
+  "queue": {
+    "waitingInQueue": "Esperando en cola",
+    "position": "Posición",
+    "estimatedWait": "Tiempo de espera estimado",
+    "connectingToServer": "Convenciendo al servidor con tapas y fiesta...",
+    "leaveQueue": "Salir de la Cola"
+  },
+  "viewer": {
+    "title": "Espectador",
+    "free": "Libre",
+    "auto": "Auto",
+    "searchPlayer": "Buscar jugador",
+    "playerNotFound": "Jugador no encontrado",
+    "noPlayers": "No hay jugadores que observar"
+  },
+  "alerts": {
+    "afk": {
+      "title": "Expulsado - AFK",
+      "description": "Has estado AFK por demasiado tiempo"
+    },
+    "dead": {
+      "title": "Muerto",
+      "description": "Fuiste aplastado por el metacube"
+    },
+    "kicked": {
+      "title": "Expulsado",
+      "description": "Has sido expulsado"
+    },
+    "connecting": {
+      "title": "Tocando castañuelas para la blockchain...",
+      "description": "A la blockchain"
+    },
+    "afkWarning": {
+      "title": "Advertencia AFK",
+      "description": "Si no te mueves, serás expulsado por inactividad"
+    },
+    "connectionLost": {
+      "title": "Conexión perdida"
+    },
+    "loginFailed": {
+      "title": "Error de inicio de sesión",
+      "description": "Error de inicio de sesión debido a un error inesperado, por favor intenta de nuevo"
+    },
+    "kickedForInactivity": {
+      "title": "Expulsado",
+      "description": "Has sido expulsado por inactividad"
+    },
+    "memoryOutOfBounds": {
+      "title": "Distancia de renderizado reducida debido al alto uso de memoria"
+    },
+    "noStarknetID": {
+      "title": "Sin Starknet.ID",
+      "description": "No tienes un Starknet.ID"
+    },
+    "barrier": {
+      "title": "Barrera de capa",
+      "description": "Esta capa está envuelta en una barrera, que responde solo al poder colectivo de los rompedores de bloques"
+    },
+    "banned": {
+      "title": "Baneado",
+      "description": "Has sido baneado"
+    },
+    "walletNotDeployed": {
+      "title": "Cartera No Desplegada",
+      "description": "Debes configurar tu cuenta on-chain para jugar. Necesitas tokens STRK para hacerlo"
+    },
+    "unExpectedError": {
+      "title": "Error inesperado",
+      "description": "Error inesperado, por favor intenta de nuevo o contáctanos."
+    },
+    "issueVerifyingSignature": {
+      "title": "Problema al verificar firma",
+      "description": "Problema al verificar la firma, si acabas de desplegar tu cartera, por favor espera unos minutos e intenta de nuevo."
+    },
+    "seconds": "segundos"
+  },
+  "wallet": {
+    "accountTitle": "Cuenta",
+    "walletAddress": "Dirección de la cartera",
+    "googleAccount": "Cuenta de Google",
+    "guestId": "ID de Invitado",
+    "referralLink": "Enlace de referido",
+    "copyAddress": "Copiar dirección",
+    "copyReferral": "Copiar enlace de referido",
+    "errors": {
+      "noAddress": "Dirección no disponible",
+      "noReferralLink": "Enlace de referido no disponible",
+      "copyFailed": "No se pudo copiar al portapapeles"
+    },
+    "linkWallet": "Vincular Cartera",
+    "guestIdWarning": "ADVERTENCIA: Tu ID de Invitado es el identificador de tu cuenta. Si se filtra, cualquiera puede acceder a tu cuenta. ¡Nunca lo compartas con nadie!",
+    "copyGuestId": "Copiar ID de Invitado",
+    "disconnect": "Desconectar",
+    "linkRewardsWarning": "Si deseas recibir tus recompensas y ser elegible para posibles airdrops y regalos, haz clic aquí para vincular una cartera."
+  },
+  "referral": {
+    "referralTooltip": "¡Refiere nuevos jugadores para ganar 10,000 monedas Metacube! Tanto tú como el jugador referido ganan recompensas cuando rompen 1,000 cubos."
+  },
+  "walletDeploy": {
+    "connectWallet": "Conectar Cartera",
+    "connecting": "Bailando flamenco con la blockchain...",
+    "connected": "Conectado",
+    "pleaseConnect": "Por favor conecta tu cartera",
+    "getStrkTokens": "Obtener Tokens STRK",
+    "balance": "Saldo",
+    "claimStrk": "Reclamar STRK",
+    "tokensClaimed": "Tokens Reclamados",
+    "claiming": "Reclamando...",
+    "alreadyClaimed": "Ya Reclamado",
+    "waitingForTokens": "Esperando tokens...",
+    "checking": "Verificando...",
+    "strkTokensClaimed": "¡Tokens STRK reclamados! Esperando a que lleguen los tokens...",
+    "strkTokensReceived": "¡Tokens STRK recibidos! Ahora despliega tu cartera:",
+    "deployWallet": "Desplegar Cartera",
+    "walletDeployed": "Cartera Desplegada",
+    "deploying": "Desplegando...",
+    "deploymentInitiated": "¡Despliegue de cartera iniciado! Transacción firmada",
+    "clickToDeployAbove": "Haz clic en el botón de arriba para desplegar tu cartera",
+    "followInstructions": "Sigue las instrucciones para desplegar tu cartera",
+    "authenticatePlay": "Autenticar y Jugar",
+    "readyToPlay": "¡Listo para jugar!",
+    "deployWalletFirst": "Despliega tu cartera primero",
+    "authenticating": "Autenticando...",
+    "verifying": "Verificando...",
+    "waitingPropagation": "Esperando propagación...",
+    "authNote": "Nota: Si la autenticación falla, por favor espera hasta 30 segundos para que tu despliegue de cartera se propague completamente on-chain e intenta de nuevo.",
+    "verifyingDeployment": "Verificando despliegue de cartera on-chain...",
+    "deploymentVerified": "¡Despliegue de cartera verificado! Ahora verificando si está completamente propagado...",
+    "checkingPropagation": "Verificando si la cartera está lista para usar...",
+    "fullyPropagated": "¡La cartera está completamente propagada y lista para usar!",
+    "walletDeployedNotPropagated": "La cartera está desplegada pero aún no completamente propagada. Intenta la autenticación en 15-30 segundos.",
+    "couldNotVerify": "No se pudo verificar el despliegue de la cartera. Por favor intenta de nuevo.",
+    "verifyingAttempts": "Verificando despliegue de cartera... ({{attempts}} intentos restantes)",
+    "waitingPropagationAttempts": "Cartera desplegada pero esperando propagación de red... ({{attempts}} intentos restantes)",
+    "walletNotPropagated": "La cartera aún no está completamente propagada en la red. Por favor espera unos segundos más e intenta de nuevo.",
+    "walletDeployedAuthenticating": "¡Cartera desplegada y propagada! Autenticando...",
+    "authSuccessful": "¡Autenticación exitosa! Redirigiendo...",
+    "authFailed": "Error de autenticación. Por favor intenta de nuevo cuando tu cartera esté completamente desplegada on-chain.",
+    "authFailedError": "Error de autenticación: {{error}}",
+    "deploymentFailed": "Error de despliegue: {{error}}",
+    "accountDeploymentRequired": "Despliegue de cuenta requerido. Por favor intenta la opción de despliegue manual en tu extensión de cartera.",
+    "ok": "Ok"
+  },
+  "snackbar": {
+    "nftWin": {
+      "message1": "¡desenterró una joya blockchain!",
+      "message2": "¡marcó una victoria NFT!",
+      "message3": "¡atrapó una carta NFT rara!",
+      "message4": "¡agregó un diamante digital a la colección!",
+      "message5": "¡encontró oro NFT!",
+      "message6": "¡robó un NFT exclusivo!",
+      "message7": "¡aseguró una pieza de historia digital!",
+      "message8": "¡coleccionó una joya NFT!",
+      "message9": "¡embolsó una belleza blockchain artística!",
+      "message10": "¡capturó un NFT escurridizo!",
+      "message11": "¡minó una obra maestra NFT!",
+      "message12": "¡acaba de conseguir un premio gordo NFT!",
+      "message13": "¡agarró un coleccionable cripto!",
+      "message14": "¡recogió un tesoro NFT!",
+      "message15": "¡encontró una mina de oro de píxeles!",
+      "message16": "¡consiguió una captura cripto rara!",
+      "message17": "¡ganó un token de triunfo digital!",
+      "message18": "¡pescó un trofeo NFT!",
+      "message19": "¡acaba de enganchar un premio blockchain!",
+      "message20": "¡descubrió una estrella NFT!",
+      "message21": "¡tiene un as NFT en la manga!",
+      "message22": "¡pescó una delicia digital!",
+      "message23": "¡embolsó un premio de píxeles raro!",
+      "message24": "¡atrapó un pez grande en el estanque NFT!",
+      "message25": "¡encontró un coleccionable cripto!",
+      "message26": "¡agarró un boleto dorado a la fama NFT!",
+      "message27": "¡descubrió un oasis NFT!",
+      "message28": "¡reclamó un cofre del tesoro digital!",
+      "message29": "¡acaba de ganar el premio gordo NFT!",
+      "message30": "¡obtuvo la gallina de los huevos de oro de los NFT!"
+    },
+    "death": {
+      "message1": "encontró una cáscara de plátano digital",
+      "message2": "tropezó con un contrato inteligente rebelde",
+      "message3": "acaba de confirmar una transacción fatal",
+      "message4": "resbaló en jabón de servidor resbaladizo",
+      "message5": "acaba de presionar 'Ctrl-Z' en la existencia",
+      "message6": "confundió el abismo con un bloque blockchain",
+      "message7": "tuvo una caída de bytes",
+      "message8": "se sumergió en el cubo de bits",
+      "message9": "siguió un bug hasta el borde",
+      "message10": "experimentó un fork blockchain permanente",
+      "message11": "acaba de minar un bloque directamente hacia abajo",
+      "message12": "descubrió que el piso de la nube no es sólido",
+      "message13": "cayó en el letrero de 'WiFi gratis'",
+      "message14": "descubrió la venganza personal de la gravedad",
+      "message15": "se convirtió en un participante fantasma en la red",
+      "message16": "intentó morder, pero mordió el polvo",
+      "message17": "intentó hacer un hard fork de la realidad",
+      "message18": "tomó un atajo por la papelera de reciclaje",
+      "message19": "confundió el vacío con un jacuzzi",
+      "message20": "acaba de intentar depurar el suelo",
+      "message21": "realizó un auto-envío irreversible al abismo",
+      "message22": "acaba de quedar atrapado en el menú desplegable",
+      "message23": "cayó de cabeza en el lago de datos",
+      "message24": "acaba de tener una pantalla azul de la existencia",
+      "message25": "falló el captcha y fue enviado al abismo",
+      "message26": "tropezó en el cañón de código",
+      "message27": "cayó en la papelera de reciclaje de código",
+      "message28": "su hash se sumergió en el cubo de bits",
+      "message29": "resbaló en un plátano digital",
+      "message30": "hizo paracaidismo en la nube, sin paracaídas",
+      "message31": "se hundió en el mar binario",
+      "message32": "su cuenta hace una inmersión de acantilado",
+      "message33": "su código hizo un panzazo en el vacío",
+      "message34": "su armonía tomó un picado",
+      "message35": "tomó 'caída de Internet' literalmente",
+      "message36": "estableció un récord de 'caída libre digital más larga'",
+      "message37": "encontró un atajo al inframundo digital",
+      "message38": "bailó tango con la gravedad La gravedad ganó",
+      "message39": "se estrelló de cara en el vacío",
+      "message40": "perdió al escondite con el suelo",
+      "message41": "se descargó al abismo",
+      "message42": "hizo un viaje al agujero del conejo cibernético",
+      "message43": "hizo paracaidismo digital, aterrizó duro",
+      "message44": "desconexión igual caída"
+    }
+  },
+  "chat": {
+    "profanityNotAllowed": "¡La vulgaridad no está permitida!",
+    "bannedUser": "usuario baneado",
+    "pressEnter": "Presiona (Enter) para chatear",
+    "loginToChat": "Inicia sesión para chatear",
+    "confirmUsername": "Confirma tu nombre de usuario para chatear",
+    "sendOrClose": "(Enter) para enviar/cerrar chat",
+    "chatButton": "Chat",
+    "channels": {
+      "english": "Inglés",
+      "spanish": "Español",
+      "french": "Francés"
+    },
+    "bot": {
+      "welcome": "¡Bienvenido a Metacube! Escribe tu mensaje y presiona Enter para enviar.",
+      "closeHint": "Para cerrar el chat, presiona Enter en un campo vacío. Vuelve a abrirlo presionando Enter de nuevo.",
+      "respectWarning": "⚠️ Los insultos no se toleran aquí y pueden resultar en un baneo. Mantengamos nuestra comunidad positiva y respetuosa. ⚠️"
+    }
+  },
+  "validation": {
+    "username": {
+      "tooShort": "El nombre de usuario es demasiado corto.",
+      "tooLong": "El nombre de usuario es demasiado largo.",
+      "invalidCharacters": "Solo se permiten a-z, A-Z, 0-9, _.",
+      "profanity": "No se permite lenguaje vulgar.",
+      "alreadyTaken": "Este nombre de usuario ya está en uso.",
+      "unexpected": "Error inesperado, por favor inténtalo de nuevo."
+    }
+  },
+  "dialogs": {
+    "confirmTransition": {
+      "title": "Confirmar Transición",
+      "message": "¿Estás seguro de que quieres publicar la transición? Esta acción no se puede deshacer."
+    }
+  },
+  "overlays": {
+    "loginToViewSkins": "Inicia sesión para ver tus Aspectos",
+    "loginToViewAssets": "Inicia sesión para ver tus Activos",
+    "loginToViewUpgrades": "Inicia sesión para ver tus mejoras"
+  },
+  "ui": {
+    "buttons": {
+      "postTransition": "Publicar Transición",
+      "login": "Iniciar Sesión",
+      "play": "Jugar",
+      "starknetIdUsed": "¡Starknet ID está en uso!",
+      "useStarknetId": "Usar Starknet ID"
+    },
+    "labels": {
+      "quickStart": "Inicio rápido sin registro",
+      "positionInQueue": "Posición en la cola:"
+    },
+    "links": {
+      "getStarknetId": "Obtener mi Starknet ID"
+    },
+    "placeholders": {
+      "username": "Nombre de usuario: a-z, A-Z, 0-9, _"
+    },
+    "status": {
+      "loading": " Calentando los píxeles al sol..."
+    },
+    "jokes": {
+      "cube": {
+        "message1": "Un cubo para gobernarlos a todos, pero una legión de Stove Troopers para romperlo.",
+        "message2": "¿Metacube? Más bien Metacrumbles.",
+        "message3": "Cuidado, Metacube, tengo el martillo de la descentralización.",
+        "message4": "¡No te dejes encadenar por bloques, rompe el cubo!",
+        "message5": "Desmontando el cubo, una capa a la vez.",
+        "message6": "¡Metacube está a punto de recibir un golpe block-buster!",
+        "message7": "¡Vuelen, estufas! ¡Y desmontad el Metacube!",
+        "message8": "¡Mi cuerpo cúbico está listo!"
+      }
+    },
+    "tutorial": {
+      "welcome": {
+        "title": "Bienvenido a Metacube",
+        "message": "¡Saludos, Soldado Stove! Tu misión es clara: destruir el Metacube usando tus tropas. Caza NFTs, rompe los cubos, y recuerda—este es un evento único. Una vez que el Metacube sea destruido, se acabó para siempre. ¡Buena suerte!"
+      },
+      "cubeDamage": {
+        "title": "Mecanismo de Defensa de Cubos",
+        "message": "¡Cuidado con los píxeles parpadeantes en los cubos! Representan energía concentrada de Metacube. Golpearlos activará un poderoso contraataque. ¡Apunta con cuidado!"
+      },
+      "fallDamage": {
+        "title": "Cuidado con la Gravedad",
+        "message": "¡Caer demasiado rápido puede causar daños graves! Reduce la velocidad antes de tocar el suelo, y no hagas una 'Luna' tomando una caída imprudente."
+      },
+      "upgrade": {
+        "title": "¡Hora de Mejorar!",
+        "message": "¡Felicitaciones! Has reunido suficientes fondos para comprar tu primera mejora. ¡Elige sabiamente y fortalece tu arsenal!"
+      },
+      "fisc": {
+        "title": "¡Cuidado con los Asesores Fiscales!",
+        "message": "¡Los asesores fiscales están buscando robar tus Metacoins duramente ganados! No dudarán en gravarte hasta el olvido. Evítalos o aplasta con tu martillo antes de que te alcancen."
+      },
+      "press": "Presiona",
+      "toDismiss": "para cerrar",
+      "dismiss": "Cerrar",
+      "dismissAriaLabel": "Cerrar el consejo del tutorial"
+    },
+    "controls": {
+      "move": "Mover",
+      "toggleView": "Vista 3ra/1ra persona",
+      "fly": "Volar",
+      "jump": "Saltar (Volar, en el aire)",
+      "run": "Correr (En movimiento)",
+      "throwBomb": "Lanzar bomba"
+    },
+    "selectLanguage": "Seleccionar idioma",
+    "openNavigationMenu": "Abrir menú de navegación",
+    "touchControls": {
+      "openMenu": "Abrir menú",
+      "toggleSprint": "Alternar sprint",
+      "toggleCamera": "Alternar cámara",
+      "fly": "Volar",
+      "jump": "Saltar",
+      "hit": "Golpear"
+    }
+  },
+  "footer": {
+    "allRightsReserved": "Todos los derechos reservados.",
+    "terms": "Términos",
+    "privacy": "Privacidad"
+  },
+  "bombs": {
+    "mini": {
+      "name": "Mini"
+    },
+    "standard": {
+      "name": "Estándar"
+    },
+    "heavy": {
+      "name": "Pesada"
+    },
+    "mega": {
+      "name": "Mega"
+    },
+    "ultra": {
+      "name": "Ultra"
+    }
+  },
+  "hud": {
+    "ally": "Aliado",
+    "playersCount": "Jugadores:",
+    "fps": "fps",
+    "entity": {
+      "player": "Stove Trooper",
+      "fiscController": "controlador fiscal",
+      "layerBarrier": "Barrera de capa cargada ∞"
+    }
+  },
+  "skins": {
+    "stove": {
+      "name": "Stove",
+      "surname": "El Normy"
+    },
+    "zombie": {
+      "name": "Zombie",
+      "surname": "El Crackhead"
+    },
+    "ogStove": {
+      "name": "OG Stove",
+      "surname": "El Legendario"
+    },
+    "brother": {
+      "name": "Brother",
+      "surname": "El Alineado"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "short_name": "Metacube",
+  "name": "Metacube",
+  "description": "1 event, 16777216 cubes, thousand players, the Metacube",
+  "lang": "en-US",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "metacubeLogo.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "metacubeLogo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "metacubeLogo.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "scope": "/",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "#0ec630",
+  "background_color": "#000000",
+  "categories": ["games", "entertainment"],
+  "prefer_related_applications": false
+}

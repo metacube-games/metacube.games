@@ -1,0 +1,7 @@
+.git
+.gitignore
+*.md
+*.o
+game
+view
+state

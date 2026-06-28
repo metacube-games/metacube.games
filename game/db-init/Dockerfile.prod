@@ -1,0 +1,32 @@
+FROM node:24-slim AS build
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN --mount=type=cache,target=/root/.npm npm ci
+
+COPY src/ ./src/
+COPY tsconfig.json ./
+RUN npx tsc
+
+FROM node:24-slim
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN --mount=type=cache,target=/root/.npm npm ci --omit=dev
+
+RUN apt-get update && \
+    apt-get install -y lsb-release wget && \
+    echo "deb https://download.keydb.dev/open-source-dist $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/keydb.list && \
+    wget -O /etc/apt/trusted.gpg.d/keydb.gpg https://download.keydb.dev/open-source-dist/keyring.gpg && \
+    apt-get update && \
+    apt-get install -y keydb-tools && \
+    rm -rf /var/lib/apt/lists/*
+
+COPY --from=build /app/index.js ./
+COPY data/ ./data/
+
+USER node
+
+ENTRYPOINT ["node", "index.js"]

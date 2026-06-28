@@ -1,0 +1,200 @@
+{
+  "navigation": {
+    "market": "Markt",
+    "inventory": "Inventar",
+    "rewards": "Belohnungen",
+    "allStars": "All Stars",
+    "play": "SPIELEN",
+    "playMetacube": "METACUBE"
+  },
+  "metadata": {
+    "title": "Metacube",
+    "titleTemplate": "%s | Metacube",
+    "description": "Erkunden Sie den Metacube Marketplace auf Starknet. Kaufen Sie exklusive Metacube NFTs, gewinnen Sie einzigartige Belohnungen und handeln Sie Ihre Assets in diesem blockchain-basierten Gaming-Ökosystem.",
+    "keywords": "metacube marketplace, nft marktplatz, nft kaufen, nft gewinnen, nft handeln, starknet, blockchain gaming",
+    "ogImageAlt": "Metacube Marketplace Logo",
+    "siteName": "Metacube Marketplace",
+    "appTitle": "Metacube Marketplace",
+    "market": {
+      "title": "Markt",
+      "description": "Erkunden und handeln Sie einzigartige Gaming-NFTs auf dem Metacube Marketplace. Entdecken Sie exklusive digitale Assets, die von der Starknet-Blockchain-Technologie für ein verbessertes Spielerlebnis unterstützt werden.",
+      "keywords": "metacube marketplace, nft kaufen, nft handeln, gaming nft, starknet marktplatz, blockchain gaming, digitale assets"
+    },
+    "inventory": {
+      "title": "Inventar",
+      "description": "Verwalten und betrachten Sie Ihre Metacube NFT-Sammlung. Verfolgen Sie Ihre Gaming-Assets und digitalen Sammlerstücke an einem sicheren Ort, unterstützt von der Starknet-Blockchain-Technologie.",
+      "keywords": "metacube inventar, nft sammlung, gaming assets, digitale sammlerstücke, starknet wallet, blockchain gaming, nft verwaltung"
+    },
+    "rewards": {
+      "title": "Belohnungen",
+      "description": "Verdienen und fordern Sie exklusive NFT-Belohnungen im Metacube-Gaming-Ökosystem ein. Entdecken Sie einzigartige digitale Assets und Erfolge, die von der Starknet-Blockchain-Technologie unterstützt werden.",
+      "keywords": "metacube belohnungen, nft belohnungen, gaming belohnungen, blockchain belohnungen, starknet nft, metacube gaming, kostenlose nft ansprüche"
+    },
+    "allstars": {
+      "title": "All Stars",
+      "description": "Durchsuchen Sie die ursprüngliche Allstars V1 Sammlung mit 10'000 einzigartigen NFTs mit detaillierten 3D-Modellen und Visuals.",
+      "keywords": "Allstars, NFT Sammlung, digitale Kunst, 3D NFTs, blockchain Sammlerstücke",
+      "twitterTitle": "Metacube Marketplace - NFTs Kaufen, Gewinnen & Handeln",
+      "twitterDescription": "Erkunden Sie den Metacube Marketplace auf Starknet. Kaufen Sie exklusive Metacube NFTs, gewinnen Sie einzigartige Belohnungen und handeln Sie Ihre Assets.",
+      "twitterCreator": "@MetacubeGames"
+    }
+  },
+  "wallet": {
+    "accountTitle": "Wallet",
+    "connect": "Wallet verbinden",
+    "login": "Anmelden",
+    "disconnect": "Trennen",
+    "connectedAddress": "Verbundene Adresse",
+    "copyAddress": "Adresse kopieren",
+    "strkBalance": "STRK-Guthaben"
+  },
+  "common": {
+    "loading": "Wird geladen...",
+    "buttons": {
+      "tryAgain": "Erneut versuchen",
+      "goHome": "Startseite",
+      "goBack": "Zurück"
+    }
+  },
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Beim Laden des Marketplace ist ein unerwarteter Fehler aufgetreten.",
+    "devDetailsHeading": "Fehlerdetails (nur Entwicklung)",
+    "devDigestPrefix": "Digest"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht im Metacube-Marketplace."
+  },
+  "market": {
+    "title": "Markt"
+  },
+  "inventory": {
+    "title": "Inventar"
+  },
+  "rewards": {
+    "title": "Belohnungen"
+  },
+  "allstars": {
+    "title": "All Stars",
+    "searchPlaceholder": "Suche nach ID...",
+    "sortDefault": "Standard",
+    "sortRarity": "Seltenheit",
+    "noResults": "Keine Allstars gefunden, die \"{searchTerm}\" entsprechen. Versuchen Sie einen anderen Suchbegriff.",
+    "noNFTs": "Keine NFTs verfügbar. Bitte versuchen Sie es später erneut."
+  },
+  "footer": {
+    "copyrightHolder": "© {year} Metacube",
+    "allRightsReserved": "Alle Rechte vorbehalten.",
+    "terms": "Bedingungen",
+    "privacy": "Datenschutz"
+  },
+  "ui": {
+    "close": "Schließen",
+    "strk": {
+      "alt": "STRK"
+    }
+  },
+  "nft": {
+    "actions": {
+      "details": "Details ansehen",
+      "detailsSell": "Details / Verkaufen"
+    },
+    "media": {
+      "imageAlt": "NFT Bild"
+    },
+    "switchTo": "Zur {quality}-Qualität wechseln",
+    "standard": "SD",
+    "high": "HD",
+    "emptyStateListed": "Derzeit sind keine NFTs zum Verkauf gelistet",
+    "emptyStateWithFilter": "Keine NFTs mit dem ausgewählten Filter verfügbar",
+    "notFound": "Asset nicht gefunden"
+  },
+  "nftGrid": {
+    "common": {
+      "connectWallet": "Wallet verbinden",
+      "processing": "Verarbeitung...",
+      "loading": "Wird geladen..."
+    },
+    "actions": {
+      "claim": "Einfordern",
+      "claiming": "Einforderung...",
+      "buyNow": "Jetzt kaufen",
+      "approving": "Genehmigung...",
+      "buying": "Kaufen...",
+      "sellNft": "NFT verkaufen",
+      "selling": "Verkaufen...",
+      "details": "Details",
+      "confirm": "Bestätigen"
+    },
+    "buy": {
+      "yourBalance": "Ihr Guthaben:",
+      "listedPrice": "Listenpreis:",
+      "checkingBalance": "Guthaben wird geprüft...",
+      "soldOut": "AUSVERKAUFT!",
+      "transactionFailed": "Transaktion fehlgeschlagen"
+    },
+    "claim": {
+      "invalidTokenId": "NFT-ID {ids} ist ungültig oder noch nicht geprägt",
+      "fetchOwnedNftsError": "Abruf der eigenen {type} NFTs fehlgeschlagen",
+      "transactionFailed": "Transaktion fehlgeschlagen: Bitte später erneut versuchen",
+      "claimed": "Eingefordert",
+      "nothingToClaim": "Nichts einzufordern",
+      "nftsToClaimCount": "({count} NFTs einzufordern)"
+    },
+    "marketplace": {
+      "missingNftDetails": "NFT-Details fehlen oder Wallet nicht verbunden",
+      "marketplaceFee": "Marktplatzgebühr ({percentage} %):",
+      "total": "Gesamt:",
+      "owner": "Verkäufer:",
+      "cancelListing": "Verkauf abbrechen"
+    },
+    "details": {
+      "claimTitle": "{name}",
+      "buyTitle": "{name}",
+      "sellTitle": "{name} verkaufen",
+      "detailsTitle": "{name}",
+      "claimConditions": "Anspruchsbedingungen",
+      "price": "Preis",
+      "saleConditions": "Verkaufsbedingungen",
+      "details": "Details",
+      "nftDetails": "NFT-Details",
+      "collection": "Sammlung:",
+      "tokenId": "Token-ID:",
+      "rarity": "Seltenheit:",
+      "attributes": "Attribute",
+      "listingFailed": "Mise en vente échouée",
+      "removeFailed": "Entfernung aus dem Verkauf fehlgeschlagen",
+      "relistFailed": "Aktualisierung fehlgeschlagen",
+      "listedAt": "Gelistet zu",
+      "enterPrice": "Preis in STRK eingeben",
+      "enterNewPrice": "Neuen Preis in STRK eingeben",
+      "listForSale": "Zum Verkauf anbieten",
+      "updatePriceButton": "Preis aktualisieren"
+    },
+    "filter": {
+      "all": "Alle",
+      "listed": "Gelistet"
+    },
+    "messages": {
+      "loginPromptTitle": "Anmelden, um Ihre Assets zu sehen",
+      "connectWallet": "Wallet verbinden",
+      "noNftsFound": "Keine NFTs gefunden",
+      "noNftsAvailable": "Keine NFTs in dieser Sammlung verfügbar",
+      "errorLoadingNfts": "Fehler beim Laden der NFTs",
+      "unknownError": "Unbekannter Fehler"
+    },
+    "contract": {
+      "accountNotConnected": "Konto nicht verbunden. Bitte verbinden Sie zuerst Ihre Wallet.",
+      "nftSoldOut": "Dieses NFT ist ausverkauft.",
+      "insufficientBalance": "Unzureichendes STRK-Guthaben für den Kauf.",
+      "transactionFailed": "Transaktion fehlgeschlagen: {error}",
+      "listingStatusCheckFailed": "Status der Listung konnte nicht geprüft werden",
+      "walletContractsNotReady": "Wallet/Verträge nicht bereit",
+      "missingNftInfo": "Fehlende NFT-Informationen (Sammlung oder tokenId)",
+      "listNftFailed": "NFT konnte nicht zum Verkauf angeboten werden: {error}",
+      "walletNotConnected": "Wallet nicht verbunden",
+      "delistNftFailed": "NFT konnte nicht aus dem Verkauf entfernt werden: {error}"
+    }
+  }
+}

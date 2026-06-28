@@ -1,0 +1,31 @@
+{
+  // React Doctor configuration — https://react.doctor/docs/configuration/config-files
+  //
+  // This client renders with @react-three/fiber, whose JSX maps to Three.js
+  // objects (<mesh>, <group>, <boxGeometry>, props like position/castShadow).
+  // These are not DOM elements, so the DOM-property rule reports them as false
+  // positives. It is disabled for this codebase by design.
+  "rules": {
+    "react-doctor/no-unknown-property": "off",
+    // HMR-only hint. Engine constants and binary protocol tables intentionally
+    // live alongside the components that use them (mirrors eslint.config.js).
+    "react-doctor/only-export-components": "off"
+  },
+  "ignore": {
+    "files": ["src/envData/**", "src/GLBImports/**", "dist/**", "public/**"],
+    "overrides": [
+      {
+        // `skinsUrls` is a static module-level object, so mapping useGLTF over it
+        // calls the hooks in a fixed order every render — safe and intentional
+        // (already annotated with an eslint-disable). Not a real rules-of-hooks bug.
+        "files": ["src/players/components/Opponents.tsx"],
+        "rules": ["react-doctor/rules-of-hooks"]
+      }
+    ]
+  },
+  "lint": true,
+  "deadCode": true,
+  "warnings": true,
+  "blocking": "error",
+  "respectInlineDisables": true
+}

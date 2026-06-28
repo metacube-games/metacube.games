@@ -1,0 +1,346 @@
+{
+  "0": {
+    "name": "",
+    "hp": 0,
+    "coins": 0,
+    "hpEarned": 0,
+    "enemy": 0,
+    "nft": 0
+  },
+  "1": {
+    "name": "Bitcoin",
+    "hp": 1000,
+    "coins": 300,
+    "hpEarned": 0,
+    "enemy": 2,
+    "nft": 0
+  },
+  "2": {
+    "name": "B-Chip",
+    "hp": 50,
+    "coins": 10,
+    "hpEarned": 0,
+    "enemy": 1,
+    "nft": 0
+  },
+  "3": {
+    "name": "B-Processor",
+    "hp": 150,
+    "coins": 35,
+    "hpEarned": 0,
+    "enemy": 1,
+    "nft": 0
+  },
+  "4": {
+    "name": "Ether",
+    "hp": 1585,
+    "coins": 480,
+    "hpEarned": 0,
+    "enemy": 5,
+    "nft": 0
+  },
+  "5": {
+    "name": "E-Chip",
+    "hp": 52,
+    "coins": 10,
+    "hpEarned": 0,
+    "enemy": 1,
+    "nft": 0
+  },
+  "6": {
+    "name": "E-Processor",
+    "hp": 167,
+    "coins": 39,
+    "hpEarned": 0,
+    "enemy": 2,
+    "nft": 0
+  },
+  "7": {
+    "name": "Unknown Figure",
+    "hp": 3343,
+    "coins": 1057,
+    "hpEarned": 0,
+    "enemy": 8,
+    "nft": 0
+  },
+  "8": {
+    "name": "CLI",
+    "hp": 58,
+    "coins": 12,
+    "hpEarned": 0,
+    "enemy": 1,
+    "nft": 0
+  },
+  "9": {
+    "name": "Corrupted CLI",
+    "hp": 228,
+    "coins": 54,
+    "hpEarned": 0,
+    "enemy": 2,
+    "nft": 0
+  },
+  "10": {
+    "name": "Moneyro",
+    "hp": 6272,
+    "coins": 2139,
+    "hpEarned": 0,
+    "enemy": 11,
+    "nft": 0
+  },
+  "11": {
+    "name": "Magma Alloy",
+    "hp": 70,
+    "coins": 15,
+    "hpEarned": 0,
+    "enemy": 1,
+    "nft": 0
+  },
+  "12": {
+    "name": "Magma Pool",
+    "hp": 342,
+    "coins": 86,
+    "hpEarned": 0,
+    "enemy": 3,
+    "nft": 0
+  },
+  "13": {
+    "name": "EfteX",
+    "hp": 10372,
+    "coins": 3938,
+    "hpEarned": 0,
+    "enemy": 14,
+    "nft": 0
+  },
+  "14": {
+    "name": "Accumulator",
+    "hp": 87,
+    "coins": 20,
+    "hpEarned": 0,
+    "enemy": 1,
+    "nft": 0
+  },
+  "15": {
+    "name": "Pump & Dumper",
+    "hp": 512,
+    "coins": 140,
+    "hpEarned": 0,
+    "enemy": 4,
+    "nft": 0
+  },
+  "16": {
+    "name": "Lunar",
+    "hp": 15644,
+    "coins": 6778,
+    "hpEarned": 0,
+    "enemy": 17,
+    "nft": 0
+  },
+  "17": {
+    "name": "L-Processor",
+    "hp": 110,
+    "coins": 29,
+    "hpEarned": 0,
+    "enemy": 1,
+    "nft": 0
+  },
+  "18": {
+    "name": "Lunar Pool",
+    "hp": 742,
+    "coins": 225,
+    "hpEarned": 0,
+    "enemy": 5,
+    "nft": 0
+  },
+  "19": {
+    "name": "STONKS!",
+    "hp": 22088,
+    "coins": 11103,
+    "hpEarned": 0,
+    "enemy": 20,
+    "nft": 0
+  },
+  "20": {
+    "name": "BULL!",
+    "hp": 138,
+    "coins": 42,
+    "hpEarned": 0,
+    "enemy": 1,
+    "nft": 0
+  },
+  "21": {
+    "name": "BEAR!",
+    "hp": 1035,
+    "coins": 356,
+    "hpEarned": 0,
+    "enemy": 5,
+    "nft": 0
+  },
+  "22": {
+    "name": "Tornado",
+    "hp": 29704,
+    "coins": 17494,
+    "hpEarned": 0,
+    "enemy": 23,
+    "nft": 0
+  },
+  "23": {
+    "name": "Handcuffs",
+    "hp": 172,
+    "coins": 61,
+    "hpEarned": 0,
+    "enemy": 2,
+    "nft": 0
+  },
+  "24": {
+    "name": "Spiral Cash",
+    "hp": 1392,
+    "coins": 551,
+    "hpEarned": 0,
+    "enemy": 6,
+    "nft": 0
+  },
+  "25": {
+    "name": "Lazarus",
+    "hp": 38491,
+    "coins": 26668,
+    "hpEarned": 0,
+    "enemy": 26,
+    "nft": 0
+  },
+  "26": {
+    "name": "Shadow Figure",
+    "hp": 212,
+    "coins": 88,
+    "hpEarned": 0,
+    "enemy": 2,
+    "nft": 0
+  },
+  "27": {
+    "name": "Mumeye",
+    "hp": 1816,
+    "coins": 837,
+    "hpEarned": 0,
+    "enemy": 7,
+    "nft": 0
+  },
+  "28": {
+    "name": "Wall Street Guy",
+    "hp": 48449,
+    "coins": 39489,
+    "hpEarned": 0,
+    "enemy": 29,
+    "nft": 0
+  },
+  "29": {
+    "name": "Wall Street Suit",
+    "hp": 257,
+    "coins": 125,
+    "hpEarned": 0,
+    "enemy": 2,
+    "nft": 0
+  },
+  "30": {
+    "name": "Diamond Hands",
+    "hp": 2309,
+    "coins": 1244,
+    "hpEarned": 0,
+    "enemy": 8,
+    "nft": 0
+  },
+  "31": {
+    "name": "Private Key",
+    "hp": 59579,
+    "coins": 56976,
+    "hpEarned": 0,
+    "enemy": 32,
+    "nft": 0
+  },
+  "32": {
+    "name": "Lock",
+    "hp": 309,
+    "coins": 177,
+    "hpEarned": 0,
+    "enemy": 2,
+    "nft": 0
+  },
+  "33": {
+    "name": "Seed Phrase",
+    "hp": 2873,
+    "coins": 1813,
+    "hpEarned": 0,
+    "enemy": 8,
+    "nft": 0
+  },
+  "34": {
+    "name": "Doge",
+    "hp": 71881,
+    "coins": 80303,
+    "hpEarned": 0,
+    "enemy": 35,
+    "nft": 0
+  },
+  "35": {
+    "name": "Woof Woof Miam",
+    "hp": 366,
+    "coins": 244,
+    "hpEarned": 0,
+    "enemy": 2,
+    "nft": 0
+  },
+  "36": {
+    "name": "The D",
+    "hp": 3508,
+    "coins": 2589,
+    "hpEarned": 0,
+    "enemy": 9,
+    "nft": 0
+  },
+  "37": {
+    "name": "Starknet",
+    "hp": 1000000,
+    "coins": 120000,
+    "hpEarned": 0,
+    "enemy": 40,
+    "nft": 0
+  },
+  "38": {
+    "name": "Cairo",
+    "hp": 430,
+    "coins": 334,
+    "hpEarned": 0,
+    "enemy": 2,
+    "nft": 0
+  },
+  "39": {
+    "name": "Toothpaste",
+    "hp": 4216,
+    "coins": 3629,
+    "hpEarned": 0,
+    "enemy": 10,
+    "nft": 0
+  },
+  "40": {
+    "name": "Metacube",
+    "hp": 1000000,
+    "coins": 1500000,
+    "hpEarned": 0,
+    "enemy": 100,
+    "nft": 0
+  },
+  "41": {
+    "name": "Layer Barrier",
+    "hp": 5,
+    "coins": 5,
+    "hpEarned": 0,
+    "enemy": 0,
+    "nft": 0
+  },
+  "42": {
+    "name": "M-Chip",
+    "hp": 5000,
+    "coins": 5000,
+    "hpEarned": 0,
+    "enemy": 10,
+    "nft": 0
+  }
+}

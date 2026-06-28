@@ -1,0 +1,52 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "jsx-a11y", "import", "oxc"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "worker": true,
+    "es2024": true
+  },
+  "rules": {
+    "react/no-unknown-property": "off",
+    "react/react-in-jsx-scope": "off",
+    "typescript/no-explicit-any": "off",
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-underscore-dangle": "off",
+    "import/no-unassigned-import": "off",
+    "import/no-cycle": "off",
+    "no-await-in-loop": "off",
+    "import/no-named-as-default-member": "off",
+    "jsx-a11y/prefer-tag-over-role": "warn",
+    "jsx-a11y/no-autofocus": "warn"
+  },
+  "ignorePatterns": [
+    "dist",
+    "node_modules",
+    "public",
+    "android",
+    "ios",
+    "src/envData",
+    "src/GLBImports",
+    "**/*.config.{js,ts,mjs}",
+    "**/*.d.ts"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.test.{ts,tsx}", "src/test/**"],
+      "plugins": ["vitest"],
+      "env": { "vitest": true },
+      "rules": {
+        "vitest/require-mock-type-parameters": "off",
+        "vitest/require-to-throw-message": "off",
+        "vitest/no-conditional-expect": "off",
+        "typescript/no-misused-spread": "off"
+      }
+    }
+  ]
+}

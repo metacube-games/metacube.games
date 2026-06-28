@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --radius: 0.5rem;
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --font-sans: 'Geist', Arial, Helvetica, sans-serif;
+  --font-mono: 'Geist Mono', 'Courier New', monospace;
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 142.1 76.2% 36.3%;
+  --primary-foreground: 355.7 100% 97.3%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 142.1 76.2% 36.3%;
+}
+
+.dark {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 95%;
+  --card: 24 9.8% 10%;
+  --card-foreground: 0 0% 95%;
+  --popover: 0 0% 9%;
+  --popover-foreground: 0 0% 95%;
+  --primary: 142.1 70.6% 45.3%;
+  --primary-foreground: 144.9 80.4% 10%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 12 6.5% 15.1%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 85.7% 97.3%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 142.4 71.8% 29.2%;
+}
+
+body {
+  font-family: var(--font-sans);
+  /* Match all other Metacube frontends: antialiased smoothing prevents
+     Geist from rendering with macOS subpixel "ghost-bold" strokes. */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground));
+    border: 1px solid hsl(var(--background));
+    border-radius: 4px;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground)) hsl(var(--background));
+  }
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+/* Sonner toast styling */
+:root {
+  --toast-success: 142.1 76.2% 36.3%;
+  --toast-error: 346.8 77.2% 49.8%;
+  --toast-info: 221.2 83.2% 53.3%;
+  --toast-warning: 24.6 95% 53.1%;
+}
+
+[data-sonner-toast] {
+  padding: 0.75rem !important;
+  color: hsl(var(--foreground)) !important;
+  overflow: visible !important;
+  padding-left: 1.5rem !important;
+}
+
+[data-sonner-toast] [data-title],
+[data-sonner-toast] [data-description] {
+  color: hsl(var(--foreground)) !important;
+}
+
+[data-sonner-toast] [data-close-button] {
+  opacity: 1 !important;
+  transform: translate(-40%, -40%) !important;
+  left: 0 !important;
+  top: 0 !important;
+  transition: all 0.2s ease !important;
+  color: hsl(var(--foreground)) !important;
+  background-color: hsl(var(--muted)) !important;
+  border-radius: 50% !important;
+  padding: 3px !important;
+  width: 22px !important;
+  height: 22px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+  z-index: 100 !important;
+  position: absolute !important;
+  border: 2px solid hsl(var(--background)) !important;
+}
+
+[data-sonner-toast]:hover [data-close-button] {
+  background-color: hsl(var(--destructive)) !important;
+  color: white !important;
+}
+
+[data-sonner-toast][data-type="success"] {
+  border-color: hsl(var(--toast-success) / 0.3) !important;
+  background-color: hsl(var(--toast-success) / 0.2) !important;
+}
+[data-sonner-toast][data-type="success"] [data-icon] {
+  color: hsl(var(--toast-success)) !important;
+}
+
+[data-sonner-toast][data-type="error"] {
+  border-color: hsl(var(--toast-error) / 0.3) !important;
+  background-color: hsl(var(--toast-error) / 0.2) !important;
+}
+[data-sonner-toast][data-type="error"] [data-icon] {
+  color: hsl(var(--toast-error)) !important;
+}
+
+[data-sonner-toast][data-type="info"] {
+  border-color: hsl(var(--toast-info) / 0.3) !important;
+  background-color: hsl(var(--toast-info) / 0.2) !important;
+}
+[data-sonner-toast][data-type="info"] [data-icon] {
+  color: hsl(var(--toast-info)) !important;
+}
+
+[data-sonner-toaster][data-x-position="left"] {
+  left: 16px !important;
+}
+[data-sonner-toaster][data-y-position="bottom"] {
+  bottom: 16px !important;
+}

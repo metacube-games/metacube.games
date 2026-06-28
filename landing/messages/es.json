@@ -1,0 +1,350 @@
+{
+  "metadata": {
+    "title": "Metacube",
+    "titleTemplate": "%s | Metacube",
+    "description": "Juego de evento multijugador gratuito en Starknet. Colecciona NFTs únicos, compite con miles de jugadores y posee tus activos dentro del juego en esta experiencia única de blockchain gaming.",
+    "keywords": "metacube, starknet, juego blockchain, juego nft, free to play, multijugador, mmo, gaming web3, play to earn, gamefi, colección nft",
+    "ogImageAlt": "Metacube - Evento multijugador gratuito en Starknet",
+    "siteName": "Metacube",
+    "appTitle": "Metacube"
+  },
+  "home": {
+    "features": {
+      "title": "Acerca de",
+      "items": {
+        "poweredByStarknet": {
+          "title": "Impulsado por Starknet",
+          "description": "Starknet le da a los jugadores la capacidad de poseer, coleccionar e intercambiar sus activos libremente dentro del juego"
+        },
+        "freeToPlay": {
+          "title": "Gratis para Jugar",
+          "description": "Metacube es completamente gratuito, sin inversión inicial requerida para jugar"
+        },
+        "massiveEvent": {
+          "title": "Evento Masivo",
+          "description": "Únete a miles de jugadores compitiendo por recompensas en un evento único que concluye cuando el Cubo sea completamente destruido"
+        },
+        "openSource": {
+          "title": "Código Abierto",
+          "description": "El juego, el mercado y las herramientas son de código abierto — ejecuta tu propia instancia auto-alojada"
+        }
+      },
+      "learnMoreAbout": "Aprende más sobre {title}"
+    },
+    "team": {
+      "title": "El Equipo",
+      "learnMoreAbout": "Aprende más sobre {name}, {designation}"
+    }
+  },
+  "navbar": {
+    "items": {
+      "home": "Inicio",
+      "streams": "Streams",
+      "blog": "Blog",
+      "market": "Mercado",
+      "play": "Jugar"
+    },
+    "ariaLabel": {
+      "learnMore": "Aprende más sobre {name} en Metacube Games",
+      "toggleMenu": "Alternar menú"
+    }
+  },
+  "footer": {
+    "copyrightHolder": "© {year} Metacube",
+    "allRightsReserved": "Todos los derechos reservados.",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "contactUs": "Contáctanos",
+    "social": {
+      "twitter": "Twitter",
+      "tiktok": "TikTok",
+      "discord": "Discord",
+      "instagram": "Instagram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    },
+    "info": "Información",
+    "links": {
+      "blog": "Blog",
+      "linkWallet": "Conectar Billetera",
+      "documentation": "Documentación",
+      "terms": "Términos",
+      "privacy": "Privacidad"
+    },
+    "partners": "Socios"
+  },
+  "privacy": {
+    "title": "Política de Privacidad de Metacube",
+    "sections": {
+      "introduction": {
+        "content": "Bienvenido a Metacube, una plataforma que revoluciona la industria del gaming con tecnología blockchain. Esta política de privacidad explica cómo recopilamos, usamos, almacenamos y protegemos su información personal cuando utiliza los servicios de Metacube. Al usar nuestros servicios, usted acepta los términos descritos en esta política."
+      },
+      "informationCollection": {
+        "title": "1. Recopilación de Información",
+        "description": "Cuando utiliza Metacube, recopilamos la información necesaria para proporcionar y mejorar nuestros servicios. Esto incluye:",
+        "items": [
+          "Su nombre y dirección de correo electrónico (obtenidos mediante inicio de sesión con Google)",
+          "Dirección de billetera blockchain",
+          "Datos relacionados con sus actividades y transacciones dentro del juego",
+          "Información técnica como dirección IP e información del dispositivo"
+        ]
+      },
+      "informationUse": {
+        "title": "2. Uso de la Información",
+        "description": "Utilizamos su información para:",
+        "items": [
+          "Operar y mejorar Metacube",
+          "Procesar transacciones",
+          "Proporcionar soporte al cliente",
+          "Personalizar su experiencia de juego",
+          "Desarrollar nuevas características",
+          "Comunicar actualizaciones y anuncios importantes"
+        ]
+      },
+      "dataStorage": {
+        "title": "3. Almacenamiento y Seguridad de Datos",
+        "content": "Su información personal se almacena en servidores seguros con acceso restringido. Implementamos medidas de seguridad estándar de la industria para proteger sus datos de acceso no autorizado o violaciones. Sin embargo, ningún método de transmisión por Internet o almacenamiento electrónico es 100% seguro, y no podemos garantizar seguridad absoluta."
+      },
+      "blockchainTransactions": {
+        "title": "4. Transacciones Blockchain",
+        "content": "Tenga en cuenta que las transacciones blockchain son públicas por naturaleza. Aunque protegemos su información personal, los detalles de las transacciones en la blockchain son visibles para todos los participantes. Tenga precaución al realizar transacciones blockchain."
+      },
+      "googleLogin": {
+        "title": "5. Inicio de Sesión con Google",
+        "content": "Utilizamos el inicio de sesión de Google para autenticación. Cuando inicia sesión con Google, solo accedemos a su información de perfil básica (nombre y dirección de correo electrónico). No accedemos ni almacenamos su contraseña de Google u otra información sensible."
+      },
+      "dataRetention": {
+        "title": "6. Retención de Datos",
+        "content": "Conservamos su información personal mientras su cuenta esté activa o según sea necesario para proporcionarle servicios. Si desea cancelar su cuenta o solicitar que ya no utilicemos su información, contáctenos en contact@metacube.com. Conservaremos y utilizaremos su información según sea necesario para cumplir con nuestras obligaciones legales, resolver disputas y hacer cumplir nuestros acuerdos."
+      },
+      "userRights": {
+        "title": "7. Derechos y Opciones del Usuario",
+        "description": "Usted tiene derecho a:",
+        "items": [
+          "Acceder a sus datos personales",
+          "Corregir inexactitudes en sus datos personales",
+          "Eliminar sus datos personales",
+          "Objetar el procesamiento de sus datos personales",
+          "Solicitar una copia de sus datos personales"
+        ],
+        "footer": "Para ejercer estos derechos o para cualquier consulta relacionada con privacidad, comuníquese con nuestro equipo de soporte."
+      },
+      "childrens": {
+        "title": "8. Privacidad de Menores",
+        "content": "Metacube no está dirigido a menores de 13 años. No recopilamos intencionalmente información personal de menores de 13 años. Si tiene menos de 13 años, no utilice ni proporcione información en este sitio web."
+      },
+      "changes": {
+        "title": "9. Cambios a Esta Política de Privacidad",
+        "content": "Podemos actualizar esta política de privacidad periódicamente. Le notificaremos cualquier cambio significativo publicando la nueva política de privacidad en esta página y actualizando la fecha de última actualización en la parte superior de esta página. Se le aconseja revisar esta política de privacidad periódicamente para conocer cualquier cambio."
+      },
+      "companyDetails": {
+        "title": "10. Detalles de la Empresa",
+        "description": "Metacube es operado por:",
+        "items": [
+          "Nombre Comercial: Clashware Sàrl",
+          "Dirección: Avenue de Jurigoz 15, 1006 Lausana, Suiza",
+          "Forma Legal: Sociedad de Responsabilidad Limitada (Sàrl)",
+          "Oficina Registrada: Lausana",
+          "Estado: Activa",
+          "ID de Empresa: CHE-178.795.076"
+        ]
+      },
+      "contact": {
+        "title": "11. Contáctenos",
+        "content": "Si tiene alguna pregunta o inquietud sobre esta política de privacidad o nuestras prácticas de manejo de datos, comuníquese con nuestro equipo de soporte en"
+      }
+    }
+  },
+  "terms": {
+    "title": "Términos de Servicio de Metacube",
+    "sections": {
+      "introduction": {
+        "title": "1. Introducción",
+        "content": "Bienvenido a Metacube. Estos Términos de Servicio (Términos) rigen su acceso y uso del sitio web, servicios y plataforma de juego basada en blockchain de Metacube (colectivamente, el Servicio). Al usar nuestro Servicio, usted acepta estar sujeto a estos Términos. Si no está de acuerdo con alguna parte de los Términos, no puede utilizar nuestro Servicio."
+      },
+      "useOfServices": {
+        "title": "2. Uso de los Servicios",
+        "description": "Metacube proporciona servicios de juegos basados en blockchain. Usted acepta usar estos servicios solo para propósitos legales y de acuerdo con estos Términos. Los usos prohibidos incluyen, pero no se limitan a:",
+        "items": [
+          "Usar el Servicio para cualquier actividad ilegal",
+          "Intentar interferir o interrumpir el Servicio",
+          "Suplantar a otros usuarios o entidades",
+          "Transmitir cualquier código o software malicioso",
+          "Participar en cualquier forma de recopilación automatizada de datos sin nuestro consentimiento"
+        ]
+      },
+      "userAccounts": {
+        "title": "3. Cuentas de Usuario y Seguridad",
+        "description": "Para acceder a ciertas características del Servicio, debe crear una cuenta. Usted es responsable de:",
+        "items": [
+          "Mantener la confidencialidad de su cuenta y contraseña",
+          "Restringir el acceso a su cuenta",
+          "Todas las actividades que ocurran bajo su cuenta"
+        ],
+        "footer": "Metacube no es responsable de ninguna pérdida resultante del uso no autorizado de su cuenta. Debe notificarnos inmediatamente de cualquier uso no autorizado de su cuenta o cualquier otra violación de seguridad."
+      },
+      "intellectualProperty": {
+        "title": "4. Derechos de Propiedad Intelectual",
+        "content": "El Servicio y su contenido original, características y funcionalidad son propiedad de Metacube y están protegidos por leyes internacionales de derechos de autor, marcas comerciales, patentes, secretos comerciales y otras leyes de propiedad intelectual. No puede reproducir, distribuir, modificar, crear obras derivadas, exhibir públicamente, ejecutar públicamente, republicar, descargar, almacenar o transmitir ningún material de nuestro Servicio, excepto como incidental a la navegación web normal o según lo permita expresamente por escrito Metacube."
+      },
+      "blockchainNfts": {
+        "title": "5. Transacciones Blockchain y NFTs",
+        "description": "Usted comprende y acepta que:",
+        "items": [
+          "Las transacciones blockchain son irreversibles",
+          "Usted es el único responsable de la seguridad de su billetera y claves privadas",
+          "Metacube no es responsable de ninguna pérdida debido a error del usuario, problemas de la red blockchain o vulnerabilidades de la billetera",
+          "El valor de los NFTs puede ser altamente volátil, y Metacube no ofrece garantías con respecto al valor de ningún NFT",
+          "Usted es responsable de comprender y cumplir con cualquier impuesto aplicable relacionado con sus transacciones blockchain y propiedad de NFTs"
+        ]
+      },
+      "limitationOfLiability": {
+        "title": "6. Limitación de Responsabilidad",
+        "description": "En la máxima medida permitida por la ley aplicable, Metacube no será responsable de ningún daño indirecto, incidental, especial, consecuente o punitivo, ni de ninguna pérdida de ganancias o ingresos, ya sea incurrida directa o indirectamente, ni de ninguna pérdida de datos, uso, buena voluntad u otras pérdidas intangibles, resultantes de:",
+        "items": [
+          "Su acceso o uso o incapacidad de acceder o usar el Servicio",
+          "Cualquier conducta o contenido de terceros en el Servicio",
+          "Cualquier contenido obtenido del Servicio",
+          "Acceso no autorizado, uso o alteración de sus transmisiones o contenido"
+        ]
+      },
+      "modifications": {
+        "title": "7. Modificaciones al Servicio",
+        "content": "Nos reservamos el derecho de modificar o discontinuar, temporal o permanentemente, el Servicio (o cualquier parte del mismo) con o sin aviso. No seremos responsables ante usted o ante terceros por cualquier modificación, cambio de precio, suspensión o discontinuación del Servicio."
+      },
+      "governingLaw": {
+        "title": "8. Ley Aplicable y Resolución de Disputas",
+        "content": "Estos Términos se regirán e interpretarán de acuerdo con las leyes de Suiza, sin tener en cuenta sus disposiciones sobre conflictos de leyes. Cualquier disputa que surja de o relacionada con estos Términos o el Servicio se resolverá mediante arbitraje vinculante de acuerdo con las reglas de la Institución de Arbitraje de las Cámaras Suizas (SCAI). El arbitraje se llevará a cabo en Lausana, Suiza."
+      },
+      "changes": {
+        "title": "9. Cambios a los Términos",
+        "content": "Nos reservamos el derecho, a nuestra sola discreción, de modificar o reemplazar estos Términos en cualquier momento. Proporcionaremos aviso de cualquier cambio significativo publicando los nuevos Términos en esta página y actualizando la fecha de última actualización. Su uso continuado del Servicio después de dichos cambios constituye su aceptación de los nuevos Términos."
+      },
+      "termination": {
+        "title": "10. Terminación",
+        "content": "Podemos terminar o suspender su cuenta y prohibir el acceso al Servicio inmediatamente, sin previo aviso o responsabilidad, bajo nuestra sola discreción, por cualquier motivo, incluyendo pero no limitado a una violación de los Términos. Al terminar, su derecho a usar el Servicio cesará inmediatamente."
+      },
+      "companyDetails": {
+        "title": "11. Detalles de la Empresa",
+        "description": "Metacube es operado por:",
+        "items": [
+          "Nombre Comercial: Clashware Sàrl",
+          "Dirección: Avenue de Jurigoz 15, 1006 Lausana, Suiza",
+          "Forma Legal: Sociedad de Responsabilidad Limitada (Sàrl)",
+          "Oficina Registrada: Lausana",
+          "Estado: Activa",
+          "ID de Empresa: CHE-178.795.076"
+        ]
+      },
+      "contact": {
+        "title": "12. Contáctenos",
+        "content": "Si tiene alguna pregunta sobre estos Términos, comuníquese con nosotros en"
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog de Metacube",
+    "metadata": {
+      "title": "Blog",
+      "description": "Últimas noticias, guías de jugabilidad y actualizaciones de desarrollo para Metacube."
+    },
+    "postPage": {
+      "backToBlog": "Volver al Blog",
+      "postNotFound": "Publicación No Encontrada",
+      "postNotFoundDescription": "La publicación del blog que buscas no existe.",
+      "nftRarityTitle": "Distribución de Rareza de NFT",
+      "nftRarityDescription": "A continuación encontrarás visualizaciones detalladas de la distribución de rareza en todos los rasgos de NFT.",
+      "nftRarityDetails": "Estos gráficos muestran el desglose exacto de cada rasgo por nivel de rareza.",
+      "relatedPosts": "Otras Publicaciones"
+    },
+    "card": {
+      "readMore": "Leer más →"
+    }
+  },
+  "communityStreams": {
+    "title": "Streams de la Comunidad",
+    "metadata": {
+      "title": "Streams de la Comunidad",
+      "description": "Mira transmisiones en vivo, videos de jugabilidad y contenido creativo de la comunidad de Metacube."
+    },
+    "videoGrid": {
+      "featured": "Destacado"
+    }
+  },
+  "nftStats": {
+    "loading": "Cargando estadísticas de NFT...",
+    "title": "Estadísticas de la Colección NFT de Metacube",
+    "description": "Explora las estadísticas completas de los 10,000 NFTs de Metacube. Cada gráfico a continuación representa la distribución de rasgos a través de diferentes categorías y niveles de rareza.",
+    "totalNfts": "10,000 NFTs en Total",
+    "traitCategories": "5 Categorías de Rasgos",
+    "uniqueTraits": "79 Rasgos Únicos",
+    "rarityTiers": "5 Niveles de Rareza",
+    "skinTraits": "Rasgos de Piel",
+    "skinDistribution": "Distribución de Piel",
+    "cubeTraits": "Rasgos del Cubo",
+    "cubeDistribution": "Distribución del Cubo",
+    "coinTraits": "Rasgos de Moneda",
+    "coinDistribution": "Distribución de Moneda",
+    "backgroundTraits": "Rasgos de Fondo",
+    "backgroundDistribution": "Distribución de Fondo",
+    "weaponTraits": "Rasgos de Arma",
+    "weaponDistribution": "Distribución de Armas",
+    "rarityGuide": "Guía de Rareza",
+    "rarity": {
+      "common": "Común",
+      "rare": "Raro",
+      "epic": "Épico",
+      "mythic": "Mítico",
+      "legendary": "Legendario"
+    }
+  },
+  "localeSwitcher": {
+    "ariaLabel": "Seleccionar idioma"
+  },
+  "common": {
+    "buttons": {
+      "submit": "Enviar",
+      "cancel": "Cancelar",
+      "close": "Cerrar",
+      "save": "Guardar",
+      "delete": "Eliminar",
+      "edit": "Editar",
+      "confirm": "Confirmar",
+      "tryAgain": "Intentar de nuevo",
+      "goHome": "Ir al inicio",
+      "goBack": "Volver"
+    },
+    "labels": {
+      "email": "Correo Electrónico",
+      "password": "Contraseña",
+      "username": "Nombre de Usuario",
+      "search": "Buscar",
+      "filter": "Filtrar",
+      "sort": "Ordenar"
+    },
+    "messages": {
+      "loading": "Cargando...",
+      "error": "Ocurrió un error",
+      "success": "¡Éxito!",
+      "noData": "No hay datos disponibles",
+      "comingSoon": "Próximamente"
+    },
+    "validation": {
+      "required": "Este campo es requerido",
+      "invalidEmail": "Por favor ingresa un correo electrónico válido",
+      "invalidUrl": "Por favor ingresa una URL válida"
+    }
+  },
+  "error": {
+    "title": "¡Ups! Algo salió mal",
+    "description": "Encontramos un error inesperado. No te preocupes, nuestro equipo ha sido notificado y estamos trabajando en ello.",
+    "supportText": "Si este problema persiste, por favor",
+    "contactSupport": "contacta a nuestro equipo de soporte"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o ha sido movida a otra ubicación.",
+    "quickLinks": "O explora estas páginas:"
+  }
+}

@@ -1,0 +1,129 @@
+---
+# Bootstrap a fresh Ubuntu server.
+# Run once as root before switching to the metacube user.
+# Usage: ansible-playbook playbooks/init.yml
+
+- name: Establish host authenticity
+  hosts: prod
+  gather_facts: false
+
+  tasks:
+    - name: Scan and trust host key
+      delegate_to: localhost
+      become: false
+      ansible.builtin.shell:
+        cmd: |
+          ssh-keygen -R {{ ansible_host }} 2>/dev/null || true
+          ssh-keyscan -t rsa,ecdsa,ed25519 {{ ansible_host }} >> ~/.ssh/known_hosts
+
+- name: Initialise server
+  hosts: prod
+  become: true
+  vars:
+    ansible_ssh_user: root
+
+  tasks:
+    - name: Update and upgrade APT packages
+      ansible.builtin.apt:
+        autoclean: true
+        clean: true
+        update_cache: true
+        upgrade: full
+
+    - name: Install required packages
+      ansible.builtin.apt:
+        name:
+          - curl
+          - ca-certificates
+          - gnupg
+          - lsb-release
+          - rsync
+        state: present
+
+    - name: Install Docker
+      ansible.builtin.shell:
+        cmd: curl -fsSL https://get.docker.com | sh
+
+    - name: Create metacube user
+      ansible.builtin.user:
+        name: metacube
+        shell: /bin/bash
+        create_home: true
+
+    - name: Add metacube to docker group
+      ansible.builtin.user:
+        name: metacube
+        groups: docker
+        append: true
+
+    - name: Authorise SSH keys
+      ansible.posix.authorized_key:
+        user: metacube
+        key: "{{ lookup('file', item) }}"
+      with_fileglob:
+        - "../config/authorized-ssh-keys/*"
+
+    - name: Create deployment directory
+      ansible.builtin.file:
+        path: /home/metacube
+        state: directory
+        owner: metacube
+        group: metacube
+        mode: "0755"
+
+- name: Generate GitHub Actions deploy key
+  hosts: prod
+  become: true
+  vars:
+    ansible_ssh_user: root
+
+  tasks:
+    - name: Generate ED25519 SSH key for metacube user
+      ansible.builtin.user:
+        name: metacube
+        generate_ssh_key: true
+        ssh_key_type: ed25519
+        ssh_key_file: .ssh/id_ed25519
+        ssh_key_comment: "github-actions-deploy"
+        force: false
+
+    - name: Read generated public key
+      ansible.builtin.slurp:
+        src: /home/metacube/.ssh/id_ed25519.pub
+      register: deploy_pubkey
+
+    - name: Authorise deploy key for metacube user
+      ansible.posix.authorized_key:
+        user: metacube
+        key: "{{ deploy_pubkey.content | b64decode | trim }}"
+
+    - name: Read generated private key
+      ansible.builtin.slurp:
+        src: /home/metacube/.ssh/id_ed25519
+      register: deploy_privkey
+
+    - name: Print private key — add this as VPS_SSH_KEY GitHub secret
+      ansible.builtin.debug:
+        msg: "{{ deploy_privkey.content | b64decode }}"
+
+    - name: Delete private key from server (public key in authorized_keys is all that remains)
+      ansible.builtin.file:
+        path: /home/metacube/.ssh/id_ed25519
+        state: absent
+
+- name: Authenticate Docker with GHCR
+  hosts: prod
+  become: false
+  vars:
+    env_file: "{{ playbook_dir }}/../config/.env"
+
+  tasks:
+    - name: Load GHCR credentials from local .env
+      ansible.builtin.set_fact:
+        ghcr_username: "{{ lookup('ini', 'GHCR_USERNAME type=properties file=' + env_file) | regex_replace('^\"|\"$', '') }}"
+        ghcr_token: "{{ lookup('ini', 'GHCR_TOKEN type=properties file=' + env_file) | regex_replace('^\"|\"$', '') }}"
+
+    - name: Log in to GHCR
+      ansible.builtin.command:
+        cmd: docker login ghcr.io -u {{ ghcr_username }} --password-stdin
+        stdin: "{{ ghcr_token }}"

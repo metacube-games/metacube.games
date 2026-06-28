@@ -1,0 +1,21 @@
+[package]
+name = "v1-allstars"
+version = "0.1.0"
+edition = "2024_07"
+
+[dependencies]
+openzeppelin = "1.0.0"
+starknet = "2.9.4"
+
+[dev-dependencies]
+snforge_std = "0.38.3"
+assert_macros = "2.9.4"
+
+[[target.starknet-contract]]
+sierra = true
+
+[scripts]
+test = "snforge test"
+
+[tool.scarb]
+allow-prebuilt-plugins = ["snforge_std"]

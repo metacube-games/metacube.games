@@ -1,0 +1,329 @@
+{
+  "Skin": {
+    "Anonymous": {
+      "count": 764,
+      "percentage": "7.6%"
+    },
+    "Fire Man": {
+      "count": 1064,
+      "percentage": "10.6%"
+    },
+    "Johnny Wolovick": {
+      "count": 840,
+      "percentage": "8.4%"
+    },
+    "Gladiator": {
+      "count": 1089,
+      "percentage": "10.8%"
+    },
+    "Alien": {
+      "count": 983,
+      "percentage": "9.8%"
+    },
+    "Skeleton": {
+      "count": 1009,
+      "percentage": "10.0%"
+    },
+    "Golden Boy": {
+      "count": 781,
+      "percentage": "7.8%"
+    },
+    "Michel Marin": {
+      "count": 650,
+      "percentage": "6.5%"
+    },
+    "Doge": {
+      "count": 699,
+      "percentage": "6.9%"
+    },
+    "Changpen Cil": {
+      "count": 539,
+      "percentage": "5.3%"
+    },
+    "Wallstreet Guy": {
+      "count": 539,
+      "percentage": "5.3%"
+    },
+    "Broke Donald": {
+      "count": 350,
+      "percentage": "3.5%"
+    },
+    "Giga Chad": {
+      "count": 337,
+      "percentage": "3.3%"
+    },
+    "Pepe": {
+      "count": 230,
+      "percentage": "2.3%"
+    },
+    "Pelton Flusk": {
+      "count": 126,
+      "percentage": "1.2%"
+    }
+  },
+  "Cube": {
+    "Bitcoin": {
+      "count": 334,
+      "percentage": "3.3%"
+    },
+    "B-Chip": {
+      "count": 328,
+      "percentage": "3.2%"
+    },
+    "B-Processor": {
+      "count": 358,
+      "percentage": "3.5%"
+    },
+    "Ether": {
+      "count": 325,
+      "percentage": "3.2%"
+    },
+    "E-Chip": {
+      "count": 377,
+      "percentage": "3.7%"
+    },
+    "E-Processor": {
+      "count": 347,
+      "percentage": "3.4%"
+    },
+    "Unknown Figure": {
+      "count": 304,
+      "percentage": "3.0%"
+    },
+    "CLI": {
+      "count": 364,
+      "percentage": "3.6%"
+    },
+    "Corrupted CLI": {
+      "count": 339,
+      "percentage": "3.3%"
+    },
+    "Moneyro": {
+      "count": 307,
+      "percentage": "3.0%"
+    },
+    "Magma Alloy": {
+      "count": 358,
+      "percentage": "3.5%"
+    },
+    "Magma Pool": {
+      "count": 354,
+      "percentage": "3.5%"
+    },
+    "EfteX": {
+      "count": 285,
+      "percentage": "2.8%"
+    },
+    "Accumulator": {
+      "count": 281,
+      "percentage": "2.8%"
+    },
+    "Pump & Dumper": {
+      "count": 321,
+      "percentage": "3.2%"
+    },
+    "Lunar": {
+      "count": 291,
+      "percentage": "2.9%"
+    },
+    "L-Processor": {
+      "count": 305,
+      "percentage": "3.0%"
+    },
+    "Lunar Pool": {
+      "count": 292,
+      "percentage": "2.9%"
+    },
+    "STONKS!": {
+      "count": 159,
+      "percentage": "1.5%"
+    },
+    "BULL!": {
+      "count": 268,
+      "percentage": "2.6%"
+    },
+    "BEAR!": {
+      "count": 229,
+      "percentage": "2.2%"
+    },
+    "Tornado": {
+      "count": 187,
+      "percentage": "1.8%"
+    },
+    "Handcuffs": {
+      "count": 274,
+      "percentage": "2.7%"
+    },
+    "Spiral Cash": {
+      "count": 247,
+      "percentage": "2.4%"
+    },
+    "Lazarus": {
+      "count": 155,
+      "percentage": "1.5%"
+    },
+    "Shadow Figure": {
+      "count": 231,
+      "percentage": "2.3%"
+    },
+    "Mumeye": {
+      "count": 217,
+      "percentage": "2.1%"
+    },
+    "Wall Street Guy": {
+      "count": 151,
+      "percentage": "1.5%"
+    },
+    "Wall Street Suit": {
+      "count": 227,
+      "percentage": "2.2%"
+    },
+    "Diamond Hands": {
+      "count": 238,
+      "percentage": "2.3%"
+    },
+    "Private Key": {
+      "count": 115,
+      "percentage": "1.1%"
+    },
+    "Lock": {
+      "count": 175,
+      "percentage": "1.7%"
+    },
+    "Seed Phrase": {
+      "count": 159,
+      "percentage": "1.5%"
+    },
+    "Doge": {
+      "count": 117,
+      "percentage": "1.1%"
+    },
+    "Woof Woof Miam": {
+      "count": 175,
+      "percentage": "1.7%"
+    },
+    "The D": {
+      "count": 184,
+      "percentage": "1.8%"
+    },
+    "Starknet": {
+      "count": 74,
+      "percentage": "0.7%"
+    },
+    "Cairo": {
+      "count": 158,
+      "percentage": "1.5%"
+    },
+    "Toothpaste": {
+      "count": 139,
+      "percentage": "1.3%"
+    },
+    "Metacube": {
+      "count": 39,
+      "percentage": "0.3%"
+    },
+    "Layer Barrier": {
+      "count": 104,
+      "percentage": "1.0%"
+    },
+    "M-Chip": {
+      "count": 108,
+      "percentage": "1.0%"
+    }
+  },
+  "Coin": {
+    "Yellow": {
+      "count": 3661,
+      "percentage": "36.6%"
+    },
+    "Blue": {
+      "count": 2903,
+      "percentage": "29.0%"
+    },
+    "Green": {
+      "count": 2095,
+      "percentage": "20.9%"
+    },
+    "Gray": {
+      "count": 896,
+      "percentage": "8.9%"
+    },
+    "Purple": {
+      "count": 445,
+      "percentage": "4.4%"
+    }
+  },
+  "Background": {
+    "Violet": {
+      "count": 3028,
+      "percentage": "30.2%"
+    },
+    "Red": {
+      "count": 2510,
+      "percentage": "25.1%"
+    },
+    "Green": {
+      "count": 1903,
+      "percentage": "19.0%"
+    },
+    "Blue": {
+      "count": 1588,
+      "percentage": "15.8%"
+    },
+    "Yellow": {
+      "count": 653,
+      "percentage": "6.5%"
+    },
+    "Magenta": {
+      "count": 318,
+      "percentage": "3.1%"
+    }
+  },
+  "Weapon": {
+    "sword": {
+      "count": 1529,
+      "percentage": "15.2%"
+    },
+    "Hammer": {
+      "count": 1440,
+      "percentage": "14.4%"
+    },
+    "Double Axe": {
+      "count": 1270,
+      "percentage": "12.7%"
+    },
+    "Gun": {
+      "count": 1180,
+      "percentage": "11.8%"
+    },
+    "Scythe": {
+      "count": 1046,
+      "percentage": "10.4%"
+    },
+    "Kunai": {
+      "count": 953,
+      "percentage": "9.5%"
+    },
+    "TNT": {
+      "count": 848,
+      "percentage": "8.4%"
+    },
+    "Candy": {
+      "count": 794,
+      "percentage": "7.9%"
+    },
+    "Hammer Future": {
+      "count": 488,
+      "percentage": "4.8%"
+    },
+    "Pirannah": {
+      "count": 307,
+      "percentage": "3.0%"
+    },
+    "Unicorn": {
+      "count": 145,
+      "percentage": "1.4%"
+    }
+  },
+  "total_generated": 10000
+}

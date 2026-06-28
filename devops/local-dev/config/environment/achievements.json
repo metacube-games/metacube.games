@@ -1,0 +1,429 @@
+{
+  "typesID": 0,
+  "thresholdsID": 1,
+  "categories": [
+    {
+      "name": "cubes",
+      "id": 0,
+      "types": [
+        {
+          "key": "btc",
+          "id": 0,
+          "name": "The King of Crypto",
+          "description": "Break a Bitcoin biome cube",
+          "reward": 400,
+          "type": 2
+        },
+        {
+          "key": "eth",
+          "id": 1,
+          "name": "The King of Contracts",
+          "description": "Break an Ether biome cube",
+          "reward": 450,
+          "type": 5
+        },
+        {
+          "key": "cli",
+          "id": 2,
+          "name": "The Queen of Bash",
+          "description": "Break a unknown figure biome cube",
+          "reward": 500,
+          "type": 8
+        },
+        {
+          "key": "mro",
+          "id": 3,
+          "name": "The Queen of Oblivion",
+          "description": "Break a Moneyro biome cube",
+          "reward": 550,
+          "type": 11
+        },
+        {
+          "key": "ftx",
+          "id": 4,
+          "name": "The Queen of Rug",
+          "description": "Break an EfteX biome cube",
+          "reward": 600,
+          "type": 14
+        },
+        {
+          "key": "lna",
+          "id": 5,
+          "name": "The Queen of Dump",
+          "description": "Break a Lunar biome cube",
+          "reward": 700,
+          "type": 17
+        },
+        {
+          "key": "stks",
+          "id": 6,
+          "name": "This one just goes up",
+          "description": "Break a Stonks biome cube",
+          "reward": 1000,
+          "type": 20
+        },
+        {
+          "key": "trndo",
+          "id": 7,
+          "name": "The Queen of Washing",
+          "description": "Break a Tornado biome cube",
+          "reward": 2000,
+          "type": 23
+        },
+        {
+          "key": "lzrs",
+          "id": 8,
+          "name": "The King of Washing",
+          "description": "Break a Lazarus biome cube",
+          "reward": 5000,
+          "type": 26
+        },
+        {
+          "key": "wsb",
+          "id": 9,
+          "name": "The King of the streets",
+          "description": "Break a WallStreet Bets biome cube",
+          "reward": 75000,
+          "type": 29
+        },
+        {
+          "key": "key",
+          "id": 10,
+          "name": "The King of Security",
+          "description": "Break a Key biome cube",
+          "reward": 10000,
+          "type": 32
+        },
+        {
+          "key": "dog",
+          "id": 11,
+          "name": "The King of Memes",
+          "description": "Break a Doge biome cube",
+          "reward": 15000,
+          "type": 35
+        },
+        {
+          "key": "strk",
+          "id": 12,
+          "name": "The King of Layers",
+          "description": "Break a Starknet biome cube",
+          "reward": 20000,
+          "type": 38
+        },
+        {
+          "key": "mcb",
+          "id": 13,
+          "name": "The King of Cubes",
+          "description": "Break a m-chip cube",
+          "reward": 10000,
+          "type": 42
+        }
+      ],
+      "thresholds": [
+        {
+          "key": "1",
+          "id": 0,
+          "name": "Wake and Mine",
+          "description": "Break your first cube!",
+          "reward": 1,
+          "threshold": 1
+        },
+        {
+          "key": "100",
+          "id": 1,
+          "name": "Breaking some Cubes",
+          "description": "Break 100 cubes",
+          "reward": 100,
+          "threshold": 100
+        },
+        {
+          "key": "200",
+          "id": 2,
+          "name": "Node Explorer",
+          "description": "Break 200 cubes",
+          "reward": 200,
+          "threshold": 200
+        },
+        {
+          "key": "500",
+          "id": 3,
+          "name": "Decentralized Miner",
+          "description": "Break 500 cubes",
+          "reward": 500,
+          "threshold": 500
+        },
+        {
+          "key": "1000",
+          "id": 4,
+          "name": "Ledger Lord",
+          "description": "Break 1'000 cubes",
+          "reward": 1000,
+          "threshold": 1000
+        },
+        {
+          "key": "2000",
+          "id": 5,
+          "name": "Stove Commander",
+          "description": "Break 2'000 cubes",
+          "reward": 2000,
+          "threshold": 2000
+        },
+        {
+          "key": "5000",
+          "name": "Stove Conqueror",
+          "description": "Break 5'000 cubes",
+          "reward": 5000,
+          "id": 6,
+          "threshold": 5000
+        },
+        {
+          "key": "10000",
+          "name": "Pleton's right-hand man",
+          "description": "Break 10'000 cubes",
+          "reward": 10000,
+          "id": 6,
+          "threshold": 10000
+        },
+        {
+          "key": "20000",
+          "id": 7,
+          "name": "The Saylor",
+          "description": "Break 20'000 cubes",
+          "reward": 20000,
+          "threshold": 20000
+        },
+        {
+          "key": "50000",
+          "id": 8,
+          "name": "Zero Knowledge Hash",
+          "description": "Break 50'000 cubes",
+          "reward": 50000,
+          "threshold": 50000
+        }
+      ]
+    },
+    {
+      "name": "layers",
+      "id": 1,
+      "types": [],
+      "thresholds": [
+        {
+          "key": "5",
+          "id": 5,
+          "name": "First Down",
+          "description": "Be present at layer 5 destruction",
+          "reward": 5000,
+          "threshold": 1
+        },
+        {
+          "key": "4",
+          "id": 4,
+          "name": "Block War",
+          "description": "Be present at layer 4 destruction",
+          "reward": 10000,
+          "threshold": 1
+        },
+        {
+          "key": "3",
+          "id": 3,
+          "name": "Age Of Block",
+          "description": "Be present at layer 3 destruction",
+          "reward": 20000,
+          "threshold": 1
+        },
+        {
+          "key": "2",
+          "id": 2,
+          "name": "War Of Infinity",
+          "description": "Be present at layer 2 destruction",
+          "reward": 30000,
+          "threshold": 1
+        },
+        {
+          "key": "1",
+          "id": 1,
+          "name": "END GAME",
+          "description": "Be present at layer 1 destruction",
+          "reward": 40000,
+          "threshold": 1
+        },
+        {
+          "key": "0",
+          "id": 0,
+          "name": "Doomsday",
+          "description": "Be present at layer 0 destruction",
+          "reward": 50000,
+          "threshold": 1
+        }
+      ]
+    },
+    {
+      "name": "upgrades",
+      "id": 2,
+      "types": [],
+      "thresholds": [
+        {
+          "key": "1",
+          "id": 0,
+          "name": "The Upgrader",
+          "description": "Buy your first upgrade",
+          "reward": 500,
+          "threshold": 1
+        },
+        {
+          "key": "max",
+          "id": 1,
+          "name": "The Maximizer",
+          "description": "Maximize one Skill",
+          "reward": 20000,
+          "threshold": 6
+        }
+      ]
+    },
+    {
+      "name": "ally",
+      "id": 3,
+      "types": [],
+      "thresholds": [
+        {
+          "key": "1",
+          "id": 0,
+          "name": "Hostile allies",
+          "description": "Hit another Stove ally",
+          "reward": 500,
+          "threshold": 1
+        }
+      ]
+    },
+    {
+      "name": "attacks",
+      "id": 4,
+      "types": [
+        {
+          "key": "fall1",
+          "id": 0,
+          "name": "Jump Around!",
+          "description": "Get falling damage",
+          "reward": 500,
+          "type": 0
+        },
+        {
+          "key": "fisc",
+          "id": 1,
+          "name": "Taxed to Death",
+          "description": "Get hit by a tax advisor",
+          "reward": 500,
+          "type": 3
+        },
+        {
+          "key": "cube",
+          "id": 2,
+          "name": "Shocked Pick a Chu",
+          "description": "Get shocked by an energized biome cube",
+          "reward": 500,
+          "type": 4
+        }
+      ],
+      "thresholds": []
+    },
+    {
+      "name": "deaths",
+      "id": 5,
+      "types": [],
+      "thresholds": [
+        {
+          "key": "1",
+          "id": 0,
+          "name": "First Fall",
+          "description": "Die once",
+          "reward": 200,
+          "threshold": 1
+        },
+        {
+          "key": "5",
+          "id": 1,
+          "name": "Tenacious Tombstone",
+          "description": "Die 5 times",
+          "reward": 500,
+          "threshold": 5
+        },
+        {
+          "key": "10",
+          "id": 2,
+          "name": "Grim Grinder",
+          "description": "Die 10 times",
+          "reward": 1000,
+          "threshold": 10
+        },
+        {
+          "key": "20",
+          "id": 3,
+          "name": "Mortality Monarch",
+          "description": "Die 20 times",
+          "reward": 2000,
+          "threshold": 20
+        }
+      ]
+    },
+    {
+      "name": "streaks",
+      "id": 6,
+      "types": [],
+      "thresholds": [
+        {
+          "key": "1",
+          "id": 0,
+          "name": "Back for More",
+          "description": "Connect on 2 different days",
+          "reward": 10000,
+          "threshold": 1
+        }
+      ]
+    },
+    {
+      "name": "links",
+      "id": 7,
+      "types": [],
+      "thresholds": [
+        {
+          "key": "1",
+          "id": 0,
+          "name": "Join the army",
+          "description": "Visit Metacube's socials",
+          "reward": 1000,
+          "threshold": 1
+        }
+      ]
+    },
+    {
+      "name": "skins",
+      "id": 8,
+      "types": [],
+      "thresholds": [
+        {
+          "key": "1",
+          "id": 0,
+          "name": "Metamorph",
+          "description": "Change skin",
+          "reward": 10000,
+          "threshold": 1
+        }
+      ]
+    },
+    {
+      "name": "blocks",
+      "id": 9,
+      "types": [],
+      "thresholds": [
+        {
+          "key": "1",
+          "id": 0,
+          "name": "Ozymandias the king of kings",
+          "description": "Destroy all cubes' types",
+          "reward": 1000000,
+          "threshold": 1
+        }
+      ]
+    }
+  ]
+}

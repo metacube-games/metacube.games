@@ -1,0 +1,134 @@
+modules:
+
+  db-init:
+    actions:
+      build:
+        command: make build
+        curr-state: idle
+        transition-state: building
+        next-state: ready
+      fill:
+        command: make fill
+        curr-state: ready
+        transition-state: filling
+        next-state: filled
+      clean:
+        command: make clean
+        curr-state: filled
+        transition-state: cleaning
+        next-state: idle
+
+  backend:
+    actions:
+      build:
+        command: make build
+        curr-state: idle
+        transition-state: building
+        next-state: ready
+      start:
+        command: make start
+        curr-state: ready
+        transition-state: starting
+        next-state: running
+      stop:
+        command: pkill -f make
+        curr-state: running
+        transition-state: stopping
+        next-state: ready
+      clean:
+        command: make clean
+        curr-state: ready
+        transition-state: cleaning
+        next-state: idle
+
+  game-server:
+    actions:
+      build:
+        command: make game -B
+        curr-state: idle
+        transition-state: building
+        next-state: ready
+      start:
+        command: make game-start
+        curr-state: ready
+        transition-state: starting
+        next-state: running
+      stop:
+        command: pkill -f make
+        curr-state: running
+        transition-state: stopping
+        next-state: ready
+      clean:
+        command: make clean
+        curr-state: ready
+        transition-state: cleaning
+        next-state: idle
+
+  view-server:
+    actions:
+      build:
+        command: make view -B
+        curr-state: idle
+        transition-state: building
+        next-state: ready
+      start:
+        command: make view-start
+        curr-state: ready
+        transition-state: starting
+        next-state: running
+      stop:
+        command: pkill -f make
+        curr-state: running
+        transition-state: stopping
+        next-state: ready
+      clean:
+        command: make clean
+        curr-state: ready
+        transition-state: cleaning
+        next-state: idle
+
+  state-server:
+    actions:
+      build:
+        command: make state -B
+        curr-state: idle
+        transition-state: building
+        next-state: ready
+      start:
+        command: make state-start
+        curr-state: ready
+        transition-state: starting
+        next-state: running
+      stop:
+        command: pkill -f make
+        curr-state: running
+        transition-state: stopping
+        next-state: ready
+      clean:
+        command: make clean
+        curr-state: ready
+        transition-state: cleaning
+        next-state: idle
+
+  game-client:
+    actions:
+      build:
+        command: make build
+        curr-state: idle
+        transition-state: building
+        next-state: ready
+      start:
+        command: make start
+        curr-state: ready
+        transition-state: starting
+        next-state: running
+      stop:
+        command: pkill -f make
+        curr-state: running
+        transition-state: stopping
+        next-state: ready
+      clean:
+        command: make clean
+        curr-state: ready
+        transition-state: cleaning
+        next-state: idle

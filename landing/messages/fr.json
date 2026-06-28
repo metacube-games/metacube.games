@@ -1,0 +1,350 @@
+{
+  "metadata": {
+    "title": "Metacube",
+    "titleTemplate": "%s | Metacube",
+    "description": "Jeu événementiel multijoueur gratuit sur Starknet. Collectez des NFT uniques, affrontez des milliers de joueurs et possédez vos actifs en jeu dans cette expérience blockchain unique.",
+    "keywords": "metacube, starknet, jeu blockchain, jeu nft, free to play, multijoueur, mmo, gaming web3, play to earn, gamefi, collection nft",
+    "ogImageAlt": "Metacube - Événement multijoueur gratuit sur Starknet",
+    "siteName": "Metacube",
+    "appTitle": "Metacube"
+  },
+  "home": {
+    "features": {
+      "title": "À propos",
+      "items": {
+        "poweredByStarknet": {
+          "title": "Propulsé par Starknet",
+          "description": "Starknet donne aux joueurs la possibilité de posséder, collecter et échanger librement leurs actifs dans le jeu"
+        },
+        "freeToPlay": {
+          "title": "Gratuit",
+          "description": "Metacube est entièrement gratuit, sans investissement initial requis pour jouer"
+        },
+        "massiveEvent": {
+          "title": "Événement massif",
+          "description": "Rejoignez des milliers de joueurs en compétition pour des récompenses dans un événement unique qui se termine lorsque le Cube est complètement détruit"
+        },
+        "openSource": {
+          "title": "Open Source",
+          "description": "Le jeu, le marché et les outils sont open source — hébergez votre propre instance"
+        }
+      },
+      "learnMoreAbout": "En savoir plus sur {title}"
+    },
+    "team": {
+      "title": "L'Équipe",
+      "learnMoreAbout": "En savoir plus sur {name}, {designation}"
+    }
+  },
+  "navbar": {
+    "items": {
+      "home": "Accueil",
+      "streams": "Streams",
+      "blog": "Blog",
+      "market": "Marché",
+      "play": "Jouer"
+    },
+    "ariaLabel": {
+      "learnMore": "En savoir plus sur {name} chez Metacube Games",
+      "toggleMenu": "Basculer le menu"
+    }
+  },
+  "footer": {
+    "copyrightHolder": "© {year} Metacube",
+    "allRightsReserved": "Tous droits réservés.",
+    "terms": "Conditions",
+    "privacy": "Confidentialité",
+    "contactUs": "Nous contacter",
+    "social": {
+      "twitter": "Twitter",
+      "tiktok": "TikTok",
+      "discord": "Discord",
+      "instagram": "Instagram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    },
+    "info": "Infos",
+    "links": {
+      "blog": "Blog",
+      "linkWallet": "Lier un portefeuille",
+      "documentation": "Documentation",
+      "terms": "Conditions",
+      "privacy": "Confidentialité"
+    },
+    "partners": "Partenaires"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité Metacube",
+    "sections": {
+      "introduction": {
+        "content": "Bienvenue sur Metacube, une plateforme révolutionnant l'industrie du jeu vidéo avec la technologie blockchain. Cette politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations personnelles lorsque vous utilisez les services de Metacube. En utilisant nos services, vous acceptez les conditions décrites dans cette politique."
+      },
+      "informationCollection": {
+        "title": "1. Collecte d'informations",
+        "description": "Lorsque vous utilisez Metacube, nous collectons les informations nécessaires pour fournir et améliorer nos services. Cela inclut :",
+        "items": [
+          "Votre nom et adresse e-mail (obtenus via la connexion Google)",
+          "Adresse de portefeuille blockchain",
+          "Données relatives à vos activités en jeu et transactions",
+          "Informations techniques telles que l'adresse IP et les informations sur l'appareil"
+        ]
+      },
+      "informationUse": {
+        "title": "2. Utilisation des informations",
+        "description": "Nous utilisons vos informations pour :",
+        "items": [
+          "Exploiter et améliorer Metacube",
+          "Traiter les transactions",
+          "Fournir un support client",
+          "Personnaliser votre expérience de jeu",
+          "Développer de nouvelles fonctionnalités",
+          "Communiquer les mises à jour et annonces importantes"
+        ]
+      },
+      "dataStorage": {
+        "title": "3. Stockage et sécurité des données",
+        "content": "Vos informations personnelles sont stockées sur des serveurs sécurisés avec un accès restreint. Nous mettons en œuvre des mesures de sécurité standard de l'industrie pour protéger vos données contre tout accès non autorisé ou violation. Cependant, aucune méthode de transmission sur Internet ou de stockage électronique n'est sûre à 100%, et nous ne pouvons garantir une sécurité absolue."
+      },
+      "blockchainTransactions": {
+        "title": "4. Transactions blockchain",
+        "content": "Veuillez noter que les transactions blockchain sont publiques par nature. Bien que nous protégions vos informations personnelles, les détails des transactions sur la blockchain sont visibles par tous les participants. Faites preuve de prudence lors de la réalisation de transactions blockchain."
+      },
+      "googleLogin": {
+        "title": "5. Connexion Google",
+        "content": "Nous utilisons la connexion Google pour l'authentification. Lorsque vous vous connectez avec Google, nous accédons uniquement aux informations de base de votre profil (nom et adresse e-mail). Nous n'accédons pas et ne stockons pas votre mot de passe Google ou d'autres informations sensibles."
+      },
+      "dataRetention": {
+        "title": "6. Conservation des données",
+        "content": "Nous conservons vos informations personnelles tant que votre compte est actif ou aussi longtemps que nécessaire pour vous fournir des services. Si vous souhaitez annuler votre compte ou demander que nous n'utilisions plus vos informations, veuillez nous contacter à contact@metacube.com. Nous conserverons et utiliserons vos informations dans la mesure nécessaire pour nous conformer à nos obligations légales, résoudre les litiges et faire respecter nos accords."
+      },
+      "userRights": {
+        "title": "7. Droits et choix des utilisateurs",
+        "description": "Vous avez le droit de :",
+        "items": [
+          "Accéder à vos données personnelles",
+          "Corriger les inexactitudes dans vos données personnelles",
+          "Supprimer vos données personnelles",
+          "Vous opposer au traitement de vos données personnelles",
+          "Demander une copie de vos données personnelles"
+        ],
+        "footer": "Pour exercer ces droits ou pour toute question relative à la confidentialité, veuillez contacter notre équipe de support."
+      },
+      "childrens": {
+        "title": "8. Confidentialité des enfants",
+        "content": "Metacube n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnelles auprès d'enfants de moins de 13 ans. Si vous avez moins de 13 ans, veuillez ne pas utiliser ou fournir d'informations sur ce site web."
+      },
+      "changes": {
+        "title": "9. Modifications de cette politique de confidentialité",
+        "content": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Nous vous informerons de tout changement significatif en publiant la nouvelle politique de confidentialité sur cette page et en mettant à jour la date de dernière mise à jour en haut de cette page. Nous vous conseillons de consulter régulièrement cette politique de confidentialité pour prendre connaissance de tout changement."
+      },
+      "companyDetails": {
+        "title": "10. Informations sur la société",
+        "description": "Metacube est exploité par :",
+        "items": [
+          "Nom commercial : Clashware Sàrl",
+          "Adresse : Avenue de Jurigoz 15, 1006 Lausanne, Suisse",
+          "Forme juridique : Société à responsabilité limitée (Sàrl)",
+          "Siège social : Lausanne",
+          "Statut : Actif",
+          "Identifiant de l'entreprise : CHE-178.795.076"
+        ]
+      },
+      "contact": {
+        "title": "11. Nous contacter",
+        "content": "Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité ou nos pratiques de traitement des données, veuillez contacter notre équipe de support à"
+      }
+    }
+  },
+  "terms": {
+    "title": "Conditions d'utilisation de Metacube",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "content": "Bienvenue sur Metacube. Ces conditions d'utilisation (Conditions) régissent votre accès et votre utilisation du site web, des services et de la plateforme de jeu basée sur la blockchain de Metacube (collectivement, le Service). En utilisant notre Service, vous acceptez d'être lié par ces Conditions. Si vous n'êtes pas d'accord avec une partie des Conditions, vous ne pouvez pas utiliser notre Service."
+      },
+      "useOfServices": {
+        "title": "2. Utilisation des services",
+        "description": "Metacube fournit des services de jeu basés sur la blockchain. Vous acceptez d'utiliser ces services uniquement à des fins légales et conformément à ces Conditions. Les utilisations interdites incluent, sans s'y limiter :",
+        "items": [
+          "Utiliser le Service pour toute activité illégale",
+          "Tenter d'interférer avec ou de perturber le Service",
+          "Usurper l'identité d'autres utilisateurs ou entités",
+          "Transmettre tout code ou logiciel malveillant",
+          "S'engager dans toute forme de collecte automatisée de données sans notre consentement"
+        ]
+      },
+      "userAccounts": {
+        "title": "3. Comptes utilisateur et sécurité",
+        "description": "Pour accéder à certaines fonctionnalités du Service, vous devez créer un compte. Vous êtes responsable de :",
+        "items": [
+          "Maintenir la confidentialité de votre compte et mot de passe",
+          "Restreindre l'accès à votre compte",
+          "Toutes les activités qui se produisent sous votre compte"
+        ],
+        "footer": "Metacube n'est pas responsable des pertes résultant d'une utilisation non autorisée de votre compte. Vous devez nous informer immédiatement de toute utilisation non autorisée de votre compte ou de toute autre violation de sécurité."
+      },
+      "intellectualProperty": {
+        "title": "4. Droits de propriété intellectuelle",
+        "content": "Le Service et son contenu, ses fonctionnalités et ses fonctionnalités d'origine sont la propriété de Metacube et sont protégés par les lois internationales sur les droits d'auteur, les marques de commerce, les brevets, les secrets commerciaux et autres lois sur la propriété intellectuelle. Vous ne pouvez pas reproduire, distribuer, modifier, créer des œuvres dérivées, afficher publiquement, exécuter publiquement, republier, télécharger, stocker ou transmettre aucun des matériaux de notre Service, sauf de manière accessoire à la navigation Web normale ou tel qu'expressément autorisé par écrit par Metacube."
+      },
+      "blockchainNfts": {
+        "title": "5. Transactions blockchain et NFT",
+        "description": "Vous comprenez et acceptez que :",
+        "items": [
+          "Les transactions blockchain sont irréversibles",
+          "Vous êtes seul responsable de la sécurité de votre portefeuille et de vos clés privées",
+          "Metacube n'est pas responsable des pertes dues à une erreur de l'utilisateur, des problèmes de réseau blockchain ou des vulnérabilités du portefeuille",
+          "La valeur des NFT peut être très volatile, et Metacube ne garantit en aucun cas la valeur de tout NFT",
+          "Vous êtes responsable de comprendre et de vous conformer à toutes les taxes applicables liées à vos transactions blockchain et à la propriété de NFT"
+        ]
+      },
+      "limitationOfLiability": {
+        "title": "6. Limitation de responsabilité",
+        "description": "Dans toute la mesure permise par la loi applicable, Metacube ne sera pas responsable de tout dommage indirect, accessoire, spécial, consécutif ou punitif, ou de toute perte de profits ou de revenus, encourue directement ou indirectement, ou de toute perte de données, d'utilisation, de clientèle ou d'autres pertes intangibles, résultant de :",
+        "items": [
+          "Votre accès ou utilisation ou incapacité d'accéder ou d'utiliser le Service",
+          "Toute conduite ou contenu de tout tiers sur le Service",
+          "Tout contenu obtenu du Service",
+          "Accès, utilisation ou altération non autorisés de vos transmissions ou contenus"
+        ]
+      },
+      "modifications": {
+        "title": "7. Modifications du service",
+        "content": "Nous nous réservons le droit de modifier ou d'interrompre, temporairement ou définitivement, le Service (ou toute partie de celui-ci) avec ou sans préavis. Nous ne serons pas responsables envers vous ou envers tout tiers de toute modification, changement de prix, suspension ou interruption du Service."
+      },
+      "governingLaw": {
+        "title": "8. Droit applicable et résolution des litiges",
+        "content": "Ces Conditions seront régies et interprétées conformément aux lois de la Suisse, sans égard à ses dispositions en matière de conflits de lois. Tout litige découlant de ou lié à ces Conditions ou au Service sera résolu par arbitrage exécutoire conformément aux règles de l'Institution suisse d'arbitrage des Chambres (SCAI). L'arbitrage se tiendra à Lausanne, en Suisse."
+      },
+      "changes": {
+        "title": "9. Modifications des conditions",
+        "content": "Nous nous réservons le droit, à notre seule discrétion, de modifier ou de remplacer ces Conditions à tout moment. Nous fournirons un avis de tout changement significatif en publiant les nouvelles Conditions sur cette page et en mettant à jour la date de dernière mise à jour. Votre utilisation continue du Service après de tels changements constitue votre acceptation des nouvelles Conditions."
+      },
+      "termination": {
+        "title": "10. Résiliation",
+        "content": "Nous pouvons résilier ou suspendre votre compte et interdire l'accès au Service immédiatement, sans préavis ni responsabilité, à notre seule discrétion, pour quelque raison que ce soit, y compris, mais sans s'y limiter, une violation des Conditions. En cas de résiliation, votre droit d'utiliser le Service cessera immédiatement."
+      },
+      "companyDetails": {
+        "title": "11. Informations sur la société",
+        "description": "Metacube est exploité par :",
+        "items": [
+          "Nom commercial : Clashware Sàrl",
+          "Adresse : Avenue de Jurigoz 15, 1006 Lausanne, Suisse",
+          "Forme juridique : Société à responsabilité limitée (Sàrl)",
+          "Siège social : Lausanne",
+          "Statut : Actif",
+          "Identifiant de l'entreprise : CHE-178.795.076"
+        ]
+      },
+      "contact": {
+        "title": "12. Nous contacter",
+        "content": "Si vous avez des questions concernant ces Conditions, veuillez nous contacter à"
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog Metacube",
+    "metadata": {
+      "title": "Blog",
+      "description": "Dernières nouvelles, guides de gameplay et mises à jour de développement pour Metacube."
+    },
+    "postPage": {
+      "backToBlog": "Retour au blog",
+      "postNotFound": "Article non trouvé",
+      "postNotFoundDescription": "L'article de blog que vous recherchez n'existe pas.",
+      "nftRarityTitle": "Distribution de la rareté des NFT",
+      "nftRarityDescription": "Vous trouverez ci-dessous des visualisations détaillées de la distribution de la rareté à travers tous les traits des NFT.",
+      "nftRarityDetails": "Ces graphiques montrent la répartition exacte de chaque trait par niveau de rareté.",
+      "relatedPosts": "Autres articles"
+    },
+    "card": {
+      "readMore": "Lire la suite →"
+    }
+  },
+  "communityStreams": {
+    "title": "Streams de la communauté",
+    "metadata": {
+      "title": "Streams de la communauté",
+      "description": "Regardez des streams en direct, des vidéos de gameplay et du contenu créatif de la communauté Metacube."
+    },
+    "videoGrid": {
+      "featured": "En vedette"
+    }
+  },
+  "nftStats": {
+    "loading": "Chargement des statistiques NFT...",
+    "title": "Statistiques de la collection NFT Metacube",
+    "description": "Explorez les statistiques complètes pour tous les 10 000 NFT Metacube. Chaque graphique ci-dessous représente la distribution des traits à travers différentes catégories et niveaux de rareté.",
+    "totalNfts": "10 000 NFT au total",
+    "traitCategories": "5 catégories de traits",
+    "uniqueTraits": "79 traits uniques",
+    "rarityTiers": "5 niveaux de rareté",
+    "skinTraits": "Traits de peau",
+    "skinDistribution": "Distribution de la peau",
+    "cubeTraits": "Traits du cube",
+    "cubeDistribution": "Distribution du cube",
+    "coinTraits": "Traits de pièce",
+    "coinDistribution": "Distribution de la pièce",
+    "backgroundTraits": "Traits d'arrière-plan",
+    "backgroundDistribution": "Distribution de l'arrière-plan",
+    "weaponTraits": "Traits d'arme",
+    "weaponDistribution": "Distribution des armes",
+    "rarityGuide": "Guide de rareté",
+    "rarity": {
+      "common": "Commun",
+      "rare": "Rare",
+      "epic": "Épique",
+      "mythic": "Mythique",
+      "legendary": "Légendaire"
+    }
+  },
+  "localeSwitcher": {
+    "ariaLabel": "Sélectionner la langue"
+  },
+  "common": {
+    "buttons": {
+      "submit": "Soumettre",
+      "cancel": "Annuler",
+      "close": "Fermer",
+      "save": "Enregistrer",
+      "delete": "Supprimer",
+      "edit": "Modifier",
+      "confirm": "Confirmer",
+      "tryAgain": "Réessayer",
+      "goHome": "Retour à l'accueil",
+      "goBack": "Retour"
+    },
+    "labels": {
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "username": "Nom d'utilisateur",
+      "search": "Rechercher",
+      "filter": "Filtrer",
+      "sort": "Trier"
+    },
+    "messages": {
+      "loading": "Chargement...",
+      "error": "Une erreur s'est produite",
+      "success": "Succès !",
+      "noData": "Aucune donnée disponible",
+      "comingSoon": "Bientôt disponible"
+    },
+    "validation": {
+      "required": "Ce champ est requis",
+      "invalidEmail": "Veuillez entrer une adresse e-mail valide",
+      "invalidUrl": "Veuillez entrer une URL valide"
+    }
+  },
+  "error": {
+    "title": "Oups ! Quelque chose s'est mal passé",
+    "description": "Nous avons rencontré une erreur inattendue. Ne vous inquiétez pas, notre équipe a été notifiée et nous travaillons dessus.",
+    "supportText": "Si ce problème persiste, veuillez",
+    "contactSupport": "contacter notre équipe d'assistance"
+  },
+  "notFound": {
+    "title": "Page non trouvée",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée vers un autre emplacement.",
+    "quickLinks": "Ou explorez ces pages :"
+  }
+}

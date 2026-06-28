@@ -1,0 +1,35 @@
+FROM golang:1.26 AS build
+
+WORKDIR /app
+
+COPY go.mod go.sum ./
+
+RUN --mount=type=cache,target=/go/pkg/mod \
+    --mount=type=cache,target=/root/.cache/go-build \
+    go mod download
+
+RUN useradd -u 1001 metacube
+
+COPY . .
+
+RUN --mount=type=cache,target=/go/pkg/mod \
+    --mount=type=cache,target=/root/.cache/go-build \
+    go build -ldflags="-linkmode external -extldflags -static" -buildvcs=false -o main .
+
+RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/*
+
+RUN update-ca-certificates
+
+FROM scratch
+
+EXPOSE 8080 5555
+
+COPY --from=build /etc/passwd /etc/passwd
+
+COPY --from=build /app/main main
+
+COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+
+USER metacube
+
+ENTRYPOINT ["./main", "/env/.env"]

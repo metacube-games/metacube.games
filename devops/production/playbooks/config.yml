@@ -1,0 +1,123 @@
+---
+# Sync all configuration, certificates, secrets, and data files to the server.
+# Re-run any time configs change. Safe to run on a live server.
+# Usage: ansible-playbook playbooks/config.yml
+
+- name: Sync configuration to server
+  hosts: prod
+  become: false
+
+  vars:
+    deploy_dir: /home/metacube
+
+  tasks:
+    - name: Create directory structure
+      ansible.builtin.file:
+        path: "{{ deploy_dir }}/{{ item }}"
+        state: directory
+        mode: "0755"
+      loop:
+        - config/environment
+        - config/game-db
+        - config/cache-db
+        - config/private-keys
+        - config/users-db
+        - config/certificates
+        - config/authorized-ssh-keys
+        - private
+        - world-data
+        - assets
+        - data/mysql
+        - data/game-db
+        - data/indexer
+        - data/backend
+        - logs
+
+    - name: Sync docker-compose.yml
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/../config/docker-compose.yml"
+        dest: "{{ deploy_dir }}/docker-compose.yml"
+        mode: "0644"
+
+    - name: Sync nginx.conf
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/../config/nginx.conf"
+        dest: "{{ deploy_dir }}/config/nginx.conf"
+        mode: "0644"
+
+    - name: Sync private-keys nginx config
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/../config/private-keys/nginx.conf"
+        dest: "{{ deploy_dir }}/config/private-keys/nginx.conf"
+        mode: "0644"
+
+    - name: Sync game-db keydb config
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/../config/game-db/keydb.conf"
+        dest: "{{ deploy_dir }}/config/game-db/keydb.conf"
+        mode: "0644"
+
+    - name: Sync cache-db keydb config
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/../config/cache-db/keydb.conf"
+        dest: "{{ deploy_dir }}/config/cache-db/keydb.conf"
+        mode: "0644"
+
+    - name: Sync environment JSON files
+      ansible.builtin.copy:
+        src: "{{ item }}"
+        dest: "{{ deploy_dir }}/config/environment/"
+        mode: "0644"
+      loop:
+        - "{{ playbook_dir }}/../config/environment/upgrades.json"
+        - "{{ playbook_dir }}/../config/environment/achievements.json"
+
+    - name: Sync .env to environment dir (read by game containers at /env/.env)
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/../config/.env"
+        dest: "{{ deploy_dir }}/config/environment/.env"
+        mode: "0600"
+
+    - name: Symlink .env to deploy root (Docker Compose auto-load)
+      ansible.builtin.file:
+        src: "{{ deploy_dir }}/config/environment/.env"
+        dest: "{{ deploy_dir }}/.env"
+        state: link
+
+    - name: Sync Cloudflare origin certificates
+      ansible.posix.synchronize:
+        src: "{{ playbook_dir }}/../config/certificates/"
+        dest: "{{ deploy_dir }}/config/certificates/"
+        mode: push
+        delete: true
+
+    - name: Sync private key files (internal only — never publicly exposed)
+      ansible.posix.synchronize:
+        src: "{{ playbook_dir }}/../private/"
+        dest: "{{ deploy_dir }}/private/"
+        mode: push
+        delete: true
+
+    - name: Set private directory permissions
+      ansible.builtin.file:
+        path: "{{ deploy_dir }}/private"
+        mode: "0700"
+        recurse: true
+
+    - name: Sync world data (worldData.bin, nft.json, nft_keys.txt)
+      ansible.posix.synchronize:
+        src: "{{ playbook_dir }}/../snapshot/world-data/"
+        dest: "{{ deploy_dir }}/world-data/"
+        mode: push
+
+    - name: Sync database dump (auto-imported by MySQL on first start)
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/../snapshot/dump.sql"
+        dest: "{{ deploy_dir }}/config/users-db/dump.sql"
+        mode: "0644"
+
+    - name: Sync snapshot-wd script
+      ansible.builtin.copy:
+        src: "{{ playbook_dir }}/../config/snapshot-wd.sh"
+        dest: "{{ deploy_dir }}/snapshot-wd.sh"
+        mode: "0755"

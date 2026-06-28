@@ -1,0 +1,670 @@
+@import "tailwindcss";
+
+/*
+  Canonical CSS tokens shared with landing / market / link-wallet.
+  Same values, single `--primary` green (#0ec630 = hsl(131 87% 42%)) —
+  no `--primary-foreground` / `--ring`, those were removed everywhere.
+*/
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+
+  --radius: 0.5rem;
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+:root {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 95%;
+  --card: 24 9.8% 10%;
+  --card-foreground: 0 0% 95%;
+  --popover: 0 0% 9%;
+  --popover-foreground: 0 0% 95%;
+  --primary: 131 87% 42%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 240 5% 64.9%;
+  --accent: 12 6.5% 15.1%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 85.7% 97.3%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+}
+
+/*
+  Tailwind v4 changed the `border` shorthand to default to `currentColor`
+  (it used to be `gray-200`). The canonical shadcn template restores the
+  v3 behaviour with a global `* { border-color: var(--border) }` so plain
+  `border` matches the design-system token instead of inheriting text
+  color. Without this, every `border` (Dialog, Input, outline Button…)
+  picks up `--foreground` (white) and the surface looks inflated.
+
+  Wrapped in `@layer base` so explicit utilities like `border-primary` /
+  `border-red-500` still win.
+*/
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+}
+
+html,
+body,
+#root {
+  /*  WARNING: IF modify these colors, you must also modify the colors in the colors.ts file */
+  --color-black: #121212;
+  --color-blackT1: #121212bb;
+  --color-blackTM: #12121288;
+  --color-red: rgb(230, 48, 48);
+  --color-green: #0ec630;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-black);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+/*
+  Metric-matched fallback for Nova Square. The Google Fonts cut only
+  ships weight 400, so `font-bold` / `font-medium` would otherwise be
+  synthesised by the browser (visibly smudgy faux-bold). Aliasing
+  Arial with the same per-glyph metrics that next/font emits in
+  landing / market / link-wallet means the bold weight resolves to
+  real Arial Bold while staying visually aligned with Nova Square.
+*/
+@font-face {
+  font-family: "Nova Square Fallback";
+  src: local("Arial");
+  ascent-override: 88.17%;
+  descent-override: 22.69%;
+  line-gap-override: 0%;
+  size-adjust: 108.87%;
+}
+
+body {
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  font-family: "Nova Square", "Nova Square Fallback", sans-serif;
+  /*
+    Match canonical (landing/market/link-wallet) text rendering. Without
+    these two rules, macOS falls back to subpixel antialiasing, which
+    renders Nova Square strokes visibly heavier and less crisp than the
+    next/font-based siblings — making the Play CTA look "off" even though
+    every other style primitive is identical.
+  */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: hsl(var(--foreground));
+
+  background-color: var(--color-black);
+}
+body > iframe {
+  display: none;
+}
+
+/*
+  Legacy element resets — kept inside `@layer base` so Tailwind's utility
+  classes (which are higher up the cascade-layer order) win when a class
+  like `text-4xl` is applied directly on an h1/p/etc.
+*/
+@layer base {
+  h1 {
+    font-family: "Nova Square", "Nova Square Fallback", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+  }
+  h3 {
+    font-family: "Nova Square", "Nova Square Fallback", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+  }
+  p {
+    font-family: "Nova Square", "Nova Square Fallback", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  blockquote {
+    font-family: "Nova Square", "Nova Square Fallback", sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  pre {
+    font-family: "Nova Square", "Nova Square Fallback", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 18.5714px;
+  }
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: rgba(245, 245, 245, 0.9);
+  box-shadow:
+    0 0 4px rgba(0, 0, 0, 0.8),
+    0 0 1px rgba(0, 0, 0, 0.9);
+}
+
+.moneyCounter {
+  color: hsl(var(--foreground));
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+}
+@media (max-width: 600px) {
+  .moneyCounter {
+    font-size: 16px;
+  }
+}
+
+.moneyCounterText {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  text-shadow: 0px 0px 5px rgba(160, 170, 160, 0.3);
+  font-style: bold;
+  font-size: 20px;
+  opacity: 0;
+  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+  transition: opacity 0.15s ease;
+}
+
+@media (max-width: 600px) {
+  .moneyCounterText {
+    top: 42px;
+    right: 18px;
+    font-size: 14px;
+  }
+}
+
+/* END FADE OUT MONEY */
+.HPMPMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  justify-self: center;
+  bottom: 12px;
+  width: 100%;
+  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+}
+
+/* enemy HP */
+.ELayout {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+}
+
+.ENameLayout {
+  position: absolute;
+  top: 6px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  color: hsl(var(--foreground));
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  font-family: "Nova Square", "Nova Square Fallback", sans-serif;
+  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+}
+@media (max-width: 600px) {
+  .ENameLayout {
+    top: 5px;
+    font-size: 14px;
+  }
+}
+
+.EHPLayout {
+  position: absolute;
+  width: 220px;
+  max-width: calc(100vw - 24px);
+  height: 16px;
+  top: 38px;
+  background-color: rgba(20, 20, 20, 0.85);
+  border-radius: 6px;
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+}
+
+@media (max-width: 640px) {
+  .EHPLayout {
+    width: 140px;
+    height: 16px;
+    top: 26px;
+    border-radius: 6px;
+  }
+}
+
+.EHPLayoutIn {
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+}
+
+.EHPWRITING {
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  font-weight: 700;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: hsl(var(--foreground));
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  .EHPWRITING {
+    font-size: 10px;
+  }
+}
+
+.EHPLayoutFill {
+  border-radius: 6px;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: var(--color-red);
+  filter: drop-shadow(0 0 4px var(--color-red));
+  transform-origin: left;
+  transition: transform 75ms ease-out;
+  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+}
+
+@media (max-width: 600px) {
+  .EHPLayoutFill {
+    border-radius: 6px;
+  }
+}
+/* END OF NB CUBE LAYOUT */
+
+.fullscreen {
+  position: absolute;
+  /* need this 0.01 offset for some screen not corretly fs  */
+  touch-action: none !important;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right bottom, rgb(5, 5, 5), rgb(45, 45, 45));
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+}
+
+.gameMenu {
+  font-family: "Nova Square", "Nova Square Fallback", sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* add shadow in background */
+  /*  // var(--color-blackTM); */
+  /* background: #121212aa; */
+}
+
+::-webkit-scrollbar {
+  width: min(0.75rem, 14px);
+  height: min(0.75rem, 14px);
+  opacity: 0.8;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px var(--color-blackT1);
+  background-color: rgb(60, 60, 60);
+  border-radius: 4px;
+  opacity: 0.8;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #565656;
+  /* box-shadow: 0px 0px 5px 0px rgba(200, 200, 200, 0.7); */
+  z-index: 10;
+  /* border: 1px solid rgb(79, 89, 98); */
+  border-radius: 4px;
+  opacity: 0.8;
+}
+
+#damageMarkerParent {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none !important;
+  touch-action: none !important;
+  user-select: none !important;
+}
+
+.damagerMarker {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  align-content: center;
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  opacity: 0;
+  color: hsl(var(--foreground));
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+  touch-action: none;
+}
+.damageNormal {
+  animation:
+    damageIn 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    damageOut 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation-delay: 0s, 0.4s;
+}
+.damageCritical {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-red);
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+
+  animation:
+    damageIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    damageOut 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation-delay: 0s, 0.5s;
+}
+
+#gameHUD {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  touch-action: none;
+  /* z-index: 100; */
+}
+
+/* animate damage blood blur out */
+.damageBlood {
+  animation: damageBloodOut 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
+  touch-action: none;
+}
+
+@keyframes damageBloodOut {
+  0% {
+    opacity: 1;
+    background: var(--color-red);
+  }
+  100% {
+    opacity: 0;
+    background: var(--color-blackTM);
+  }
+}
+
+/* animate damage critical blur out */
+
+@keyframes damageIn {
+  0% {
+    transform: translateY(200px) translateX(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100px) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes damageOut {
+  0% {
+    transform: translateY(-100px) translateX(0);
+    /* filter: blur(0.01); */
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) translateX(0);
+    /* filter: blur(12px); */
+    opacity: 0;
+  }
+}
+
+.slide-out-blurred-top {
+  pointer-events: none;
+  animation: slide-out-blurred-top 3s cubic-bezier(0.755, 0.05, 0.855, 0.06)
+    both;
+}
+
+@keyframes slide-out-blurred-top {
+  0% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 0%;
+    filter: blur(0);
+
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-1000px) scaleY(2) scaleX(0.2);
+    transform-origin: 50% 0%;
+    /* filter: blur(10px); */
+
+    opacity: 0;
+  }
+}
+
+.filling {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.containerFly {
+  position: relative;
+  border-radius: 6px;
+  background-color: #254f09d3;
+  height: 16px;
+  width: 120px;
+  max-width: calc(100vw - 24px);
+  overflow: hidden;
+}
+
+.vertical-line {
+  position: absolute;
+  width: 1.5px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  top: 0;
+}
+
+.fillingFly {
+  width: 100%;
+  position: absolute;
+  background-color: var(--color-green);
+  height: 100%;
+  border-radius: 6px;
+  filter: drop-shadow(0 0 4px var(--color-green));
+  transform-origin: left;
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 4px var(--color-green));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px var(--color-green));
+  }
+  100% {
+    filter: drop-shadow(0 0 4px var(--color-green));
+  }
+}
+
+.controls-ui {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.controls-ui.finished {
+  animation: finishedTuto 1.5s ease-in-out forwards;
+}
+
+@keyframes finishedTuto {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/*
+  Scoped to `.controls-ui` because the unqualified `.group` selector
+  collides with Tailwind's `group` modifier utility (which literally
+  adds `class="group"` to elements so descendants can use
+  `group-hover:` etc.). Without this scoping the rule was forcing
+  every `group ...` Tailwind use site into a column flex layout —
+  most visibly the top-nav pill where icons ended up above labels.
+*/
+.controls-ui .group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keys {
+  display: flex;
+}
+
+.key {
+  min-width: 30px;
+  height: 30px;
+  padding: 0 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 4px;
+  background-color: #1a1a1a;
+  border: 1px solid var(--color-green);
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  color: var(--color-green);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 0 6px rgba(14, 198, 48, 0.45);
+  transition:
+    border-width 0.12s ease,
+    transform 0.12s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.key.pressed {
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  transform: translate(1px, 1px);
+  background-color: var(--color-green);
+  color: #0b0b0b;
+  filter: drop-shadow(0 0 4px var(--color-green));
+}
+.key-description {
+  display: flex;
+  align-items: center;
+  margin: 0px 0;
+}
+
+.description {
+  font-size: 14px;
+  margin: 1px 0;
+  /* margin-left: ; */
+  color: hsl(var(--foreground));
+}
+
+/* chatroom */
+
+/* Global rule to prevent any HUD element from triggering keyboard */
+#damageMarkerParent,
+#damageMarkerParent * {
+  pointer-events: none !important;
+  touch-action: none !important;
+  user-select: none !important;
+}

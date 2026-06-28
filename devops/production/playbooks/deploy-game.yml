@@ -1,0 +1,40 @@
+---
+# Pull the latest game images and restart the game cluster.
+# Run this from your laptop when you're ready to apply a game update.
+# Independent services remain unaffected.
+# Usage: ansible-playbook playbooks/deploy-game.yml
+
+- name: Deploy game cluster
+  hosts: prod
+  become: false
+
+  vars:
+    deploy_dir: /home/metacube
+
+  tasks:
+    - name: Pull latest game images
+      ansible.builtin.command:
+        cmd: >
+          docker compose pull
+          backend state-server game-server view-server game-client
+        chdir: "{{ deploy_dir }}"
+
+    - name: Stop game client
+      ansible.builtin.command:
+        cmd: docker compose stop game-client
+        chdir: "{{ deploy_dir }}"
+
+    - name: Stop game services
+      ansible.builtin.command:
+        cmd: docker compose stop game-server view-server state-server backend
+        chdir: "{{ deploy_dir }}"
+
+    - name: Start game services
+      ansible.builtin.command:
+        cmd: docker compose up -d --no-deps backend state-server game-server view-server game-client
+        chdir: "{{ deploy_dir }}"
+
+    - name: Prune old images
+      ansible.builtin.command:
+        cmd: docker image prune -f
+        chdir: "{{ deploy_dir }}"

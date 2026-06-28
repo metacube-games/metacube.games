@@ -1,0 +1,715 @@
+{
+  "common": {
+    "or": "ODER",
+    "hide": "Verstecken",
+    "max": "MAX",
+    "close": "Schließen",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "save": "Speichern",
+    "loading": "Blockchain-Würstchen werden gegrillt...",
+    "error": "Fehler",
+    "success": "Erfolg"
+  },
+  "auth": {
+    "login": "Anmelden",
+    "waitingForSignature": "Warte auf Signatur…",
+    "cartridgeController": "Cartridge-Controller",
+    "digitalWallet": "Starknet-Wallet",
+    "playAsGuest": "Als Gast spielen",
+    "haveGuestId": "Ich habe eine Gast-ID",
+    "enterGuestId": "Gast-ID eingeben",
+    "connectWithId": "Mit ID verbinden",
+    "invalidGuestId": "Ungültige Gast-ID oder Verbindungsfehler",
+    "enterValidGuestId": "Bitte gib eine gültige Gast-ID ein",
+    "loginFailed": "Anmeldung fehlgeschlagen",
+    "guestLoginFailed": "Gast-Anmeldung fehlgeschlagen"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "account": "Konto",
+    "language": "Sprache",
+    "render": "Rendering",
+    "hud": "HUD",
+    "audio": "Audio",
+    "controls": "Steuerung",
+    "quality": "Qualität",
+    "resolution": "Auflösung",
+    "antialiasing": "Kantenglättung",
+    "shadows": "Schatten",
+    "volume": "Lautstärke",
+    "masterVolume": "Gesamtlautstärke",
+    "musicVolume": "Musiklautstärke",
+    "sfxVolume": "Effektlautstärke",
+    "sensitivity": "Empfindlichkeit",
+    "mouseSensitivity": "Mausempfindlichkeit",
+    "invertY": "Y-Achse umkehren",
+    "fps": "FPS",
+    "coordinates": "Koordinaten",
+    "totalBlocks": "Gesamte Blöcke",
+    "players": "Spieler",
+    "events": "Events",
+    "damages": "Schaden",
+    "spectator": "Zuschauer",
+    "renderDistance": "Renderentfernung",
+    "fieldOfView": "Sichtfeld",
+    "luminosity": "Helligkeit",
+    "darkFutureAmbiance": "Dunkle Zukunftsatmosphäre",
+    "fogsEffects": "Nebeleffekte",
+    "particlesEffects": "Partikeleffekte",
+    "spatialObjects": "Raumobjekte",
+    "spacecraft": "Raumschiff",
+    "powerJauges": "Leistungsanzeigen",
+    "cameraSensitivity": "Kameraempfindlichkeit",
+    "ambientVolume": "Umgebungslautstärke",
+    "fxVolume": "Effektlautstärke"
+  },
+  "game": {
+    "health": "Gesundheit",
+    "damage": "Schaden",
+    "ally": "Verbündeter",
+    "enemy": "Feind",
+    "score": "Punktzahl",
+    "level": "Level",
+    "coins": "Münzen",
+    "inventory": "Inventar"
+  },
+  "menu": {
+    "skins": "Skins",
+    "upgrades": "Upgrades",
+    "market": "Inventar",
+    "achievements": "Erfolge",
+    "stats": "Rangliste",
+    "settings": "Einstellungen"
+  },
+  "character": {
+    "selectSkin": "Skin auswählen",
+    "locked": "Gesperrt",
+    "unlockCondition": "Freischaltbedingung",
+    "attack": "Angriff",
+    "health": "Leben",
+    "stamina": "Ausdauer",
+    "range": "Reichweite",
+    "critical": "Kritisch",
+    "staking": "Staking",
+    "attackRange": "Angriffsreichweite",
+    "criticalHit": "Kritischer Treffer",
+    "coinsMultiplier": "Münzen-Multiplikator",
+    "claimBuy": "Beanspruchen / Kaufen",
+    "loginToSeeSkins": "Melde dich an, um deine Skins zu sehen",
+    "skinStats": "Bonus",
+    "skins": {
+      "stove": {
+        "name": "Stove",
+        "description": "Stove der Krypto-Raver, Soldat in Pelton Flusks Armee. Liebt Krypto und Raves. Achtung: Blockchain und Tanzen gleichzeitig kann zu Koordinationsproblemen führen!",
+        "unlockCondition": "Standard-Skin"
+      },
+      "zombie": {
+        "name": "Zombie",
+        "description": "Weder Einstein noch lebendig, aber seine Gerichte sind zum Sterben gut. Sein Motto: 'Gehirne? Nein danke! Bratwurst bitte!' Auch Zombies haben Geschmack.",
+        "unlockCondition": "Erhalte ein Zombie-Skin NFT"
+      },
+      "ogStove": {
+        "name": "OG Stove",
+        "description": "Ach, die gute alte Zeit... Als 'Mining' noch echte Bergarbeit war und 'HODL' ein Tippfehler, kein Lebensphilosophie.",
+        "unlockCondition": "Erhalte ein OG Stove-Skin NFT"
+      },
+      "brother": {
+        "name": "Brother",
+        "description": "Bruder, auf geht's! Der Kampf tobt, die Feinde fliehen, und der Kaffee wird kalt. Priorität: Erst Kaffee trinken, dann siegen!",
+        "unlockCondition": "Erhalte ein Brother-Skin NFT"
+      }
+    }
+  },
+  "leaderboard": {
+    "rank": "Rang",
+    "username": "Benutzername",
+    "cubes": "Würfel",
+    "coins": "Münzen",
+    "deaths": "Tode",
+    "referrals": "Empfehlungen",
+    "globalStats": "Statistiken",
+    "mostAligned": "Most Aligned (BEENDET)",
+    "fidelityWeek": "Fidelity Week (BEENDET)",
+    "ended": "BEENDET",
+    "top100Message": "Die Top 100 Spieler teilen sich 10.000 $STRK, wenn der Metacube vollständig zerstört ist!",
+    "searchPlayer": "Spieler suchen",
+    "rankScoreFormula": "Rangpunktzahl = Würfel * 100 + Münzen - Tode * 2.000 + Empfehlungen * 40.000",
+    "rankScoreFormula2": "Rangpunktzahl = Würfel * 100 + Gesamtmünzen - Tode * 2.000",
+    "rankScoreNote": "(Erfolgs-Münzen sind nicht enthalten)",
+    "mostAlignedEventDescription": "Metacube: Most Aligned Event (BEENDET) - Die Top 50 Spieler teilen sich 2k $STRK.",
+    "fidelityWeekEventDescription": "Fidelity Week Event (BEENDET) - Die Top 40 Spieler teilen sich 1.000 $STRK. Das Event fand vom Montag, 14. April 2025 um 20:00 Uhr bis Sonntag, 20. April 2025 um 20:00 Uhr statt.",
+    "referralDescription": "Empfiehl neue Spieler für Metacube! Du und der empfohlene Spieler erhalten jeweils 10.000, sobald der empfohlene Spieler 1.000 Würfel zerstört hat.",
+    "yourReferralLink": "Dein Empfehlungslink:",
+    "totalReferrals": "Gesamtempfehlungen:",
+    "successfulReferrals": "Erfolgreiche Empfehlungen (Bedingung erfüllt):",
+    "totalReferralRewardsEarned": "Gesamte verdiente Empfehlungsbelohnungen:",
+    "connectWalletReferrals": "Verbinde deine Wallet, um deinen Empfehlungslink und deine Statistiken zu sehen.",
+    "id": "ID"
+  },
+  "buttons": {
+    "play": "Spielen",
+    "resume": "Fortsetzen",
+    "quitGame": "Spiel verlassen",
+    "copyLink": "Link kopieren",
+    "copied": "Kopiert!",
+    "failed": "Fehlgeschlagen",
+    "buy": "Kaufen",
+    "claimStrk": "STRK beanspruchen",
+    "alreadyClaimed": "Bereits beansprucht",
+    "claiming": "Wird beansprucht...",
+    "tokensClaimed": "Token beansprucht"
+  },
+  "achievements": {
+    "title": "Erfolge",
+    "unlocked": "Freigeschaltet",
+    "locked": "Gesperrt",
+    "progress": "Fortschritt",
+    "reward": "Belohnung",
+    "claimReward": "Belohnung beanspruchen",
+    "loginToSeeAchievements": "Melde dich an, um deine Erfolge zu sehen",
+    "loginRequired": "Melde dich an, um deine Erfolge zu sehen",
+    "descriptions": {
+      "cubes": {
+        "1": "Zerstöre deinen ersten Würfel!",
+        "100": "Zerstöre 100 Würfel",
+        "200": "Zerstöre 200 Würfel",
+        "500": "Zerstöre 500 Würfel",
+        "1000": "Zerstöre 1'000 Würfel",
+        "2000": "Zerstöre 2'000 Würfel",
+        "5000": "Zerstöre 5'000 Würfel",
+        "10000": "Zerstöre 10'000 Würfel",
+        "20000": "Zerstöre 20'000 Würfel",
+        "50000": "Zerstöre 50'000 Würfel",
+        "btc": "Zerstöre einen Bitcoin-Biom-Würfel",
+        "eth": "Zerstöre einen Ether-Biom-Würfel",
+        "cli": "Zerstöre einen unbekannten Figur-Biom-Würfel",
+        "mro": "Zerstöre einen Moneyro-Biom-Würfel",
+        "ftx": "Zerstöre einen EfteX-Biom-Würfel",
+        "lna": "Zerstöre einen Lunar-Biom-Würfel",
+        "stks": "Zerstöre einen Stonks-Biom-Würfel",
+        "trndo": "Zerstöre einen Tornado-Biom-Würfel",
+        "lzrs": "Zerstöre einen Lazarus-Biom-Würfel",
+        "wsb": "Zerstöre einen WallStreet Bets-Biom-Würfel",
+        "key": "Zerstöre einen Key-Biom-Würfel",
+        "dog": "Zerstöre einen Doge-Biom-Würfel",
+        "strk": "Zerstöre einen Starknet-Biom-Würfel",
+        "mcb": "Zerstöre einen m-chip-Würfel"
+      },
+      "layers": {
+        "0": "Sei bei der Zerstörung von Schicht 0 anwesend",
+        "1": "Sei bei der Zerstörung von Schicht 1 anwesend",
+        "2": "Sei bei der Zerstörung von Schicht 2 anwesend",
+        "3": "Sei bei der Zerstörung von Schicht 3 anwesend",
+        "4": "Sei bei der Zerstörung von Schicht 4 anwesend",
+        "5": "Sei bei der Zerstörung von Schicht 5 anwesend"
+      },
+      "upgrades": {
+        "1": "Kaufe dein erstes Upgrade",
+        "max": "Maximiere eine Fähigkeit"
+      },
+      "ally": {
+        "1": "Schlage einen anderen Stove-Verbündeten"
+      },
+      "attacks": {
+        "fall1": "Erhalte Fallschaden",
+        "fisc": "Werde von einem Steuerberater getroffen",
+        "cube": "Erhalte einen Schock von einem energiegeladenen Biom-Würfel"
+      },
+      "deaths": {
+        "1": "Stirb einmal",
+        "5": "Stirb 5 Mal",
+        "10": "Stirb 10 Mal",
+        "20": "Stirb 20 Mal"
+      },
+      "streaks": {
+        "1": "Verbinde dich an 2 verschiedenen Tagen"
+      },
+      "links": {
+        "1": "Besuche Metacubes soziale Medien"
+      },
+      "skins": {
+        "1": "Ändere den Skin"
+      },
+      "blocks": {
+        "1": "Zerstöre alle Würfeltypen"
+      }
+    },
+    "toastLabel": "Erfolg"
+  },
+  "upgrades": {
+    "title": "Upgrades",
+    "damage": "Schaden",
+    "health": "Gesundheit",
+    "criticalHit": "Kritischer Treffer",
+    "coinsMultiplier": "Münz-Multiplikator",
+    "cost": "Kosten",
+    "maxLevel": "Max Level",
+    "upgrade": "Upgrade",
+    "level": "Level",
+    "miningRig": "Mining-Rig",
+    "staking": "Staking",
+    "wallet": "Wallet",
+    "network": "Netzwerk",
+    "caffeine": "Koffein",
+    "proofOfLuck": "Beweis des Glücks",
+    "miningRigDesc": "Erhöhe die Rechenleistung für schnelleres Block-Mining.",
+    "stakingDesc": "Eine verbesserte Staking-Strategie steigert den Wert deiner Krypto-Belohnungen.",
+    "walletDesc": "Ermöglicht es dir, mehr Angriffe zu überstehen, bevor du vernichtet wirst.",
+    "networkDesc": "Ermöglicht es dir, Blöcke von einem weiter entfernten Ort zu minen.",
+    "caffeineDesc": "Koffein erhöht dein Energieniveau und deine Erholung.",
+    "proofOfLuckDesc": "Erhöhe die Chancen deines Rigs, den richtigen Hash sofort zu finden.",
+    "reachedLevel": "hat Level erreicht",
+    "loginToSeeUpgrades": "Melde dich an, um deine Upgrades zu sehen",
+    "maxLevelReached": "Max Level erreicht!",
+    "notEnoughCoins": "Nicht genug Münzen!",
+    "current": "Aktuell:",
+    "next": "Nächstes:",
+    "coinSuffix": " MC",
+    "stat": {
+      "damage": "Schaden",
+      "health": "Gesundheit",
+      "stamina": "Ausdauer",
+      "meters": "Meter",
+      "critical": "% kritisch",
+      "value": "% Wert"
+    }
+  },
+  "nfts": {
+    "title": "NFTs",
+    "myNfts": "Meine NFTs",
+    "mint": "NFT prägen",
+    "claim": "Beanspruchen",
+    "noNfts": "Keine NFTs gefunden",
+    "loginToSeeAssets": "Melde dich an, um deine Assets zu sehen",
+    "warning": "WARNUNG!",
+    "walletLinkWarning": "Wenn du deine Assets erhalten und für potenzielle Airdrops und Giveaways berechtigt sein möchtest, klicke unten, um eine Wallet zu verknüpfen.",
+    "linkWallet": "Wallet verknüpfen",
+    "errorLoadingAssets": "Ups! Wir konnten die Assets nicht laden. Bitte versuche es gleich noch einmal.",
+    "noAssetsYet": "Hey Soldat, mine weiter, um dein erstes Asset zu erhalten!",
+    "inventory": "Inventar",
+    "discoverMore": "Mehr Assets entdecken",
+    "goToMarket": "Zum Markt gehen",
+    "fetchError": "Fehler beim Abrufen der NFTs.",
+    "collections": {
+      "genesis": "Genesis",
+      "passcard": "Passcard",
+      "zombie": "Zombie",
+      "ogStove": "OGStove",
+      "brother": "Brother",
+      "allstars": "Allstars"
+    },
+    "marketplaces": {
+      "element": "Element",
+      "pyramid": "Pyramid"
+    }
+  },
+  "notifications": {
+    "welcome": "Willkommen bei Metacube!",
+    "connected": "Erfolgreich verbunden",
+    "disconnected": "Getrennt",
+    "error": "Ein Fehler ist aufgetreten",
+    "achievementUnlocked": "Erfolg freigeschaltet!",
+    "levelUp": "Level aufgestiegen!",
+    "newSkinUnlocked": "Neuer Skin freigeschaltet!"
+  },
+  "errors": {
+    "connectionFailed": "Verbindung fehlgeschlagen",
+    "serverError": "Serverfehler",
+    "unauthorized": "Nicht autorisiert",
+    "unknownError": "Ein unbekannter Fehler ist aufgetreten",
+    "maintenanceMode": "Server befindet sich im Wartungsmodus",
+    "walletStillPropagating": "Wallet wird noch propagiert. Bitte warte 5-10 Sekunden und versuche es erneut."
+  },
+  "queue": {
+    "waitingInQueue": "Warte in der Warteschlange",
+    "position": "Position",
+    "estimatedWait": "Geschätzte Wartezeit",
+    "connectingToServer": "Server-Bürokratie wird bearbeitet...",
+    "leaveQueue": "Warteschlange verlassen"
+  },
+  "viewer": {
+    "title": "Zuschauer",
+    "free": "Frei",
+    "auto": "Auto",
+    "searchPlayer": "Spieler suchen",
+    "playerNotFound": "Spieler nicht gefunden",
+    "noPlayers": "Keine Spieler zu beobachten"
+  },
+  "alerts": {
+    "afk": {
+      "title": "Gekickt - AFK",
+      "description": "Du warst zu lange AFK"
+    },
+    "dead": {
+      "title": "Tot",
+      "description": "Du wurdest vom Metacube vernichtet"
+    },
+    "kicked": {
+      "title": "Gekickt",
+      "description": "Du wurdest gekickt"
+    },
+    "connecting": {
+      "title": "Klopfe ordnungsgemäß an die Blockchain-Tür...",
+      "description": "Mit der Blockchain"
+    },
+    "afkWarning": {
+      "title": "AFK-Warnung",
+      "description": "Wenn du dich nicht bewegst, wirst du wegen Inaktivität gekickt"
+    },
+    "connectionLost": {
+      "title": "Verbindung verloren"
+    },
+    "loginFailed": {
+      "title": "Anmeldung fehlgeschlagen",
+      "description": "Anmeldung aufgrund eines unerwarteten Fehlers fehlgeschlagen, bitte versuche es erneut"
+    },
+    "kickedForInactivity": {
+      "title": "Gekickt",
+      "description": "Du wurdest wegen Inaktivität gekickt"
+    },
+    "memoryOutOfBounds": {
+      "title": "Renderentfernung reduziert aufgrund hoher Speichernutzung"
+    },
+    "noStarknetID": {
+      "title": "Keine Starknet.ID",
+      "description": "Du hast keine Starknet.ID"
+    },
+    "barrier": {
+      "title": "Schichtbarriere",
+      "description": "Diese Schicht ist in einer Barriere gehüllt, die nur auf die kollektive Macht der Blockbrecher reagiert"
+    },
+    "banned": {
+      "title": "Gebannt",
+      "description": "Du wurdest gebannt"
+    },
+    "walletNotDeployed": {
+      "title": "Wallet nicht bereitgestellt",
+      "description": "Du musst dein Konto on-chain einrichten, um zu spielen. Du benötigst STRK-Token dafür"
+    },
+    "unExpectedError": {
+      "title": "Unerwarteter Fehler",
+      "description": "Unerwarteter Fehler, bitte versuche es erneut oder kontaktiere uns."
+    },
+    "issueVerifyingSignature": {
+      "title": "Problem beim Verifizieren der Signatur",
+      "description": "Problem beim Verifizieren der Signatur. Wenn du gerade deine Wallet bereitgestellt hast, warte bitte ein paar Minuten und versuche es erneut."
+    },
+    "seconds": "Sekunden"
+  },
+  "wallet": {
+    "accountTitle": "Konto",
+    "walletAddress": "Wallet-Adresse",
+    "googleAccount": "Google-Konto",
+    "guestId": "Gast-ID",
+    "referralLink": "Einladungslink",
+    "copyAddress": "Adresse kopieren",
+    "copyReferral": "Einladungslink kopieren",
+    "errors": {
+      "noAddress": "Keine Adresse verfügbar",
+      "noReferralLink": "Kein Einladungslink verfügbar",
+      "copyFailed": "Konnte nicht in die Zwischenablage kopieren"
+    },
+    "linkWallet": "Wallet verknüpfen",
+    "guestIdWarning": "WARNUNG: Deine Gast-ID ist deine Kontoidentifikation. Wenn sie durchsickert, kann jeder auf dein Konto zugreifen. Teile sie niemals mit jemandem!",
+    "copyGuestId": "Gast-ID kopieren",
+    "disconnect": "Trennen",
+    "linkRewardsWarning": "Wenn du deine Belohnungen erhalten und für potenzielle Airdrops und Giveaways berechtigt sein möchtest, klicke hier, um eine Wallet zu verknüpfen."
+  },
+  "referral": {
+    "referralTooltip": "Empfiehl neue Spieler, um 10.000 Metacube-Münzen zu verdienen! Du und der empfohlene Spieler erhalten Belohnungen, wenn sie 1.000 Würfel zerbrechen."
+  },
+  "walletDeploy": {
+    "connectWallet": "Wallet verbinden",
+    "connecting": "Blockchain-Termin wird vereinbart...",
+    "connected": "Verbunden",
+    "pleaseConnect": "Bitte verbinde deine Wallet",
+    "getStrkTokens": "STRK-Token erhalten",
+    "balance": "Guthaben",
+    "claimStrk": "STRK beanspruchen",
+    "tokensClaimed": "Token beansprucht",
+    "claiming": "Wird beansprucht...",
+    "alreadyClaimed": "Bereits beansprucht",
+    "waitingForTokens": "Warte auf Token...",
+    "checking": "Überprüfe...",
+    "strkTokensClaimed": "STRK-Token beansprucht! Warte auf Ankunft der Token...",
+    "strkTokensReceived": "STRK-Token erhalten! Stelle jetzt deine Wallet bereit:",
+    "deployWallet": "Wallet bereitstellen",
+    "walletDeployed": "Wallet bereitgestellt",
+    "deploying": "Wird bereitgestellt...",
+    "deploymentInitiated": "Wallet-Bereitstellung initiiert! Transaktion signiert",
+    "clickToDeployAbove": "Klicke auf den Button oben, um deine Wallet bereitzustellen",
+    "followInstructions": "Folge den Anweisungen, um deine Wallet bereitzustellen",
+    "authenticatePlay": "Authentifizieren & Spielen",
+    "readyToPlay": "Bereit zum Spielen!",
+    "deployWalletFirst": "Stelle zuerst deine Wallet bereit",
+    "authenticating": "Authentifiziere...",
+    "verifying": "Verifiziere...",
+    "waitingPropagation": "Warte auf Propagierung...",
+    "authNote": "Hinweis: Wenn die Authentifizierung fehlschlägt, warte bitte bis zu 30 Sekunden, damit deine Wallet-Bereitstellung vollständig on-chain propagiert wird, und versuche es erneut.",
+    "verifyingDeployment": "Verifiziere Wallet-Bereitstellung on-chain...",
+    "deploymentVerified": "Wallet-Bereitstellung verifiziert! Überprüfe jetzt, ob sie vollständig propagiert ist...",
+    "checkingPropagation": "Überprüfe, ob die Wallet einsatzbereit ist...",
+    "fullyPropagated": "Wallet ist vollständig propagiert und einsatzbereit!",
+    "walletDeployedNotPropagated": "Wallet ist bereitgestellt, aber noch nicht vollständig propagiert. Versuche die Authentifizierung in 15-30 Sekunden.",
+    "couldNotVerify": "Wallet-Bereitstellung konnte nicht verifiziert werden. Bitte versuche es erneut.",
+    "verifyingAttempts": "Verifiziere Wallet-Bereitstellung... ({{attempts}} Versuche verbleibend)",
+    "waitingPropagationAttempts": "Wallet bereitgestellt, aber warte auf Netzwerkpropagierung... ({{attempts}} Versuche verbleibend)",
+    "walletNotPropagated": "Wallet ist noch nicht vollständig im Netzwerk propagiert. Bitte warte noch ein paar Sekunden und versuche es erneut.",
+    "walletDeployedAuthenticating": "Wallet bereitgestellt und propagiert! Authentifiziere...",
+    "authSuccessful": "Authentifizierung erfolgreich! Weiterleitung...",
+    "authFailed": "Authentifizierung fehlgeschlagen. Bitte versuche es erneut, wenn deine Wallet vollständig on-chain bereitgestellt ist.",
+    "authFailedError": "Authentifizierung fehlgeschlagen: {{error}}",
+    "deploymentFailed": "Bereitstellung fehlgeschlagen: {{error}}",
+    "accountDeploymentRequired": "Konto-Bereitstellung erforderlich. Bitte versuche die manuelle Bereitstellungsoption in deiner Wallet-Erweiterung.",
+    "ok": "Ok"
+  },
+  "snackbar": {
+    "nftWin": {
+      "message1": "hat ein Blockchain-Juwel ausgegraben!",
+      "message2": "hat einen NFT-Sieg errungen!",
+      "message3": "hat eine seltene NFT-Karte geschnappt!",
+      "message4": "hat einen digitalen Diamanten zur Sammlung hinzugefügt!",
+      "message5": "hat NFT-Gold gefunden!",
+      "message6": "hat ein exklusives NFT gestohlen!",
+      "message7": "hat ein Stück digitaler Geschichte gesichert!",
+      "message8": "hat ein NFT-Juwel gesammelt!",
+      "message9": "hat eine künstlerische Blockchain-Schönheit eingesackt!",
+      "message10": "hat ein schwer fassbares NFT eingefangen!",
+      "message11": "hat ein NFT-Meisterwerk gemint!",
+      "message12": "hat gerade einen NFT-Jackpot abgesahnt!",
+      "message13": "hat ein Krypto-Sammlerstück ergattert!",
+      "message14": "hat einen NFT-Schatz aufgesammelt!",
+      "message15": "hat eine Pixel-Goldmine gefunden!",
+      "message16": "hat einen seltenen Krypto-Fang gelandet!",
+      "message17": "hat einen Token des digitalen Triumphs gewonnen!",
+      "message18": "hat eine NFT-Trophäe eingeholt!",
+      "message19": "hat gerade einen Blockchain-Preis geangelt!",
+      "message20": "hat einen NFT-Star entdeckt!",
+      "message21": "hat ein NFT-Ass im Ärmel!",
+      "message22": "hat eine digitale Delikatesse herausgefischt!",
+      "message23": "hat einen seltenen Pixel-Preis eingesteckt!",
+      "message24": "hat einen großen Fisch im NFT-Teich gefangen!",
+      "message25": "hat ein Krypto-Sammlerstück gefunden!",
+      "message26": "hat ein goldenes Ticket zum NFT-Ruhm ergriffen!",
+      "message27": "hat eine NFT-Oase entdeckt!",
+      "message28": "hat eine digitale Schatztruhe beansprucht!",
+      "message29": "hat gerade den NFT-Jackpot gewonnen!",
+      "message30": "hat die goldene Gans der NFTs bekommen!"
+    },
+    "death": {
+      "message1": "fand eine digitale Bananenschale",
+      "message2": "stolperte über einen betrügerischen Smart Contract",
+      "message3": "hat gerade eine tödliche Transaktion bestätigt",
+      "message4": "rutschte auf glitschiger Server-Seife aus",
+      "message5": "hat gerade 'Strg-Z' auf die Existenz gedrückt",
+      "message6": "verwechselte den Abgrund mit einem Blockchain-Block",
+      "message7": "nahm einen Byte-Sturz",
+      "message8": "tauchte in den Bit-Eimer",
+      "message9": "folgte einem Bug bis zum Rand",
+      "message10": "erlebte einen permanenten Blockchain-Fork",
+      "message11": "hat gerade einen Block geradeaus nach unten gemint",
+      "message12": "fand heraus, dass der Cloud-Boden nicht fest ist",
+      "message13": "fiel auf das 'Gratis-WLAN'-Schild herein",
+      "message14": "entdeckte die persönliche Vendetta der Schwerkraft",
+      "message15": "wurde ein Geist-Teilnehmer im Netzwerk",
+      "message16": "versuchte zu beißen, biss aber ins Gras",
+      "message17": "versuchte die Realität hart zu forken",
+      "message18": "nahm eine Abkürzung durch den Papierkorb",
+      "message19": "verwechselte die Leere mit einem Whirlpool",
+      "message20": "versuchte gerade, den Boden zu debuggen",
+      "message21": "führte eine irreversible Selbstüberweisung in den Abgrund durch",
+      "message22": "wurde gerade im Dropdown-Menü gefangen",
+      "message23": "fiel kopfüber in den Datensee",
+      "message24": "hatte gerade einen Bluescreen der Existenz",
+      "message25": "versagte beim Captcha und wurde in den Abgrund geschickt",
+      "message26": "stolperte in die Code-Schlucht",
+      "message27": "fiel in den Code-Papierkorb",
+      "message28": "sein Hash stürzte in den Bit-Eimer",
+      "message29": "rutschte auf einer digitalen Banane aus",
+      "message30": "machte Cloud-Fallschirmspringen, ohne Fallschirm",
+      "message31": "versank im Binärmeer",
+      "message32": "sein Konto macht einen Klippensprung",
+      "message33": "sein Code machte einen Bauchplatscher in die Leere",
+      "message34": "seine Harmonie machte einen Sturzflug",
+      "message35": "nahm 'Internet-Absturz' wörtlich",
+      "message36": "stellte einen 'längsten digitalen Freefall'-Rekord auf",
+      "message37": "fand eine Abkürzung zur digitalen Unterwelt",
+      "message38": "tanzte Tango mit der Schwerkraft Die Schwerkraft gewann",
+      "message39": "machte einen Gesichtsplatz in die Leere",
+      "message40": "verlor Versteckspiel mit dem Boden",
+      "message41": "wurde in den Abgrund heruntergeladen",
+      "message42": "machte eine Reise ins Cyber-Kaninchenloch",
+      "message43": "machte digitales Fallschirmspringen, landete hart",
+      "message44": "Abmeldung gleich Absturz"
+    }
+  },
+  "chat": {
+    "profanityNotAllowed": "Schimpfwörter sind nicht erlaubt!",
+    "bannedUser": "gebannter Benutzer",
+    "pressEnter": "Drücke (Enter) zum Chatten",
+    "loginToChat": "Melde dich an zum Chatten",
+    "confirmUsername": "Bestätige deinen Benutzernamen zum Chatten",
+    "sendOrClose": "(Enter) zum Senden/Chat schließen",
+    "chatButton": "Chat",
+    "channels": {
+      "english": "Englisch",
+      "spanish": "Spanisch",
+      "french": "Französisch"
+    },
+    "bot": {
+      "welcome": "Willkommen bei Metacube! Tippe deine Nachricht und drücke Enter zum Senden.",
+      "closeHint": "Drücke Enter in einem leeren Feld, um den Chat zu schließen. Mit Enter wieder öffnen.",
+      "respectWarning": "⚠️ Beleidigungen werden hier nicht toleriert und können zu einem Bann führen. Lasst uns unsere Community positiv und respektvoll halten. ⚠️"
+    }
+  },
+  "validation": {
+    "username": {
+      "tooShort": "Der Benutzername ist zu kurz.",
+      "tooLong": "Der Benutzername ist zu lang.",
+      "invalidCharacters": "Nur a-z, A-Z, 0-9, _ sind erlaubt.",
+      "profanity": "Keine vulgäre Sprache erlaubt.",
+      "alreadyTaken": "Dieser Benutzername ist bereits vergeben.",
+      "unexpected": "Unerwarteter Fehler, bitte erneut versuchen."
+    }
+  },
+  "dialogs": {
+    "confirmTransition": {
+      "title": "Übergang bestätigen",
+      "message": "Bist du sicher, dass du den Übergang veröffentlichen möchtest? Diese Aktion kann nicht rückgängig gemacht werden."
+    }
+  },
+  "overlays": {
+    "loginToViewSkins": "Melde dich an, um deine Skins zu sehen",
+    "loginToViewAssets": "Melde dich an, um deine Assets zu sehen",
+    "loginToViewUpgrades": "Melde dich an, um deine Upgrades zu sehen"
+  },
+  "ui": {
+    "buttons": {
+      "postTransition": "Übergang veröffentlichen",
+      "login": "Anmelden",
+      "play": "Spielen",
+      "starknetIdUsed": "Starknet ID wird verwendet!",
+      "useStarknetId": "Starknet ID verwenden"
+    },
+    "labels": {
+      "quickStart": "Schnellstart ohne Registrierung",
+      "positionInQueue": "Position in der Warteschlange:"
+    },
+    "links": {
+      "getStarknetId": "Meine Starknet ID erhalten"
+    },
+    "placeholders": {
+      "username": "Benutzername: a-z, A-Z, 0-9, _"
+    },
+    "status": {
+      "loading": " Pixel werden präzise kalibriert..."
+    },
+    "jokes": {
+      "cube": {
+        "message1": "Ein Würfel, sie alle zu beherrschen, aber eine Legion von Stove Troopers, ihn zu brechen.",
+        "message2": "Metacube? Eher Metacrumbles.",
+        "message3": "Pass auf, Metacube, ich habe den Hammer der Dezentralisierung.",
+        "message4": "Lass dich nicht von der Blockchain fesseln, zerbrich den Würfel!",
+        "message5": "Den Würfel demontieren, eine Schicht nach der anderen.",
+        "message6": "Metacube steht kurz davor, einen Block-buster-Treffer zu bekommen!",
+        "message7": "Fliegt, ihr Öfen! Und demontiert den Metacube!",
+        "message8": "Mein kubischer Körper ist bereit!"
+      }
+    },
+    "tutorial": {
+      "welcome": {
+        "title": "Willkommen bei Metacube",
+        "message": "Grüße, Stove Trooper! Ihre Mission ist klar: Zerstören Sie den Metacube mit Ihren Truppen. Jagen Sie NFTs, brechen Sie die Würfel und denken Sie daran—dies ist ein einzigartiges Ereignis. Sobald der Metacube zerstört ist, ist es für immer vorbei. Viel Glück!"
+      },
+      "cubeDamage": {
+        "title": "Würfel-Verteidigungsmechanismus",
+        "message": "Achten Sie auf die flackernden Pixel auf den Würfeln! Diese repräsentieren konzentrierte Metacube-Energie. Sie zu treffen wird einen kraftvollen Gegenangriff auslösen. Zielen Sie vorsichtig!"
+      },
+      "fallDamage": {
+        "title": "Beachten Sie die Schwerkraft",
+        "message": "Zu schnell fallen kann ernsthaften Schaden verursachen! Bremsen Sie ab, bevor Sie den Boden berühren, und machen Sie keine 'Luna', indem Sie rücksichtslos tauchen."
+      },
+      "upgrade": {
+        "title": "Upgrade-Zeit!",
+        "message": "Glückwunsch! Sie haben genug Geld gesammelt, um Ihr erstes Upgrade zu kaufen. Wählen Sie weise und stärken Sie Ihr Arsenal!"
+      },
+      "fisc": {
+        "title": "Vorsicht vor Steuerberatern!",
+        "message": "Steuerberater wollen Ihre hart verdienten Metacoins stehlen! Sie werden nicht zögern, Sie bis zur Vergessenheit zu besteuern. Weichen Sie ihnen aus oder zerschmettern Sie sie mit Ihrem Hammer, bevor sie Sie erreichen."
+      },
+      "press": "Drücken Sie",
+      "toDismiss": "zum Schließen",
+      "dismiss": "Schließen",
+      "dismissAriaLabel": "Tutorial-Tipp schließen"
+    },
+    "controls": {
+      "move": "Bewegen",
+      "toggleView": "3./1. Person Ansicht",
+      "fly": "Fliegen",
+      "jump": "Springen (Fliegen, in der Luft)",
+      "run": "Rennen (In Bewegung)",
+      "throwBomb": "Bombe werfen"
+    },
+    "selectLanguage": "Sprache auswählen",
+    "openNavigationMenu": "Navigationsmenü öffnen",
+    "touchControls": {
+      "openMenu": "Menü öffnen",
+      "toggleSprint": "Sprint umschalten",
+      "toggleCamera": "Kamera umschalten",
+      "fly": "Fliegen",
+      "jump": "Springen",
+      "hit": "Schlagen"
+    }
+  },
+  "footer": {
+    "allRightsReserved": "Alle Rechte vorbehalten.",
+    "terms": "Bedingungen",
+    "privacy": "Datenschutz"
+  },
+  "bombs": {
+    "mini": {
+      "name": "Mini"
+    },
+    "standard": {
+      "name": "Standard"
+    },
+    "heavy": {
+      "name": "Schwer"
+    },
+    "mega": {
+      "name": "Mega"
+    },
+    "ultra": {
+      "name": "Ultra"
+    }
+  },
+  "hud": {
+    "ally": "Verbündeter",
+    "playersCount": "Spieler:",
+    "fps": "fps",
+    "entity": {
+      "player": "Stove Trooper",
+      "fiscController": "Finanzkontrolleur",
+      "layerBarrier": "Geladene Schichtbarriere ∞"
+    }
+  },
+  "skins": {
+    "stove": {
+      "name": "Stove",
+      "surname": "Der Normy"
+    },
+    "zombie": {
+      "name": "Zombie",
+      "surname": "Der Crackhead"
+    },
+    "ogStove": {
+      "name": "OG Stove",
+      "surname": "Der Legendäre"
+    },
+    "brother": {
+      "name": "Brother",
+      "surname": "Der Ausgerichtete"
+    }
+  }
+}
